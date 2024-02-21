@@ -1,0 +1,4 @@
+.container {
+    @apply sticky top-20 lg:block hidden;
+  }
+  

@@ -1,0 +1,30 @@
+
+.container {
+  @apply bg-[#182237] lg:p-5 p-4 rounded-lg lg:flex lg:gap-5 lg:cursor-pointer w-full;
+  width: 100%;
+}
+
+.container:hover {
+  @apply bg-gray-800;
+}
+
+.texts {
+  @apply flex flex-col lg:gap-5 gap-3;
+}
+
+.number {
+  @apply text-2xl font-semibold;
+}
+
+.detail {
+  @apply text-base font-light;
+}
+
+.positive {
+  @apply text-green-500;
+}
+
+.negative {
+  @apply text-red-500;
+}
+

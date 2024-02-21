@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .wrapper{
+    @apply max-w-7xl mx-auto w-full px-3 lg:px-0
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .error{
+    @apply text-sm text-red-500 mt-5
+  }
+}
+
+input:focus{
+  @apply focus:ring-0
+}
+
+.empty-state{
+  @apply flex items-center justify-center min-h-screen flex-col text-white-50;
+}
+.empty-state h1{
+  @apply text-4xl font-bold
+}
+
+.empty-state p{
+  @apply text-2xl mt-3
+}
+
+
+
+
+/* Map Styles */
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top{
+  z-index: 0 !important;
+}
+
+/* 
+input {
+  all: unset;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: all 5000s ease-in-out 0s;
+}
+
+/* For WebKit-based browsers */
+.scrollbar::-webkit-scrollbar {
+  width:  12px; /* width of the entire scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the tracking area */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scroll thumb */
+  border-radius:  20px; /* roundness of the scroll thumb */
+  border:  3px solid #f1f1f1; /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: 1px; /* "auto" or "thin"  */
+  scrollbar-color: #888 unset;
+  border-radius: 10px; /* thumb and track */
+}
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+} */

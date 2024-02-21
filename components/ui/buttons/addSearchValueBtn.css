@@ -1,0 +1,4 @@
+#ad-location:hover > .flex > #border-1,
+#ad-location:hover > .flex > #border-2 {
+    @apply hidden
+}

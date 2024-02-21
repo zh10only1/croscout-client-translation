@@ -1,0 +1,19 @@
+.formInput input {
+    @apply flex w-full rounded-md border-none outline-none bg-[#3A3F51] px-3 py-3 text-sm lg:text-base placeholder:text-secondary-50 placeholder:text-sm;
+}
+
+.formInput select {
+    @apply flex w-full rounded-md border-none outline-none bg-[#3A3F51] px-3 py-3 text-sm lg:text-base placeholder:text-secondary-50 placeholder:text-sm ;
+}
+
+
+.state button {
+    @apply flex justify-between items-center w-full rounded-md border-none outline-none bg-[#3A3F51] px-3 py-3 text-sm lg:text-base placeholder:text-secondary-50 placeholder:text-sm;
+}
+
+.formInput label{
+    @apply text-base font-medium leading-6;
+}
+.formInput textarea{
+    @apply h-10 bg-[#3A3F51] lg:text-base placeholder:text-secondary-50 placeholder:text-sm flex w-full rounded-md border-none outline-none px-3 py-2 text-sm min-h-[100px];
+}

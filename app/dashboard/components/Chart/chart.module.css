@@ -1,0 +1,8 @@
+
+.container {
+  @apply lg:h-[450px] h-[300px] bg-[#182237] lg:p-5 rounded-lg;
+}
+
+.title {
+  @apply font-light text-[#b7bac1] mb-5;
+}

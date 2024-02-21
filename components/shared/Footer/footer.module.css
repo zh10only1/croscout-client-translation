@@ -1,0 +1,14 @@
+.footer a{
+    @apply hover:text-accent duration-100
+}
+
+.socialIcons a{
+    @apply text-2xl
+}
+.socialIcons a:nth-child(2),
+.socialIcons a:last-child {
+    @apply text-[28px] duration-150;
+}
+.socialIcons a:first-child {
+    @apply text-[27px] duration-150;
+}

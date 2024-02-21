@@ -1,0 +1,3 @@
+.propertyCard:hover .carouselImage{
+    @apply  scale-105 duration-200
+}

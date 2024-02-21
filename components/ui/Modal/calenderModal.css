@@ -1,0 +1,16 @@
+ .rdrDayNumber {
+    @apply lg:text-lg ; 
+    /* Adjust as needed */
+}
+ .rdrDay {
+    @apply lg:text-lg; 
+    /* Adjust as needed */
+}
+
+.rdrDateDisplayItem {
+@apply lg:text-lg
+}
+
+.rdrMonth{
+    @apply lg:text-sm
+}

@@ -1,0 +1,22 @@
+.container {
+    @apply flex bg-[#151c2c];
+  }
+  
+  .menu {
+    @apply lg:w-[300px] bg-[#182237] text-[#b7bac1] lg:p-5;
+  }
+  
+  .contain {
+    @apply flex-1 lg:p-8 p-2;
+  }
+  
+  .cards {
+    @apply flex lg:flex-row flex-col lg:gap-8 gap-6 justify-between my-5;
+  }
+  
+  .main {
+    @apply text-[#b7bac1]
+  }
+
+
+  

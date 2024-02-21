@@ -1,0 +1,52 @@
+
+.container {
+  @apply bg-[#182237] lg:p-5 p-2 rounded-lg lg:text-base text-sm;
+}
+
+.title {
+  @apply mb-5 font-light text-[#182237];
+}
+.tbody{
+  @apply  lg:mt-4 text-secondary-50
+}
+.table {
+  @apply w-full;
+}
+
+.table td {
+  @apply p-4 flex-1 justify-start;
+}
+.thead tr {
+  @apply flex lg:justify-between justify-end items-center gap-8 rounded-t-xl
+}
+.thead td{
+  @apply flex-1 lg:justify-start justify-end
+}
+
+.table tr {
+  @apply flex justify-between items-center gap-8;
+}
+
+.user {
+  @apply flex items-center mr-4 gap-2 lg:gap-3;
+}
+
+.userImage {
+  @apply rounded-full;
+}
+
+.status {
+  @apply rounded px-1 py-1 text-sm;
+}
+
+.pending {
+  @apply bg-[#f7cb7383];
+}
+
+.done {
+  @apply bg-[#327E5D] text-secondary-50;
+}
+
+.cancelled {
+  @apply bg-[#f773737e];
+}
