@@ -43,7 +43,7 @@ const PropertyList = () => {
         return <Loading></Loading>
     }
 
-    if (properties.length < 1) {
+    if (properties.length < 1 && searchKey) {
         return <div className="flex flex-col lg:pb-60 lg:pt-20 pt-10 pb-20 items-center">
             <h1 className="text-4xl font-bold text-white">Not Matched</h1>
             <ClearSearchButton onClick={() => {
@@ -59,9 +59,13 @@ const PropertyList = () => {
         </div>
     }
 
+    if (properties.length < 1) {
+        return <div className="flex flex-col lg:pb-60 lg:pt-20 pt-10 pb-20 items-center">
+            <h1 className="text-4xl font-bold text-white">Properties are not found!</h1>
+        </div>
+    }
 
 
-    // console.log(catergoryInputValue);
 
     return (
         <>
@@ -84,13 +88,7 @@ const PropertyList = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {properties?.map((property: Property, index: number) => (
-                    // <Link
-                    //     href={`/property-details/${index + 1}`}
-                    //     key={index}
-                    //     className="col-span-4 md:col-span-1"
-                    // >
                     <PropertyCard key={index} property={property} />
-                    // </Link>
                 ))}
             </div>
             <div className="my-10">

@@ -8,15 +8,23 @@ import { getStoredToken } from '@/utils/tokenStorage';
 
 // Type definition for user object
 type User = {
-    name: string;
-    role: string;
     email: string;
+    name: string;
+    password: string;
+    image: string;
+    role: string;
+    favoriteList?: string[];
+    __v: number;
+    _id: string;
+    taxNumber: string;
+    createdAt: string;
 };
 
 const Page = () => {
     // State variables for users and loading status
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = useState<User[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+
 
     useEffect(() => {
         // Function to fetch users
@@ -63,7 +71,7 @@ const Page = () => {
     return (
         <div className='bg-primary-50 px-3 py-3'>
             <h4 className='text-xl mb-3 text-white-50'>All Users:</h4>
-            <AllUsersTable data={users} tableFor="user" />
+            <AllUsersTable data={users} tableFor="user" setUsers={setUsers} />
         </div>
     );
 };

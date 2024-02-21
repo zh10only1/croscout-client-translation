@@ -66,7 +66,7 @@ const AllAgentsPage = () => {
     return (
         <div className="bg-primary-50 px-3 py-3">
             <h4 className='text-xl mb-3 text-white-50'>All Agents:</h4>
-            <AllUsersTable data={users} tableFor="agent"></AllUsersTable>
+            <AllUsersTable data={users} tableFor="agent" setUsers={setUsers}></AllUsersTable>
         </div>
     );
 };

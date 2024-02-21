@@ -7,6 +7,8 @@ import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
 import Loading from '@/components/ui/Loading/Loading';
 import { getStoredToken } from '@/utils/tokenStorage';
+import { getUsersByRole } from '@/lib/database/getUsers';
+import Link from 'next/link';
 
 //? Define the User interface with properties for user details
 interface User {
@@ -24,15 +26,16 @@ interface User {
 
 //? Define the props for the AllUsersTable component
 interface AllUsersTableProps {
-    data: User[]; // An array of User objects to display in the table
-    tableFor: string; // A string indicating the type of users to display (e.g., "agent")
+    data: User[];
+    tableFor: string;
+    setUsers?: any;
 }
 
 
-const AllUsersTable: React.FC<AllUsersTableProps> = ({ data, tableFor }) => {
+
+const AllUsersTable: React.FC<AllUsersTableProps> = ({ data, tableFor, setUsers }) => {
     // Get the current authenticated user from the AuthProvider context
     const { user } = useAuthContext();
-    console.log(user);
 
 
     const handleDelete = async (userId: string) => {
@@ -61,12 +64,22 @@ const AllUsersTable: React.FC<AllUsersTableProps> = ({ data, tableFor }) => {
                             'Authorization': token
                         }
                     });
-
                     if (response.ok) {
                         // If deletion is successful, show success message, update state, and close modal
                         toast.success('User deleted successfully');
-                        <Loading />
+                        // <Loading />
                         // setDelete(true);
+                        // Fetching users by role
+                        if (tableFor === "agent") {
+                            const data = await getUsersByRole({ role: "agent", token });
+                            setUsers(data.users);
+                        }
+                        else if (tableFor === "user") {
+                            const data = await getUsersByRole({ role: "user", token });
+
+                            setUsers(data.users);
+                        }
+                        
                         Swal.close();
                     } else {
                         // If deletion fails, show error message
@@ -83,7 +96,6 @@ const AllUsersTable: React.FC<AllUsersTableProps> = ({ data, tableFor }) => {
 
     // Get the router object for navigation
     const router = useRouter();
-    console.log(router);
 
     // Render the table with user data
     return (
@@ -122,7 +134,7 @@ const AllUsersTable: React.FC<AllUsersTableProps> = ({ data, tableFor }) => {
                                 Details
                             </th>
                             <th className="lg:p-5 p-3 font-semibold text-center">
-                                Delete User
+                                Actions
                             </th>
 
                         </tr>
@@ -159,10 +171,13 @@ const AllUsersTable: React.FC<AllUsersTableProps> = ({ data, tableFor }) => {
                                 </td>
 
                                 <td className="lg:px-6 px-4 text-xs lg:text-sm py-4 m-5 text-center">
-                                    <button onClick={() => router.push(`/dashboard/admin/user-details/${user?._id}`)} className='px-4 py-1 rounded-md border border-green-400'>{user.role === 'agent' ? 'Agent' : 'User'} Details</button>
+                                    <Link href={`/dashboard/admin/user-details/${user?._id}`}>
+                                        <button className='px-4 py-1 rounded-md border text-white-50 hover:border-white duration-150 border-green-400'>{user.role === 'agent' ? 'Agent' : 'User'} Details</button>
+                                    </Link>
                                 </td>
                                 <td className="lg:px-6 px-4 text-xs lg:text-sm py-4 m-5 text-center">
-                                    <button onClick={() => handleDelete(user?._id)} className='px-4 py-1 rounded-md border border-green-400'> Delete</button>
+                                    <button onClick={() => handleDelete(user?._id)} className='px-4 py-1 rounded-md border hover:bg-red-500
+                                    duration-150 text-white border-red-400'> Delete</button>
                                 </td>
                             </tr>)
                         }

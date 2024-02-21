@@ -73,18 +73,24 @@ export default function PropertyTestimonial({ id }: { id: string }) {
     // console.log(testimonials);
     return (
         <div className="bg-secondary pb-10 pt-[1.5rem]">
-            <div className="wrapper">
-                <h1 className="text-[2.625rem] font-bold text-center text-white">
-                    Our Reviews
-                </h1>
-                <div className="mt-[4.25rem] grid grid-cols-1 gap-[1.875rem] w-full">
-                    <Carousel slide={false}>
-                        {
-                            testimonials?.map(testimonial => <PropertyTestimonialCard testimonial={testimonial}/>)
-                        }
-                    </Carousel>
-                </div>
-            </div>
+            {
+                testimonials.length > 0 ?
+                    <div className="wrapper">
+                        <h1 className="text-[2.625rem] font-bold text-center text-white">
+                            Our Reviews
+                        </h1>
+                        <div className="mt-[4.25rem] grid grid-cols-1 gap-[1.875rem] w-full">
+                            <Carousel slide={false}>
+                                {
+                                    testimonials?.map(testimonial => <PropertyTestimonialCard testimonial={testimonial} />)
+                                }
+                            </Carousel>
+                        </div>
+                    </div>
+                    :
+                    <div className="text-[2.625rem] font-bold text-center text-white min-h-[40vh] flex items-center justify-center">The property has no reviews.</div>
+            }
+
         </div>
     );
 }
