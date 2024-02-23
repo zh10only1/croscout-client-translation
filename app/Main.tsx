@@ -3,9 +3,14 @@
 import { useToggleContext } from "@/providers/ToggleProvider";
 
 const Main = ({ children }: { children: React.ReactNode }) => {
-    const { setNavUserToggle } = useToggleContext();
+    const { setNavUserToggle, setFilterToggle, filterToggle } = useToggleContext();
     return (
-        <div onClick={() => setNavUserToggle(false)}>
+        <div onClick={() => {
+            setNavUserToggle(false);
+            if (filterToggle) {
+                setFilterToggle(false);
+            }
+        }}>
             {children}
         </div>
     );

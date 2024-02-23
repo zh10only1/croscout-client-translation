@@ -16,10 +16,12 @@ const Footer = () => {
     const pathname = usePathname();
     const isFooterHidden = /\/reset-password\/[^/]+$/.test(pathname) || /\/dashboard\/[^/]+$/.test(pathname);
     const isDashboard = pathname.includes('/dashboard')
+    const isVerifyEmail = pathname.includes('/verify-email');
+
 
     const currentYear = new Date().getFullYear();
     return (
-        <div hidden={isFooterHidden || isDashboard}>
+        <div hidden={isFooterHidden || isDashboard || isVerifyEmail}>
             <MultiCategory />
             <footer className={`bg-primary pt-20 ${footerStyles.footer}`}>
                 <div className="wrapper">

@@ -80,15 +80,12 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         const fetchUser = async () => {
             setLoading(true);
             if (token && isMounted) {
-                console.log("line number 83");
                 const { user } = await getUser({ token });
-                console.log("line 84");
                 setUser(user);
                 setCookie("authToken", token.split(" ")[1], 24)
                 setLoading(false);
             }
             else {
-                console.log("line number 90");
                 setUser(null)
                 setLoading(false);
             }

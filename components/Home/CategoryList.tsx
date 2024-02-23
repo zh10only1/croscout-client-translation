@@ -9,8 +9,7 @@ import { useSearchContext } from "@/providers/SearchProvider";
 import { setSearchQuery } from "@/utils/searchQuery";
 
 export default function CategoryList() {
-    const [activeCategory, setActiveCategory] = useState("");
-    const { location, activeCat, setActiveCat } = useSearchContext();
+    const { activeCat, setActiveCat } = useSearchContext();
 
     const CustomPrevArrow = (props: any) => (
         <div
@@ -70,7 +69,7 @@ export default function CategoryList() {
 
     const handleCategoryChange = (catName: string) => {
         setSearchQuery("category", catName)
-        setActiveCategory(catName);
+        setActiveCat(catName)
     };
 
     // console.log(activeCategory);
@@ -92,7 +91,7 @@ export default function CategoryList() {
                         }}
                         className="px-2"
                     >
-                        <CategoryCard key={index} category={item} activeCat={activeCategory} />
+                        <CategoryCard key={index} category={item} activeCat={activeCat} />
                     </div>
                 ))}
             </Slider>

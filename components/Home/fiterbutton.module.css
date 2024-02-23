@@ -1,0 +1,12 @@
+.filterMenu{
+    @apply md:bg-white bg-primary-50 w-56 shadow-lg shadow-gray-700 p-1 left-0 absolute duration-200  border border-primary z-30  md:top-[65px] top-[42px] rounded-lg origin-top flex flex-col
+}
+
+.filterMenu button {
+    @apply select-none font-semibold text-secondary-50 md:text-secondary hover:bg-secondary lg:hover:bg-slate-200 w-full text-left py-2 px-4 md:px-6 rounded-lg duration-150 flex items-center justify-between gap-1 my-1
+}
+
+.filterMenu .activeButton {
+    @apply select-none font-semibold text-secondary-50 md:text-secondary bg-secondary lg:bg-slate-200 w-full text-left py-2 px-4 md:px-6 rounded-lg duration-150 flex items-center justify-between gap-1
+}
+
