@@ -10,8 +10,10 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import MultiCategory from "@/components/Home/MultiCategory";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "../../../app/i18n/client"; 
 
 const Footer = ({lng} : {lng: string;}) => {
+    const { t } = useTranslation(lng, 'translation');
     // footer will be hidden if them pathname matches the include pathname
     const pathname = usePathname();
     const isFooterHidden = /\/reset-password\/[^/]+$/.test(pathname) || /\/dashboard\/[^/]+$/.test(pathname);
@@ -53,7 +55,7 @@ const Footer = ({lng} : {lng: string;}) => {
                         <div className="mt-20 md:mt-0">
                             <div className="grid grid-cols-3 gap-10 md:gap-[120px]">
                                 <div className="col-span-3 md:col-span-1">
-                                    <h2 className="text-xl font-semibold">Support</h2>
+                                    <h2 className="text-xl font-semibold">{t('SUPPORT')}</h2>
                                     <div className="mt-6 flex flex-col leading-[200%] text-[#CBC9C9]">
                                         <Link href={"#"}>Help Center</Link>
                                         <Link href={"#"}>AirCover</Link>
