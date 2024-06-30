@@ -19,6 +19,12 @@ import { usePathname } from "next/navigation";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/providers/AuthProvider";
 import Main from "./Main";
+import { dir } from 'i18next'
+import { languages } from '../i18n/settings'
+
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }))
+}
 
 const onest = Onest({
   subsets: ["latin"],
@@ -39,13 +45,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: {
+    lng
+  }
 }: Readonly<{
   children: React.ReactNode;
+  params: {
+    lng: string;
+  };
 }>) {
 
 
   return (
-    <html lang="en">
+    <html lang={lng} dir={dir(lng)}>
       <body className={`${onest.className} bg-primary`}>
         <LocalizationProvider>
           <AuthProvider>
@@ -72,7 +84,7 @@ export default function RootLayout({
                         {children}
                       </Main>
                     </main>
-                    <Footer />
+                    <Footer lng={lng}/>
                   </div>
                 </ToggleProvider>
               </ModalProvider>

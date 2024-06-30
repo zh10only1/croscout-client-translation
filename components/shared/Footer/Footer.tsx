@@ -11,7 +11,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import MultiCategory from "@/components/Home/MultiCategory";
 import { usePathname } from "next/navigation";
 
-const Footer = () => {
+const Footer = ({lng} : {lng: string;}) => {
     // footer will be hidden if them pathname matches the include pathname
     const pathname = usePathname();
     const isFooterHidden = /\/reset-password\/[^/]+$/.test(pathname) || /\/dashboard\/[^/]+$/.test(pathname);
