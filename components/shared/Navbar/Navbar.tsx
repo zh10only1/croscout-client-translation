@@ -18,8 +18,10 @@ import { setCookie } from "cookies-next";
 import { removeCookie } from "@/utils/authCookie";
 import { sendVerificationEmail, verifyEmail } from "@/lib/database/verifyEmail";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import { useTranslation } from "@/app/i18n/client"; 
 
-const Navbar = () => {
+const Navbar = ({lng} : {lng: string;}) => {
+    const { t } = useTranslation(lng, 'navbar');
     const { navUserToggle, setNavUserToggle } = useToggleContext();
     const { setLoginModal, setSignupModal, sidebarToggle,
         setSidebarToggle } = useModalContext();
@@ -84,7 +86,7 @@ const Navbar = () => {
                     <NavLogo />
 
                     {/* NavMenu - Visible for Version */}
-                    <NavMenu />
+                    <NavMenu lng={lng} />
 
                     {/* Menu Button - Visible for Mobile Version */}
                     <button
@@ -119,14 +121,14 @@ const Navbar = () => {
                                             setNavUserToggle(false);
 
                                         }}
-                                    >Login</button>
+                                    >{t('LOGIN')}</button>
                                     <button
                                         onClick={() => {
                                             setSignupModal(true);
                                             setNavUserToggle(false);
 
                                         }}
-                                    >Signup</button>
+                                    >{t('SIGNUP')}</button>
                                 </>
                         }
                     </ul>

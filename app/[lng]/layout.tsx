@@ -78,13 +78,13 @@ export default function RootLayout({
 
 
                   <div className="flex min-h-screen flex-col ">
-                    <Navbar />
+                    <Navbar lng={lng} />
                     <main className="flex-1">
                       <Main>
                         {children}
                       </Main>
                     </main>
-                    <Footer lng={lng}/>
+                    <Footer lng={lng} />
                   </div>
                 </ToggleProvider>
               </ModalProvider>

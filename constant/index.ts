@@ -614,3 +614,16 @@ export const languages = [
     "Slovak",
     "Dutch"
 ];
+
+export const supportedLngs: Record<string, string> = {
+    "English": "en",
+    "Russian": "ru",
+    "German": "de",
+    "Croatian": "hr",
+    "Polish": "pl",
+    "Czech": "cs",
+    "Swedish": "sv",
+    "Norway": "no",
+    "Slovak": "sk",
+    "Dutch": "nl"
+};

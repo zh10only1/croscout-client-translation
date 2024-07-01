@@ -1,5 +1,7 @@
 import HeroSearchForm from "./HeroSearchForm";
 
+// import HeroBackground from "@/public/images/hero-bg.png";
+
 const Hero = () => {
     return (
         <section

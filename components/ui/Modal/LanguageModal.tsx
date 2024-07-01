@@ -1,17 +1,28 @@
 "use client"
 
 import LoginForm from "@/components/AuthComponents/LoginForm";
-import { languages } from "@/constant";
+import { languages, supportedLngs } from "@/constant";
 import { useLocalizationContext } from "@/providers/LocalizationContext";
 import { useModalContext } from "@/providers/ModalProvider";
 import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
+import { useRouter } from 'next/navigation'
 
 const LanguageModal = () => {
+    const router = useRouter();
     const { languageModal, setLanguageModal } = useModalContext();
     const { setSelectedLanguage, selectedLanguage } = useLocalizationContext();
     const [language, setLanguage] = useState('');
 
+    const updateLanguage = () => {
+        setLanguageModal(false);
+        setSelectedLanguage(language);
+        const lng = supportedLngs[language];
+        const basePath = `/${lng}`;
+        const currentPathname = typeof window !== 'undefined' ? window.location.pathname : '/';
+        const newPathname = currentPathname.replace(/^\/[a-z]{2}/, basePath);
+        router.push(newPathname);
+    }
 
     return (
         <div className={`fixed z-50 w-full h-full bg-black bg-opacity-30 flex justify-center items-center top-0 right-0 ${languageModal ? 'scale-100' : 'scale-0'}`}>
@@ -39,11 +50,7 @@ const LanguageModal = () => {
                     }
                 </div>
                 {/* Close Modal */}
-                <button className="w-full bg-rose-500 py-3 mt-10 rounded-full text-white hover:bg-rose-400 duration-100" onClick={() => {
-                    setLanguageModal(false);
-                    localStorage.setItem('selectedLanguage', language);
-                    setSelectedLanguage(language);
-                }}>Update</button>
+                <button className="w-full bg-rose-500 py-3 mt-10 rounded-full text-white hover:bg-rose-400 duration-100" onClick={() => updateLanguage()}>Update</button>
             </div>
         </div>
     )
