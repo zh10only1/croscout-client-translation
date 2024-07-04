@@ -4,11 +4,12 @@ import PrimaryButton from "@/components/ui/buttons/Button";
 import { Property } from "@/constant";
 import { useSearchContext } from "@/providers/SearchProvider";
 import ClearSearchButton from "@/components/ui/buttons/ClearSearchButton";
-import { getAllProperty } from "@/lib/database/getProperties";
+import { getAllProperty, translateProperties } from "@/lib/database/getProperties";
 import Loading from "@/components/ui/Loading/Loading";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { removeSearchQuery, setSearchQuery } from "@/utils/searchQuery";
+import { getCurrentLng } from "@/utils/translation";
 
 const PropertyList = () => {
     const [properties, setProperties] = useState([])
@@ -33,6 +34,10 @@ const PropertyList = () => {
             try {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
+                const lng : string = getCurrentLng();
+                const translated_data = await translateProperties(data, lng);
+                // api call to translate
+
                 setProperties(data || []);
                 setIsLoading(false);
             } catch (error) {
@@ -42,6 +47,8 @@ const PropertyList = () => {
         };
         getProperty();
     }, [searchKey, searchParams]);
+
+    
 
 
     const handleShowMore = () => {

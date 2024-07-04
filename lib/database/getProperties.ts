@@ -54,3 +54,20 @@ export const getPropertyTestimonials = async (id: string) => {
         throw error;
     }
 }
+
+export const translateProperties = async (properties: any[], lng: string) => {
+    try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/properties/translateProperties`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ properties, lng }),
+        });
+        const result = await response.json();
+        return result;
+    } catch (error) {
+        console.error('Fetch error:', error);
+        throw error;
+    }
+}
