@@ -35,10 +35,11 @@ const PropertyList = () => {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
                 const lng : string = getCurrentLng();
-                const translated_data = await translateProperties(data, lng);
+                console.log(lng)
+                const {translatedProperties} = await translateProperties(data, lng);
+                console.log(translatedProperties)
                 // api call to translate
-
-                setProperties(data || []);
+                setProperties(translatedProperties || []);
                 setIsLoading(false);
             } catch (error) {
                 setIsLoading(false)
@@ -49,8 +50,6 @@ const PropertyList = () => {
     }, [searchKey, searchParams]);
 
     
-
-
     const handleShowMore = () => {
         const limit = (properties.length + 20).toString();
         setSearchQuery("limit", limit);
