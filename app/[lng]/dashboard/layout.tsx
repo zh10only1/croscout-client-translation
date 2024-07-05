@@ -7,7 +7,7 @@ import { useModalContext } from '@/providers/ModalProvider';
 import { useAuthContext } from '@/providers/AuthProvider';
 import Sidebar from './components/Sidebar/Sidebar';
 import Loading from '@/components/ui/Loading/Loading';
-import styles from "@/app/dashboard/components/dashboard.module.css";
+import styles from "@/app/[lng]/dashboard/components/dashboard.module.css";
 
 // Define the props for the DashboardLayout component
 interface DashboardLayoutProps {
