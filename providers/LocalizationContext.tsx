@@ -11,7 +11,7 @@ import {
 import { supportedLngs } from "@/constant";
 import { getCurrentLng } from "@/utils/translation";
 
-type SelectedLanguageType = string | null;
+type SelectedLanguageType = string;
 
 // Interface of Modal Context Props
 interface LocalizationContextProps {
@@ -34,7 +34,7 @@ const LocalizationProvider: React.FC<LocalizationProviderProps> = ({
   children,
 }) => {
   //* States
-  const [selectedLanguage, setSelectedLanguage] = useState<string | null>("");
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("");
 
   useEffect(() => {
     const lng: string = getCurrentLng();

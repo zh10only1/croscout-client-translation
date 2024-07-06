@@ -1,8 +1,9 @@
 import HeroSearchForm from "./HeroSearchForm";
+import { useTranslation } from "@/app/i18n";
 
-// import HeroBackground from "@/public/images/hero-bg.png";
+const Hero = async ({lng} : {lng: string;}) => {
+    const { t } = await useTranslation(lng, 'footer');
 
-const Hero = () => {
     return (
         <section
             className=" bg-white bg-cover bg-no-repeat pt-10 lg:pt-[8.125rem] lg:h-[35.56rem] pb-20 lg:pb-0 px-2 lg:px-0"
@@ -13,7 +14,7 @@ const Hero = () => {
             <h1
                 className="text-3xl lg:text-4xl select-none lg:text-[3.5rem] font-extrabold text-white text-center mt-0 lg:mt-5 mb-5"
             >
-                Book Your Room Any Place from Any Where
+                {t("DISABILITY_SUPPORT")} Book Your Room Any Place from Any Where
             </h1>
             <p className=" text-white-50 select-none text-xl text-center"
             >
