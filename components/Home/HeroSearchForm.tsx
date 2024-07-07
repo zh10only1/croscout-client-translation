@@ -15,19 +15,24 @@ import AddSearchValueBtn from "../ui/buttons/AddSearchValueBtn";
 import '../ui/buttons/addSearchValueBtn.css'
 import { MdLocationOn } from "react-icons/md";
 import { setSearchQuery } from "@/utils/searchQuery";
+import { useTranslation } from "@/app/i18n";
 
-const HeroSearchForm = () => {
+
+const HeroSearchForm = async ({lng} : {lng: string;}) => {
+    
     const { setCalenderModal, setGuestModal, setLocationModal } = useModalContext();
     const { childrenCount, adultsCount, searchCalDate, location, setLocation, isSearchBtnClicked, setIsSearchBtnClicked } = useSearchContext();
-
+    
     // Selection Date formatted
     // const formattedStartDate = format(searchCalDate[0].startDate, "MMM dd, yyyy");
     // const formattedEndDate = format(searchCalDate[0].endDate, "MMM dd, yyyy");
+    const { t } = await useTranslation(lng, 'home');
+    
     let formattedStartDate: any;
 
     let formattedEndDate: any;
 
-    let duration: any = "Any week";
+    let duration: any = "Anywhere";
 
     const startDate = new Date(searchCalDate[0].startDate);
     const endDate = new Date(searchCalDate[0].endDate);
@@ -35,10 +40,6 @@ const HeroSearchForm = () => {
     formattedEndDate = format(endDate, "MMM dd, yyyy");
 
     duration = calculateDuration(searchCalDate[0].startDate, searchCalDate[0].endDate);
-
-
-
-
 
     // const formattedStartDate = format(new Date(searchCalDate[0].startDate), "MMM dd, yyyy");
     // const formattedEndDate = format(new Date(searchCalDate[0].endDate), "MMM dd, yyyy");
@@ -80,7 +81,7 @@ const HeroSearchForm = () => {
                         id="add-location"
                         onClick={() => setLocationModal(true)}
                     >
-                        {location ? location : 'Anywhere'}
+                        {location ? location : t("HOME_SEARCH_ANYWHERE")}
                     </AddSearchValueBtn>
 
                     {/* Add Dates */}
@@ -89,7 +90,7 @@ const HeroSearchForm = () => {
                         isBorderX={true}
                         onClick={() => setCalenderModal(true)}
                     >
-                        {(duration === '0 week' || duration === '0 day') ? 'Any week' : duration}
+                        {(duration === '0 week' || duration === '0 day') ? t("HOME_SEARCH_ANY_WEEK") : duration}
                     </AddSearchValueBtn>
 
                     {/* Add Guests */}
@@ -97,7 +98,7 @@ const HeroSearchForm = () => {
                         id="add-guests"
                         onClick={() => setGuestModal(true)}
                     >
-                        {guests ? (`${guests} ${guests === 1 ? 'Guest' : 'Guests'}`) : 'Add guests'}
+                        {guests ? (`${guests} ${guests === 1 ? 'Guest' : 'Guests'}`) : t("HOME_SEARCH_ADD_GUESTS")}
                     </AddSearchValueBtn>
                 </div>
             </div>
@@ -111,7 +112,7 @@ const HeroSearchForm = () => {
                     className="p-4 relative hover:border-accent duration-200 flex items-center gap-2 cursor-pointer mt-6 lg:mt-0 md:p-5 bg-transparent outline-none border border-white-50 placeholder:text-gray-300 rounded-[5px] w-full text-white"
                 >
                     <MdLocationOn className="text-2xl" />
-                    <span>{location ? location : 'Select Your Location'}</span>
+                    <span>{location ? location : t("HOME_SEARCH_LOCATION_SELECT")}</span>
                     {/* Down Arrow Button */}
                     <FaChevronDown className={`absolute ${heroStyles.downArrow} right-1 lg:right-4 text-xl`} />
                 </div>
@@ -142,8 +143,8 @@ const HeroSearchForm = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div className="text-sm lg:text-base lg:leading-5">Check in</div>
-                                            <div className="text-sm lg:leading-5 text-gray-300">Add dates</div>
+                                            <div className="text-sm lg:text-base lg:leading-5">{t("HOME_SEARCH_CHECK_IN")}</div>
+                                            <div className="text-sm lg:leading-5 text-gray-300">{t("HOME_SEARCH_ADD_PEOPLE")}</div>
                                         </>
                                     )
                                 }
@@ -167,8 +168,8 @@ const HeroSearchForm = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div className="text-sm lg:text-base lg:leading-5">Check out</div>
-                                            <div className="text-sm lg:leading-5 text-gray-300">Add dates</div>
+                                            <div className="text-sm lg:text-base lg:leading-5">{t("HOME_SEARCH_CHECK_OUT")}</div>
+                                            <div className="text-sm lg:leading-5 text-gray-300">{t("HOME_SEARCH_ADD_PEOPLE")}</div>
                                         </>
                                     )
                                 }
@@ -197,7 +198,7 @@ const HeroSearchForm = () => {
                                             {childrenCount > 0 && <span>{childrenCount} Children{childrenCount > 1 && 's'}</span>}
                                         </>
                                     ) : (
-                                        <span>Select Guests</span>
+                                        <span>{t("HOME_SEARCH_SELECT_GUESTS")}</span>
                                     )
                                 }
                             </div>
@@ -219,7 +220,7 @@ const HeroSearchForm = () => {
                     rounded-[5px] border  duration-100 cursor-pointer  bg-primary border-white text-white font-semibold hover:border-accent`}
 
                 >
-                    Search
+                    {t("HOME_SEARCH_BUTTON")}
                 </button>
 
             </div >

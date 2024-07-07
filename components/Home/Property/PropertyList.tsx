@@ -4,11 +4,12 @@ import PrimaryButton from "@/components/ui/buttons/Button";
 import { Property } from "@/constant";
 import { useSearchContext } from "@/providers/SearchProvider";
 import ClearSearchButton from "@/components/ui/buttons/ClearSearchButton";
-import { getAllProperty } from "@/lib/database/getProperties";
+import { getAllProperty, translateProperties } from "@/lib/database/getProperties";
 import Loading from "@/components/ui/Loading/Loading";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { removeSearchQuery, setSearchQuery } from "@/utils/searchQuery";
+import { getCurrentLng } from "@/utils/translation";
 
 const PropertyList = () => {
     const [properties, setProperties] = useState([])
@@ -33,7 +34,12 @@ const PropertyList = () => {
             try {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
-                setProperties(data || []);
+                const lng : string = getCurrentLng();
+                console.log(lng)
+                const {translatedProperties} = await translateProperties(data, lng);
+                console.log(translatedProperties)
+                // api call to translate
+                setProperties(translatedProperties || []);
                 setIsLoading(false);
             } catch (error) {
                 setIsLoading(false)
@@ -43,7 +49,7 @@ const PropertyList = () => {
         getProperty();
     }, [searchKey, searchParams]);
 
-
+    
     const handleShowMore = () => {
         const limit = (properties.length + 20).toString();
         setSearchQuery("limit", limit);

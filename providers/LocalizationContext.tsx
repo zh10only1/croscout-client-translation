@@ -9,8 +9,9 @@ import {
 } from "react";
 
 import { supportedLngs } from "@/constant";
+import { getCurrentLng } from "@/utils/translation";
 
-type SelectedLanguageType = string | null;
+type SelectedLanguageType = string;
 
 // Interface of Modal Context Props
 interface LocalizationContextProps {
@@ -33,13 +34,10 @@ const LocalizationProvider: React.FC<LocalizationProviderProps> = ({
   children,
 }) => {
   //* States
-  const [selectedLanguage, setSelectedLanguage] = useState<string | null>("");
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("");
 
   useEffect(() => {
-    const currentPathname =
-      typeof window !== "undefined" ? window.location.pathname : "/";
-    const segments = currentPathname.split("/");
-    const lng: string = segments[1] || "";
+    const lng: string = getCurrentLng();
 
     let language: string = "";
     for (const key in supportedLngs) {

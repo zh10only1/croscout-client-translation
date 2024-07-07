@@ -14,14 +14,18 @@ export const metadata: Metadata = {
 }
 
 
-export default function Home() {
+export default function Home({ params: { lng } }: {
+  params: {
+    lng: string;
+  };
+}) {
 
   return (
     <>
-      <Hero />
+      <Hero lng={lng} />
       <div className="wrapper">
-        <FilterButton />
-        <CategoryList />
+        <FilterButton lng={lng}/>
+        <CategoryList/>
         <PropertyList />
       </div>
     </>
