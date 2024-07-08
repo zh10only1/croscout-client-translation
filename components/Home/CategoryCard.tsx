@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { getCurrentLng } from "@/utils/translation";
-import { useTranslation } from "@/app/i18n";
+import { useTranslation } from "@/app/i18n/client";
 
 type IProps = {
   category: { name: string; icon: string; active: string };
   activeCat: string;
 };
 
-export default async function CategoryCard({ category, activeCat }: IProps) {
+export default function CategoryCard({ category, activeCat }: IProps) {
   const [isHovered, setIsHovered] = useState(false);
   // console.log(activeCat);
   const handleHover = () => {
@@ -21,7 +21,7 @@ export default async function CategoryCard({ category, activeCat }: IProps) {
   };
 
   const lng: string = getCurrentLng();
-  const { t } = await useTranslation(lng, "home");
+  const { t } = useTranslation(lng, "home");
 
   return (
     <div className="">

@@ -15,10 +15,11 @@ import AddSearchValueBtn from "../ui/buttons/AddSearchValueBtn";
 import '../ui/buttons/addSearchValueBtn.css'
 import { MdLocationOn } from "react-icons/md";
 import { setSearchQuery } from "@/utils/searchQuery";
-import { useTranslation } from "@/app/i18n";
+import { useTranslation } from "@/app/i18n/client";
+import { getCurrentLng } from "@/utils/translation";
 
 
-const HeroSearchForm = async ({lng} : {lng: string;}) => {
+const HeroSearchForm = () => {
     
     const { setCalenderModal, setGuestModal, setLocationModal } = useModalContext();
     const { childrenCount, adultsCount, searchCalDate, location, setLocation, isSearchBtnClicked, setIsSearchBtnClicked } = useSearchContext();
@@ -26,7 +27,8 @@ const HeroSearchForm = async ({lng} : {lng: string;}) => {
     // Selection Date formatted
     // const formattedStartDate = format(searchCalDate[0].startDate, "MMM dd, yyyy");
     // const formattedEndDate = format(searchCalDate[0].endDate, "MMM dd, yyyy");
-    const { t } = await useTranslation(lng, 'home');
+    const lng: string = getCurrentLng();
+    const { t } = useTranslation(lng, 'home');
     
     let formattedStartDate: any;
 

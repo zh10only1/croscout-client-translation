@@ -12,10 +12,11 @@ import { MdEvent } from "react-icons/md";
 import { FaSortAlphaDown } from "react-icons/fa";
 import { setSearchQuery } from "@/utils/searchQuery";
 import { GiSettingsKnobs } from "react-icons/gi";
-import { useTranslation } from "@/app/i18n";
+import { useTranslation } from "@/app/i18n/client";
+import { getCurrentLng } from "@/utils/translation";
 
 
-const FilterButton = async ({lng} : {lng: string;}) => {
+const FilterButton = () => {
     const { taxToggle, setTaxToggle, filterToggle, setFilterToggle } = useToggleContext();
     const { isFilterSection, setIsFilterSection, currentFilter, setCurrentFilter } = useSearchContext();
 
@@ -29,7 +30,8 @@ const FilterButton = async ({lng} : {lng: string;}) => {
         }, 2000);
     }, [isFilterSection]);
     
-    const { t } = await useTranslation(lng, 'home');
+    const lng: string = getCurrentLng();
+    const { t } = useTranslation(lng, 'home');
     
     // function for remove search query
     const removeSearchQuery = (current: string) => {
