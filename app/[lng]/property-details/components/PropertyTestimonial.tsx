@@ -5,8 +5,9 @@ import React, { useEffect, useState } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 // import Slider from "react-slick";
 import PropertyTestimonialCard from "./PropertyTestimonailCard";
-import { getPropertyTestimonials } from "@/lib/database/getProperties";
+import { getPropertyTestimonials, translatePropertyTestimonials } from "@/lib/database/getProperties";
 import { Carousel } from "flowbite-react";
+import { getCurrentLng } from "@/utils/translation";
 
 export default function PropertyTestimonial({ id }: { id: string }) {
     const [testimonials, setTestimonials] = useState([]);
@@ -63,7 +64,13 @@ export default function PropertyTestimonial({ id }: { id: string }) {
         const fetchData = async () => {
             const dbResponse = await getPropertyTestimonials(id);
             if (dbResponse.success) {
-                setTestimonials(dbResponse.feedbacks)
+                const translationResponse = await translatePropertyTestimonials(dbResponse.feedbacks, getCurrentLng());
+                if(translationResponse.success) {
+                    setTestimonials(translationResponse.translatedFeedbacks);
+                }
+                else {
+                    setTestimonials(dbResponse.feedbacks);
+                }
             }
         };
 

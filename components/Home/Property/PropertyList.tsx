@@ -35,8 +35,9 @@ const PropertyList = () => {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
                 const lng : string = getCurrentLng();
-                const {translatedProperties} = await translateProperties(data, lng, false);
-                setProperties(translatedProperties || []);
+                const translationResponse = await translateProperties(data, lng, false);
+                translationResponse.success ? setProperties(translationResponse.translatedProperties || [])
+                                            : setProperties(data || []);
                 setIsLoading(false);
             } catch (error) {
                 setIsLoading(false)

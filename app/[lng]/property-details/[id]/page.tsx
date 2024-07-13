@@ -66,8 +66,10 @@ export default function PropertyDetails({
 
             if (typeof id === "string") {
                 const propertiesData = await getPropertyById(id);
-                const { translatedProperties } = await translateProperties([propertiesData.property], lng, true);
-                propertiesData.property = translatedProperties[0];
+                const translationResponse = await translateProperties([propertiesData.property], lng, true);
+                if(translationResponse.success){
+                    propertiesData.property = translationResponse.translatedProperties[0];
+                }
                 // Transform the owner property if necessary
                 if (typeof propertiesData.property.owner === "string") {
                     propertiesData.property.owner = {
