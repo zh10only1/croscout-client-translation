@@ -35,10 +35,7 @@ const PropertyList = () => {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
                 const lng : string = getCurrentLng();
-                console.log(lng)
                 const {translatedProperties} = await translateProperties(data, lng, false);
-                console.log(translatedProperties)
-                // api call to translate
                 setProperties(translatedProperties || []);
                 setIsLoading(false);
             } catch (error) {

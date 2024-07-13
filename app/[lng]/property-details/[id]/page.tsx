@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import PropertyAbout from "../components/PropertyAbout";
@@ -9,8 +9,9 @@ import { useParams } from "next/navigation";
 import { getPropertyById } from "@/lib/database/getProperties";
 import Loading from "@/components/ui/Loading/Loading";
 import PropertyDescription from "../components/PropertyDescription";
+import { translateProperties } from "@/lib/database/getProperties";
 
-// Interface of Properties Data 
+// Interface of Properties Data
 export interface IPropertyData {
     property: {
         name: string;
@@ -32,9 +33,13 @@ export interface IPropertyData {
     };
 }
 
-
-export default function PropertyDetails() {
-
+export default function PropertyDetails({
+    params: { lng },
+}: {
+    params: {
+        lng: string;
+    };
+}) {
     const [singlePropertyDetails, setSinglePropertyDetails] = useState<IPropertyData>();
     const [loading, setLoading] = useState(true);
 
@@ -42,12 +47,11 @@ export default function PropertyDetails() {
     const lastIndex = images ? images.length - 1 : -1;
 
     useEffect(() => {
-        const navbarId = document.getElementById("topbar")
+        const navbarId = document.getElementById("topbar");
         if (navbarId) {
-            navbarId.scrollIntoView({ behavior: "smooth" })
+            navbarId.scrollIntoView({ behavior: "smooth" });
         }
     }, []);
-
 
     const { id } = useParams();
     useEffect(() => {
@@ -60,25 +64,35 @@ export default function PropertyDetails() {
             //     // ...
             // }
 
-            if (typeof id === 'string') {
+            if (typeof id === "string") {
                 const propertiesData = await getPropertyById(id);
+                const { translatedProperties } = await translateProperties([propertiesData.property], lng, true);
+                propertiesData.property = translatedProperties[0];
                 // Transform the owner property if necessary
-                if (typeof propertiesData.property.owner === 'string') {
-                    propertiesData.property.owner = { _id: propertiesData.property.owner } as IPropertyData['property']['owner'];
+                if (typeof propertiesData.property.owner === "string") {
+                    propertiesData.property.owner = {
+                        _id: propertiesData.property.owner,
+                    } as IPropertyData["property"]["owner"];
                 }
                 setLoading(false);
                 setSinglePropertyDetails({
                     ...propertiesData,
                     property: {
                         ...propertiesData.property,
-                        owner: propertiesData.property.owner as IPropertyData['property']['owner'],
+                        owner: propertiesData.property
+                            .owner as IPropertyData["property"]["owner"],
                     },
                 });
                 // Update the metadata with the property details
                 document.title = `${propertiesData.property.name} | Croscout`;
-                const descriptionMeta = document.querySelector('meta[name="description"]');
+                const descriptionMeta = document.querySelector(
+                    'meta[name="description"]'
+                );
                 if (descriptionMeta) {
-                    descriptionMeta.setAttribute('content', propertiesData.property.description);
+                    descriptionMeta.setAttribute(
+                        "content",
+                        propertiesData.property.description
+                    );
                 }
             }
         };
@@ -86,9 +100,8 @@ export default function PropertyDetails() {
         fetchData();
     }, []);
 
-
     if (loading) {
-        return <Loading />
+        return <Loading />;
     }
     // console.log(singlePropertyDetails);
     return (
@@ -97,7 +110,10 @@ export default function PropertyDetails() {
             <PropertyAbout aboutDetails={singlePropertyDetails?.property} />
             <PropertyDescription
                 description={singlePropertyDetails?.property?.description || ""}
-                image={(singlePropertyDetails?.property?.propertyImages || [])[lastIndex] || ""}
+                image={
+                    (singlePropertyDetails?.property?.propertyImages || [])[lastIndex] ||
+                    ""
+                }
             />
             <PropertyTestimonial id={singlePropertyDetails?.property._id || ""} />
             <PropertyReviews />
