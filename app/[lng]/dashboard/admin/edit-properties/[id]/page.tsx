@@ -8,10 +8,11 @@ import { useAuthContext } from '@/providers/AuthProvider';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
 import { IoMdClose } from 'react-icons/io';
-import ImageUploader from '@/app/dashboard/agent/add-property/components/ImageUploader';
-import styles from "@/app/dashboard/agent/add-property/components/addProperty.module.css"
+import ImageUploader from '@/app/[lng]/dashboard/agent/add-property/components/ImageUploader';
+import styles from "@/app/[lng]/dashboard/agent/add-property/components/addProperty.module.css"
 import Loading from '@/components/ui/Loading/Loading';
 import { getStoredToken } from '@/utils/tokenStorage';
+import { translateProperties } from '@/lib/database/getProperties';
 
 
 type Inputs = {
@@ -49,7 +50,6 @@ export interface IPropertyData {
 type AmenitiesState = string[];
 
 const EditProperties = () => {
-
     const { register, handleSubmit, reset, formState: { errors }, } = useForm<Inputs>();
     const [imagesArr, setImagesArr] = useState<string[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
@@ -66,13 +66,17 @@ const EditProperties = () => {
         console.log(imagesArr);
     };
 
-    const { id } = useParams();
+    const { id, lng } : { id: any, lng: string } = useParams();
 
     const fetchData = async () => {
         setLoading(true);
         try {
             if (typeof id === 'string') {
                 const propertiesData = await getPropertyById(id);
+                const translationResponse = await translateProperties([propertiesData.property], lng, true);
+                if(translationResponse.success){
+                    propertiesData.property = translationResponse.translatedProperties[0];
+                }
                 setPropertiesData(propertiesData);
                 setImagesArr(propertiesData?.property.propertyImages);
                 setAmenities([...propertiesData?.property.amenities])

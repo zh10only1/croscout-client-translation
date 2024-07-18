@@ -7,7 +7,7 @@ import StatisticsCard from "./components/StatisticsCard/StatisticsCard";
 import Transactions from "./components/Transections/Transections";
 import Chart from "./components/Chart/Chart";
 import Loading from "@/components/ui/Loading/Loading";
-import styles from "@/app/dashboard/components/dashboard.module.css";
+import styles from "@/app/[lng]/dashboard/components/dashboard.module.css";
 import { MdSupervisedUserCircle } from "react-icons/md";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { FaHandHoldingDollar } from "react-icons/fa6";
