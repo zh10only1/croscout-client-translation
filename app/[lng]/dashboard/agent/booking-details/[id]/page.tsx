@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { format } from "date-fns";
 import Image from "next/image";
-import { translateBookings } from "@/lib/database/getProperties";
+import { translateBookings } from "@/lib/database/getBookings";
 
 //* Define interfaces for booking details data and booking
 export interface IPropertyDetailsData {

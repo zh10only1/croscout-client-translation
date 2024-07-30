@@ -90,20 +90,3 @@ export const translateProperties = async (properties: any[], lng: string, comple
     }
 }
 
-export const translateBookings = async (bookings: any[], lng: string) => {
-    try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/bookings/translateBookings`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ bookings, lng }),
-        });
-        const result = await response.json();
-        return result;
-    } catch (error) {
-        console.error('Fetch error:', error);
-        throw error;
-    }
-}
-

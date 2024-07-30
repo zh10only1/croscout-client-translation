@@ -4,7 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { format } from "date-fns";
 import Image from "next/image";
-import { translateBookings } from "@/lib/database/getProperties";
+import { translateBookings } from "@/lib/database/getBookings";
 
 export interface IPropertyDetailsData {
   property: {

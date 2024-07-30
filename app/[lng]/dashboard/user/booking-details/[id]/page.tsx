@@ -3,7 +3,7 @@ import { getBookingDetails } from "@/lib/database/getBookingDetails";
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { format } from "date-fns";
-import { translateBookings } from "@/lib/database/getProperties";
+import { translateBookings } from "@/lib/database/getBookings";
 import Image from "next/image";
 
 export interface IPropertyDetailsData {
