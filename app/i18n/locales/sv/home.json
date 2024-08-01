@@ -28,5 +28,16 @@
     "Castles": "Slott",
     "Earth homes": "Jordhus",
     "INSPIRATION_FOR_FUTURE": "Inspiration för framtida resor",
-    "SEE_MORE_BUTTON": "Se mer"
+    "SEE_MORE_BUTTON": "Se mer",
+    "SEE_LESS": "Se mindre",
+    "CALENDAR": "Kalender",
+  "CONTINUE": "Fortsätt",
+  "LOCATION": "Plats",
+  "WHERE_DO_YOU_WANNA_GO": "Vart vill du åka?",
+  "FIND_THE_PERFECT_LOCATION": "Hitta den perfekta platsen!",
+  "GUESTS": "Gäster",
+  "ADULTS": "Vuxna",
+  "ADULTS_SUBTITLE": "Ålder 18 eller äldre",
+  "CHILDREN": "Barn",
+  "CHILDREN_SUBTITLE": "Ålder 0-17"
 }

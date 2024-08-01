@@ -7,10 +7,15 @@ import PrimaryButton from "../ui/buttons/Button";
 import { useSearchContext } from "@/providers/SearchProvider";
 import { setSearchQuery } from "@/utils/searchQuery";
 import { goToSpecificSection } from "@/utils/goToSpecificSection";
+import { useTranslation } from "@/app/i18n/client";
+import { getCurrentLng } from "@/utils/translation";
 
 export default function MultiCategory() {
     const [showMoreClicked, setShowMoreClicked] = useState(false);
     const { setLocation } = useSearchContext();
+
+    const lng: string = getCurrentLng();
+    const { t } = useTranslation(lng, 'home');
 
 
 
@@ -62,7 +67,7 @@ export default function MultiCategory() {
                     <PrimaryButton
                         onClick={() => setShowMoreClicked(prev => !prev)}
                         className="flex-center gap-x-3 bg-transparent px-7">
-                        <span>{showMoreClicked ? 'See less' : 'See  more'}</span>
+                        <span>{showMoreClicked ? t("SEE_LESS") : t("SEE_MORE_BUTTON")}</span>
                         {!showMoreClicked ? <BsArrowRight /> : <BsArrowLeft />}
                     </PrimaryButton>
                 </div>
