@@ -1,5 +1,7 @@
 {
     "LOGIN": "Anmelden",
     "SIGNUP": "Registrieren",
-    "CROSCOUT_YOUR_HOME": "Croscout Ihr Zuhause"
+    "CROSCOUT_YOUR_HOME": "Croscout Ihr Zuhause",
+      "DASHBOARD": "Dashboard",
+  "LOGOUT": "Abmelden"
 }

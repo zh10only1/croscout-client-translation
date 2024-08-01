@@ -1,5 +1,7 @@
 {
     "LOGIN": "Logg inn",
     "SIGNUP": "Registrer deg",
-    "CROSCOUT_YOUR_HOME": "Croscout hjemmet ditt"
+    "CROSCOUT_YOUR_HOME": "Croscout hjemmet ditt",
+      "DASHBOARD": "Dashbord",
+  "LOGOUT": "Logg ut"
 }

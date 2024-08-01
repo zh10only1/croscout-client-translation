@@ -1,5 +1,7 @@
 {
     "LOGIN": "Přihlásit se",
     "SIGNUP": "Zaregistrovat se",
-    "CROSCOUT_YOUR_HOME": "Croscout Váš domov"
+    "CROSCOUT_YOUR_HOME": "Croscout Váš domov",
+      "DASHBOARD": "Dashboard",
+  "LOGOUT": "Odhlásit se"
 }

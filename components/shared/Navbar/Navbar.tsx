@@ -107,11 +107,11 @@ const Navbar = ({lng} : {lng: string;}) => {
                                     <Link onClick={() =>
                                         setNavUserToggle(false)}
                                         className={navbarStyles.dashboardBtn}
-                                        href={user.role === "user" ? "/dashboard/user/my-bookings" : "/dashboard"}>Dashboard</Link>
+                                        href={user.role === "user" ? "/dashboard/user/my-bookings" : "/dashboard"}>{t("DASHBOARD")}</Link>
                                     <button
 
                                         onClick={handleLogout}
-                                    >Logout</button>
+                                    >{t("LOGOUT")}</button>
                                 </>
                                 :
                                 <>

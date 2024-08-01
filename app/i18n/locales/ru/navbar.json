@@ -1,5 +1,7 @@
 {
     "LOGIN": "Войти",
     "SIGNUP": "Регистрация",
-    "CROSCOUT_YOUR_HOME": "Croscout Ваш Дом"
+    "CROSCOUT_YOUR_HOME": "Croscout Ваш Дом",
+    "DASHBOARD": "Панель управления",
+  "LOGOUT": "Выйти"
 }

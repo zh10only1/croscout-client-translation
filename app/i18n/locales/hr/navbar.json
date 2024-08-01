@@ -1,5 +1,7 @@
 {
     "LOGIN": "Prijava",
     "SIGNUP": "Registracija",
-    "CROSCOUT_YOUR_HOME": "Croscout vaš dom"
+    "CROSCOUT_YOUR_HOME": "Croscout vaš dom",
+    "DASHBOARD": "Nadzorna ploča",
+  "LOGOUT": "Odjavi se"
 }

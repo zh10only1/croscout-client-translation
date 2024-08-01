@@ -1,5 +1,7 @@
 {
     "LOGIN": "Login",
     "SIGNUP": "Signup",
-    "CROSCOUT_YOUR_HOME": "Croscout Your Home"
+    "CROSCOUT_YOUR_HOME": "Croscout Your Home",
+      "DASHBOARD": "Dashboard",
+  "LOGOUT": "Logout"
 }
