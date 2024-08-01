@@ -7,10 +7,13 @@ import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import PropertyTestimonialCard from "./PropertyTestimonailCard";
 import { getPropertyTestimonials, translatePropertyTestimonials } from "@/lib/database/getProperties";
 import { Carousel } from "flowbite-react";
+import { useTranslation } from "@/app/i18n/client";
 import { getCurrentLng } from "@/utils/translation";
 
 export default function PropertyTestimonial({ id }: { id: string }) {
     const [testimonials, setTestimonials] = useState([]);
+    const lng : string = getCurrentLng();
+    const { t } = useTranslation(lng, "propertyDetail");
 
     // const [activeTab, setActiveTab] = useState(0)
 
@@ -84,7 +87,7 @@ export default function PropertyTestimonial({ id }: { id: string }) {
                 testimonials.length > 0 ?
                     <div className="wrapper">
                         <h1 className="text-[2.625rem] font-bold text-center text-white">
-                            Our Reviews
+                            {t("OUR_REVIEWS")}
                         </h1>
                         <div className="mt-[4.25rem] grid grid-cols-1 gap-[1.875rem] w-full">
                             <Carousel slide={false}>
@@ -95,7 +98,7 @@ export default function PropertyTestimonial({ id }: { id: string }) {
                         </div>
                     </div>
                     :
-                    <div className="text-[2.625rem] font-bold text-center text-white min-h-[40vh] flex items-center justify-center">The property has no reviews.</div>
+                    <div className="text-[2.625rem] font-bold text-center text-white min-h-[40vh] flex items-center justify-center">{t("NO_PROPERTY_REVIEWS")}</div>
             }
 
         </div>
