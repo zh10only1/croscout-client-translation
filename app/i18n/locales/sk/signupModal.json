@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Registrácia",
+    "YOUR_NAME": "Vaše meno",
+    "NAME": "Meno",
+    "ENTER_YOUR_NAME": "Zadajte svoje meno.",
+    "YOUR_EMAIL": "Váš e-mail",
+    "EMAIL": "E-mail",
+    "ENTER_YOUR_EMAIL": "Zadajte svoj e-mail.",
+    "PASSWORD": "Heslo",
+    "ENTER_YOUR_PASSWORD": "Zadajte svoje heslo.",
+    "TAX_NUMBER": "Daňové číslo",
+    "ENTER_TAX_NUMBER": "Zadajte daňové číslo.",
+    "REGISTER_AS_AGENT": "Registrovať sa ako agent.",
+    "REGISTER": "Registrovať",
+    "ALREADY_HAVE_AN_ACCOUNT": "Máte už účet?",
+    "LOG_IN": "Prihlásiť sa",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Prihlásiť sa pomocou sociálnych účtov"
+}

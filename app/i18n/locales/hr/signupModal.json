@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Registracija",
+    "YOUR_NAME": "Vaše ime",
+    "NAME": "Ime",
+    "ENTER_YOUR_NAME": "Unesite svoje ime.",
+    "YOUR_EMAIL": "Vaš Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Unesite svoj email.",
+    "PASSWORD": "Lozinka",
+    "ENTER_YOUR_PASSWORD": "Unesite svoju lozinku.",
+    "TAX_NUMBER": "Porezni broj",
+    "ENTER_TAX_NUMBER": "Unesite porezni broj.",
+    "REGISTER_AS_AGENT": "Registrirajte se kao agent.",
+    "REGISTER": "Registriraj se",
+    "ALREADY_HAVE_AN_ACCOUNT": "Već imate račun?",
+    "LOG_IN": "Prijavi se",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Prijavi se putem društvenih računa"
+}

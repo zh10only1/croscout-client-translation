@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Registrera",
+    "YOUR_NAME": "Ditt namn",
+    "NAME": "Namn",
+    "ENTER_YOUR_NAME": "Skriv in ditt namn.",
+    "YOUR_EMAIL": "Din e-post",
+    "EMAIL": "E-post",
+    "ENTER_YOUR_EMAIL": "Skriv in din e-post.",
+    "PASSWORD": "Lösenord",
+    "ENTER_YOUR_PASSWORD": "Skriv in ditt lösenord.",
+    "TAX_NUMBER": "Skattenummer",
+    "ENTER_TAX_NUMBER": "Skriv in ett skattenummer.",
+    "REGISTER_AS_AGENT": "Registrera som agent.",
+    "REGISTER": "Registrera",
+    "ALREADY_HAVE_AN_ACCOUNT": "Har du redan ett konto?",
+    "LOG_IN": "Logga in",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Logga in med sociala konton"
+}

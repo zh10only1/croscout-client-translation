@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Регистрация",
+    "YOUR_NAME": "Ваше имя",
+    "NAME": "Имя",
+    "ENTER_YOUR_NAME": "Введите ваше имя.",
+    "YOUR_EMAIL": "Ваш Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Введите ваш email.",
+    "PASSWORD": "Пароль",
+    "ENTER_YOUR_PASSWORD": "Введите ваш пароль.",
+    "TAX_NUMBER": "Налоговый номер",
+    "ENTER_TAX_NUMBER": "Введите налоговый номер.",
+    "REGISTER_AS_AGENT": "Зарегистрируйтесь как агент.",
+    "REGISTER": "Зарегистрироваться",
+    "ALREADY_HAVE_AN_ACCOUNT": "Уже есть аккаунт?",
+    "LOG_IN": "Войти",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Войти через социальные сети"
+}

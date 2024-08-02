@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Rejestracja",
+    "YOUR_NAME": "Twoje imię",
+    "NAME": "Imię",
+    "ENTER_YOUR_NAME": "Wprowadź swoje imię.",
+    "YOUR_EMAIL": "Twój Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Wprowadź swój email.",
+    "PASSWORD": "Hasło",
+    "ENTER_YOUR_PASSWORD": "Wprowadź swoje hasło.",
+    "TAX_NUMBER": "Numer identyfikacji podatkowej",
+    "ENTER_TAX_NUMBER": "Wprowadź numer identyfikacji podatkowej.",
+    "REGISTER_AS_AGENT": "Zarejestruj się jako agent.",
+    "REGISTER": "Zarejestruj się",
+    "ALREADY_HAVE_AN_ACCOUNT": "Masz już konto?",
+    "LOG_IN": "Zaloguj się",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Zaloguj się za pomocą kont społecznościowych"
+}

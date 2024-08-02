@@ -21,9 +21,9 @@ type Inputs = {
 };
 
 const LoginForm = () => {
-  const [isShow, setIsShow] = useState(false);
   const lng: string = getCurrentLng();
   const { t } = useTranslation(lng, "loginModal");
+  const [isShow, setIsShow] = useState(false);
 
   const { setLoginModal, setSignupModal, setIsForgotMode, isForgotMode } =
     useModalContext();
