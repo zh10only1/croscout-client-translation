@@ -8,11 +8,10 @@ import PropertyTestimonialCard from "./PropertyTestimonailCard";
 import { getPropertyTestimonials, translatePropertyTestimonials } from "@/lib/database/getProperties";
 import { Carousel } from "flowbite-react";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
-export default function PropertyTestimonial({ id }: { id: string }) {
+
+export default function PropertyTestimonial({ id, lng }: { id: string; lng: string }) {
     const [testimonials, setTestimonials] = useState([]);
-    const lng : string = getCurrentLng();
     const { t } = useTranslation(lng, "propertyDetail");
 
     // const [activeTab, setActiveTab] = useState(0)
@@ -67,7 +66,7 @@ export default function PropertyTestimonial({ id }: { id: string }) {
         const fetchData = async () => {
             const dbResponse = await getPropertyTestimonials(id);
             if (dbResponse.success) {
-                const translationResponse = await translatePropertyTestimonials(dbResponse.feedbacks, getCurrentLng());
+                const translationResponse = await translatePropertyTestimonials(dbResponse.feedbacks, lng);
                 if(translationResponse.success) {
                     setTestimonials(translationResponse.translatedFeedbacks);
                 }

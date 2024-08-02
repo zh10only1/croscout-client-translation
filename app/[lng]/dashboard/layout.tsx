@@ -12,10 +12,13 @@ import styles from "@/app/[lng]/dashboard/components/dashboard.module.css";
 // Define the props for the DashboardLayout component
 interface DashboardLayoutProps {
     children: ReactNode;
+    params: {
+        lng: string;
+    };
 }
 
 //* DashboardLayout component that provides a consistent layout for the dashboard
-export default function DashboardLayout({ children }: DashboardLayoutProps) {
+export default function DashboardLayout({ children, params: { lng } }: DashboardLayoutProps) {
 
     //* Use the ModalContext to control the sidebar toggle state
     const { setSidebarToggle, sidebarToggle } = useModalContext();
@@ -32,7 +35,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     return (
         <div className={`${styles.container}`}>
             <div className={`${styles.menu}`}>
-                <Sidebar />
+                <Sidebar lng={lng} />
             </div>
             <div className={`${styles.contain} overflow-hidden min-h-screen py-20 scrollbar ${sidebarToggle ? "blur-md pointer-events-auto" : ""}`}>
                 <div className='mb-4'></div>

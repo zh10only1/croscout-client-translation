@@ -26,7 +26,7 @@ const Hero = async ({lng} : {lng: string;}) => {
                 <div
                     className="bg-secondary py-4 px-4 md:py-[5.625rem] md:px-40 rounded-[10px] mt-[5.25rem] relative m-shadow "
                 >
-                    <HeroSearchForm lng={lng}/>
+                    <HeroSearchForm lng={lng} />
                 </div>
             </div>
         </section>

@@ -8,22 +8,15 @@ import { useSearchContext } from "@/providers/SearchProvider";
 import { setSearchQuery } from "@/utils/searchQuery";
 import { goToSpecificSection } from "@/utils/goToSpecificSection";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
-export default function MultiCategory() {
+export default function MultiCategory({lng}: {lng: string}) {
     const [showMoreClicked, setShowMoreClicked] = useState(false);
     const { setLocation } = useSearchContext();
-
-    const lng: string = getCurrentLng();
     const { t } = useTranslation(lng, 'home');
-
-
-
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
 
     const handleLocationSearch = (state: string) => {
         setLocation(state);

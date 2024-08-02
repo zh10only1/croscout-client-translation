@@ -13,10 +13,9 @@ import { FaSortAlphaDown } from "react-icons/fa";
 import { setSearchQuery } from "@/utils/searchQuery";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
 
-const FilterButton = () => {
+const FilterButton = ({lng} : {lng: string}) => {
     const { taxToggle, setTaxToggle, filterToggle, setFilterToggle } = useToggleContext();
     const { isFilterSection, setIsFilterSection, currentFilter, setCurrentFilter } = useSearchContext();
 
@@ -30,7 +29,6 @@ const FilterButton = () => {
         }, 2000);
     }, [isFilterSection]);
     
-    const lng: string = getCurrentLng();
     const { t } = useTranslation(lng, 'home');
     
     // function for remove search query

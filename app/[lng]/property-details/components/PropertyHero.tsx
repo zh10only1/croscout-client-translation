@@ -26,16 +26,16 @@ import ImageCarousel from "./ImageCarousel";
 import { getUser } from "@/lib/database/authUser";
 import { getStoredToken } from "@/utils/tokenStorage";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
 interface PropertyHeroProps {
   singlePropertyDetails?: IPropertyData["property"];
+  lng: string;
 }
 
 export default function PropertyHero({
   singlePropertyDetails,
+  lng
 }: PropertyHeroProps) {
-  const lng: string = getCurrentLng();
   const { t } = useTranslation(lng, "propertyDetail");
   const [calendarModal, setCalenderModal] = useState(false);
   const [guestModal, setGuestModal] = useState(false);

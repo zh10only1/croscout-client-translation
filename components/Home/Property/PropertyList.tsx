@@ -9,9 +9,8 @@ import Loading from "@/components/ui/Loading/Loading";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { removeSearchQuery, setSearchQuery } from "@/utils/searchQuery";
-import { getCurrentLng } from "@/utils/translation";
 
-const PropertyList = () => {
+const PropertyList = ({lng}: {lng : string;}) => {
     const [properties, setProperties] = useState([])
     const [isLoading, setIsLoading] = useState(true);
     const { isSearchBtnClicked, setCurrentFilter, setIsSearchBtnClicked, setActiveCat, setLocation, setLocationObject, setAdultsCount, setChildrenCount } = useSearchContext();
@@ -34,7 +33,6 @@ const PropertyList = () => {
             try {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
-                const lng : string = getCurrentLng();
                 const translationResponse = await translateProperties(data, lng, false);
                 translationResponse.success ? setProperties(translationResponse.translatedProperties || [])
                                             : setProperties(data || []);

@@ -8,7 +8,7 @@ import { useSearchContext } from "@/providers/SearchProvider";
 // import { searchProperties } from "@/utils/filterProperties";
 import { setSearchQuery } from "@/utils/searchQuery";
 
-export default function CategoryList() {
+export default function CategoryList({lng} : {lng: string}) {
     const { activeCat, setActiveCat } = useSearchContext();
 
     const CustomPrevArrow = (props: any) => (
@@ -91,7 +91,7 @@ export default function CategoryList() {
                         }}
                         className="px-2"
                     >
-                        <CategoryCard key={index} category={item} activeCat={activeCat} />
+                        <CategoryCard lng={lng} key={index} category={item} activeCat={activeCat} />
                     </div>
                 ))}
             </Slider>

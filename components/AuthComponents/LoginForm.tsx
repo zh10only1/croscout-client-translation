@@ -13,15 +13,13 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { setCookie } from "@/utils/authCookie";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
 type Inputs = {
   email: string;
   password: string;
 };
 
-const LoginForm = () => {
-  const lng: string = getCurrentLng();
+const LoginForm = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng, "loginModal");
   const [isShow, setIsShow] = useState(false);
 

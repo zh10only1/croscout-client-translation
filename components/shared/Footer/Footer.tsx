@@ -26,7 +26,7 @@ const Footer = ({lng} : {lng: string;}) => {
     const currentYear = new Date().getFullYear();
     return (
         <div hidden={isFooterHidden || isDashboard || isVerifyEmail}>
-            <MultiCategory />
+            <MultiCategory lng={lng} />
             <footer className={`bg-primary pt-20 ${footerStyles.footer}`}>
                 <div className="wrapper">
                     <div className="flex flex-col md:flex-row justify-between text-white pb-[60px]">

@@ -9,7 +9,6 @@ import { ImSpinner9 } from "react-icons/im";
 import { registerUser } from "@/lib/database/authUser";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
 type Inputs = {
   name: string;
@@ -19,9 +18,8 @@ type Inputs = {
   role: string;
 };
 
-const SignupForm = () => {
-  const lng: string = getCurrentLng();
-  const { t } = useTranslation(lng, "loginModal");
+const SignupForm = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng, "signupModal");
   const { setLoginModal, setSignupModal, setIsForgotMode } = useModalContext();
   const {
     register,

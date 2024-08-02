@@ -5,20 +5,20 @@ import CheckmarkText from "./CheckmarkText";
 import { useState } from "react";
 import { IPropertyData } from "../[id]/page";
 import { useTranslation } from "@/app/i18n/client";
-import { getCurrentLng } from "@/utils/translation";
 
 interface PropertyAboutProps {
   singlePropertyDetails?: IPropertyData["property"];
   amenities?: string[];
-  propertyImages?: string[];
+  propertyImages?: string[]; 
 }
 
 export default function PropertyAbout({
   aboutDetails,
+  lng
 }: {
   aboutDetails?: PropertyAboutProps;
+  lng: string;
 }) {
-    const lng : string = getCurrentLng();
   const { t } = useTranslation(lng, "propertyDetail");
   const [showAll, setShowAll] = useState(false);
 

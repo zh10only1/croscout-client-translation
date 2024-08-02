@@ -2,15 +2,15 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { getCurrentLng } from "@/utils/translation";
 import { useTranslation } from "@/app/i18n/client";
 
 type IProps = {
   category: { name: string; icon: string; active: string };
   activeCat: string;
+  lng: string;
 };
 
-export default function CategoryCard({ category, activeCat }: IProps) {
+export default function CategoryCard({ category, activeCat, lng }: IProps) {
   const [isHovered, setIsHovered] = useState(false);
   // console.log(activeCat);
   const handleHover = () => {
@@ -20,7 +20,6 @@ export default function CategoryCard({ category, activeCat }: IProps) {
     setIsHovered(false);
   };
 
-  const lng: string = getCurrentLng();
   const { t } = useTranslation(lng, "home");
 
   return (

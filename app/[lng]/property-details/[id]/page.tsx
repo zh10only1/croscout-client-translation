@@ -113,8 +113,8 @@ export default function PropertyDetails({
   // console.log(singlePropertyDetails);
   return (
     <div className="">
-      <PropertyHero singlePropertyDetails={singlePropertyDetails?.property} />
-      <PropertyAbout aboutDetails={singlePropertyDetails?.property} />
+      <PropertyHero lng={lng} singlePropertyDetails={singlePropertyDetails?.property} />
+      <PropertyAbout lng={lng} aboutDetails={singlePropertyDetails?.property} />
       <PropertyDescription
         description={singlePropertyDetails?.property?.description || ""}
         image={
@@ -123,7 +123,7 @@ export default function PropertyDetails({
         }
         lng={lng}
       />
-      <PropertyTestimonial id={singlePropertyDetails?.property._id || ""} />
+      <PropertyTestimonial lng={lng} id={singlePropertyDetails?.property._id || ""} />
       <PropertyReviews lng={lng} />
     </div>
   );
