@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Zapomniałeś hasła",
+    "LOGIN": "Zaloguj się",
+    "YOUR_EMAIL": "Twój Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Wprowadź swój email",
+    "PASSWORD": "Hasło",
+    "ENTER_YOUR_PASSWORD": "Wprowadź swoje hasło",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Zaloguj się za pomocą emaila i hasła?",
+    "SEND_RESET_LINK": "Wyślij link do resetowania",
+    "DONT_HAVE_AN_ACCOUNT": "Nie masz konta?",
+    "SIGN_UP": "Zarejestruj się"
+}

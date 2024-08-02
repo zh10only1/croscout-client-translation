@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Забыли пароль",
+    "LOGIN": "Войти",
+    "YOUR_EMAIL": "Ваш Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Введите ваш email",
+    "PASSWORD": "Пароль",
+    "ENTER_YOUR_PASSWORD": "Введите ваш пароль",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Войти с помощью email и пароля?",
+    "SEND_RESET_LINK": "Отправить ссылку для сброса пароля",
+    "DONT_HAVE_AN_ACCOUNT": "Нет аккаунта?",
+    "SIGN_UP": "Зарегистрироваться"
+}
