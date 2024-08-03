@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Keine Benutzer registriert.",
+    "ALL_USERS:": "Alle Benutzer:",
+    "ARE_YOU_SURE": "Sind Sie sicher?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Sie können dies nicht rückgängig machen!",
+    "YES_DELETE_IT": "Ja, löschen!",
+    "USER_DELETED_SUCCESSFULLY": "Benutzer erfolgreich gelöscht",
+    "FAILED_TO_DELETE_USER": "Fehler beim Löschen des Benutzers",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Ein Fehler ist beim Löschen des Benutzers aufgetreten",
+    "NUMBER": "#",
+    "NAME": "Name",
+    "EMAIL": "E-Mail",
+    "TAX_ID": "Steuernummer",
+    "USER_ID": "Benutzer-ID",
+    "JOINED_AT": "Beigetreten am",
+    "DETAILS": "Details",
+    "ACTIONS": "Aktionen",
+    "AGENT_DETAILS": "Agentendetails",
+    "USER_DETAILS": "Benutzerdetails",
+    "DELETE": "Löschen"
+  }
+  

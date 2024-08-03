@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Inga användare registrerade.",
+    "ALL_USERS:": "Alla användare:",
+    "ARE_YOU_SURE": "Är du säker?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Du kommer inte kunna ångra detta!",
+    "YES_DELETE_IT": "Ja, ta bort det!",
+    "USER_DELETED_SUCCESSFULLY": "Användare raderad framgångsrikt",
+    "FAILED_TO_DELETE_USER": "Misslyckades med att ta bort användare",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Ett fel inträffade vid borttagning av användare",
+    "NUMBER": "#",
+    "NAME": "Namn",
+    "EMAIL": "E-post",
+    "TAX_ID": "Skatt-ID",
+    "USER_ID": "Användar-ID",
+    "JOINED_AT": "Gick med",
+    "DETAILS": "Detaljer",
+    "ACTIONS": "Åtgärder",
+    "AGENT_DETAILS": "Agentdetaljer",
+    "USER_DETAILS": "Användardetaljer",
+    "DELETE": "Ta bort"
+  }
+  

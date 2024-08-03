@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Geen gebruikers geregistreerd.",
+    "ALL_USERS:": "Alle gebruikers:",
+    "ARE_YOU_SURE": "Weet je het zeker?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Je kunt dit niet ongedaan maken!",
+    "YES_DELETE_IT": "Ja, verwijderen!",
+    "USER_DELETED_SUCCESSFULLY": "Gebruiker succesvol verwijderd",
+    "FAILED_TO_DELETE_USER": "Verwijderen van gebruiker mislukt",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Er is een fout opgetreden bij het verwijderen van de gebruiker",
+    "NUMBER": "#",
+    "NAME": "Naam",
+    "EMAIL": "E-mail",
+    "TAX_ID": "BTW-ID",
+    "USER_ID": "Gebruiker-ID",
+    "JOINED_AT": "Aangesloten op",
+    "DETAILS": "Details",
+    "ACTIONS": "Acties",
+    "AGENT_DETAILS": "Agentgegevens",
+    "USER_DETAILS": "Gebruikersgegevens",
+    "DELETE": "Verwijderen"
+  }
+  

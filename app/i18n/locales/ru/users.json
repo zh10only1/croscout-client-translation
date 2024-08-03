@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Пользователи не зарегистрированы.",
+    "ALL_USERS:": "Все пользователи:",
+    "ARE_YOU_SURE": "Вы уверены?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Вы не сможете отменить это!",
+    "YES_DELETE_IT": "Да, удалить!",
+    "USER_DELETED_SUCCESSFULLY": "Пользователь успешно удален",
+    "FAILED_TO_DELETE_USER": "Не удалось удалить пользователя",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Произошла ошибка при удалении пользователя",
+    "NUMBER": "#",
+    "NAME": "Имя",
+    "EMAIL": "Электронная почта",
+    "TAX_ID": "ИНН",
+    "USER_ID": "ID пользователя",
+    "JOINED_AT": "Присоединился",
+    "DETAILS": "Детали",
+    "ACTIONS": "Действия",
+    "AGENT_DETAILS": "Детали агента",
+    "USER_DETAILS": "Детали пользователя",
+    "DELETE": "Удалить"
+  }
+  

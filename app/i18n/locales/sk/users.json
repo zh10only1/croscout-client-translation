@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Žiadni používatelia nie sú registrovaní.",
+    "ALL_USERS:": "Všetci používatelia:",
+    "ARE_YOU_SURE": "Ste si istí?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Nebudete to môcť vrátiť!",
+    "YES_DELETE_IT": "Áno, odstrániť!",
+    "USER_DELETED_SUCCESSFULLY": "Používateľ bol úspešne odstránený",
+    "FAILED_TO_DELETE_USER": "Nepodarilo sa odstrániť používateľa",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Pri odstraňovaní používateľa došlo k chybe",
+    "NUMBER": "#",
+    "NAME": "Meno",
+    "EMAIL": "E-mail",
+    "TAX_ID": "DIČ",
+    "USER_ID": "ID používateľa",
+    "JOINED_AT": "Pripojený",
+    "DETAILS": "Detaily",
+    "ACTIONS": "Akcie",
+    "AGENT_DETAILS": "Detaily agenta",
+    "USER_DETAILS": "Detaily používateľa",
+    "DELETE": "Odstrániť"
+  }
+  
