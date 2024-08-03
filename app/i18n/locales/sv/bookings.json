@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Inga bokningar hittades. Vänligen boka en fastighet.",
+    "ARE_YOU_SURE": "Är du säker?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Denna bokning kommer att tas bort överallt!",
+    "CLOSE": "Stäng",
+    "YES_CANCEL_IT": "Ja, avboka!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Denna boknings status kommer att ändras till bekräftad!",
+    "YES_CONFIRM_IT": "Ja, bekräfta!",
+    "CONFIRMED": "Bekräftad",
+    "PENDING": "Väntar",
+    "CANCEL": "Avboka",
+    "CONFIRM": "Bekräfta",
+    "NAME": "Namn",
+    "STATUS": "Status",
+    "LAST_BOOKING": "Senaste bokningen",
+    "CHECK_IN_CHECK_OUT": "Incheckning - Utcheckning",
+    "TOTAL_PRICE": "Total pris",
+    "BOOKING_DETAILS": "Bokningsdetaljer",
+    "PAYMENT_DETAILS": "Betalningsdetaljer",
+    "FEEDBACK": "Feedback",
+    "pending": "väntar",
+    "confirmed": "bekräftad"
+  }
+  

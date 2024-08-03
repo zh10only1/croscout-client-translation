@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Brak rezerwacji. Proszę zarezerwować nieruchomość.",
+    "ARE_YOU_SURE": "Jesteś pewny?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Ta rezerwacja zostanie usunięta wszędzie!",
+    "CLOSE": "Zamknij",
+    "YES_CANCEL_IT": "Tak, anuluj!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Status tej rezerwacji zostanie zmieniony na potwierdzony!",
+    "YES_CONFIRM_IT": "Tak, potwierdź!",
+    "CONFIRMED": "Potwierdzone",
+    "PENDING": "Oczekujące",
+    "CANCEL": "Anuluj",
+    "CONFIRM": "Potwierdź",
+    "NAME": "Imię",
+    "STATUS": "Status",
+    "LAST_BOOKING": "Ostatnia rezerwacja",
+    "CHECK_IN_CHECK_OUT": "Zameldowanie - Wymeldowanie",
+    "TOTAL_PRICE": "Łączna cena",
+    "BOOKING_DETAILS": "Szczegóły rezerwacji",
+    "PAYMENT_DETAILS": "Szczegóły płatności",
+    "FEEDBACK": "Opinie",
+    "pending": "oczekujące",
+    "confirmed": "potwierdzone"
+  }
+  

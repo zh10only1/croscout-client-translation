@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Ingen reservasjoner funnet. Vennligst bestill en eiendom.",
+    "ARE_YOU_SURE": "Er du sikker?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Denne reservasjonen vil bli fjernet overalt!",
+    "CLOSE": "Lukk",
+    "YES_CANCEL_IT": "Ja, avbryt!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Statusen til denne reservasjonen vil bli endret til bekreftet!",
+    "YES_CONFIRM_IT": "Ja, bekreft!",
+    "CONFIRMED": "Bekreftet",
+    "PENDING": "Venter",
+    "CANCEL": "Avbryt",
+    "CONFIRM": "Bekreft",
+    "NAME": "Navn",
+    "STATUS": "Status",
+    "LAST_BOOKING": "Siste reservasjon",
+    "CHECK_IN_CHECK_OUT": "Innsjekking - Utsjekking",
+    "TOTAL_PRICE": "Total pris",
+    "BOOKING_DETAILS": "Reservasjonsdetaljer",
+    "PAYMENT_DETAILS": "Betalingsdetaljer",
+    "FEEDBACK": "Tilbakemelding",
+    "pending": "venter",
+    "confirmed": "bekreftet"
+  }
+  

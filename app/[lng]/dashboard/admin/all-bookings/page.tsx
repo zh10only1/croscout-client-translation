@@ -6,6 +6,7 @@ import BookingsTable from "../../components/BookingsTable/BookingsTable";
 import { getAllBookings } from "@/lib/database/getBookings";
 import EmptyPage from "@/components/common/EmptyPage";
 import { translateBookings } from "@/lib/database/getBookings";
+import { useTranslation } from "@/app/i18n/client";
 
 const page = ({
   params: { lng },
@@ -14,6 +15,7 @@ const page = ({
     lng: string;
   };
 }) => {
+  const {t} = useTranslation(lng, "bookings");
   const [bookings, setBookings] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -64,12 +66,13 @@ const page = ({
 
   // If there are no bookings, render a message indicating that no bookings were found
   if (!bookings || bookings.length === 0) {
-    return <EmptyPage>No bookings found. Please book a property.</EmptyPage>;
+    return <EmptyPage>{t("NO_BOOKINGS_FOUND")}</EmptyPage>;
   }
 
   return (
     <div>
       <BookingsTable
+        lng={lng}
         data={bookings}
         setBookings={setBookings}
         tableFor="admin"
