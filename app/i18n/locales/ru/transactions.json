@@ -1,0 +1,9 @@
+{
+    "NO_PAYMENT_HISTORY": "История платежей не найдена.",
+    "NUMBER": "#",
+    "TRANSACTION_ID": "ID транзакции",
+    "BOOKING_ID": "ID бронирования",
+    "PAYMENT_METHOD": "Способ оплаты",
+    "TRANSACTION_DATE": "Дата транзакции",
+    "AMOUNT": "Сумма"
+}

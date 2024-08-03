@@ -1,0 +1,9 @@
+{
+    "NO_PAYMENT_HISTORY": "Povijest uplata nije pronađena.",
+    "NUMBER": "#",
+    "TRANSACTION_ID": "ID transakcije",
+    "BOOKING_ID": "ID rezervacije",
+    "PAYMENT_METHOD": "Metoda plačanja",
+    "TRANSACTION_DATE": "Datum transakcije",
+    "AMOUNT": "Iznos"
+}
