@@ -150,7 +150,7 @@ const AllUsersTable: React.FC<AllUsersTableProps> = ({
                   {format(new Date(user?.createdAt), "MMM dd, yyyy")}
                 </td>
                 <td className="lg:px-6 px-4 text-xs lg:text-sm py-4 m-5 text-center">
-                  <Link href={`/dashboard/admin/user-details/${user?._id}`}>
+                  <Link href={`${lng}/dashboard/admin/user-details/${user?._id}`}>
                     <button className="px-4 py-1 rounded-md border text-white-50 hover:border-white duration-150 border-green-400">
                       {user.role === "agent"
                         ? t("AGENT_DETAILS")

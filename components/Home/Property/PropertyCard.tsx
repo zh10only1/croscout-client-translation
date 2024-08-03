@@ -27,7 +27,7 @@ interface Event {
     _id: string;
 }
 
-export default function PropertyCard({ property }: Property & any,) {
+export default function PropertyCard({ property, lng }: Property & any,) {
     const { setLoginModal } = useModalContext();
     const { user, setUser } = useAuthContext();
     const [isActive, setIsActive] = useState(false);
@@ -178,7 +178,7 @@ export default function PropertyCard({ property }: Property & any,) {
             <div className="h-[15rem] w-full relative rounded-t-[4px] overflow-hidden">
                 <ImageCarousel propertyId={_id} propertyImages={propertyImages} />
             </div>
-            <Link href={`/property-details/${_id}`}>
+            <Link href={`${lng}/property-details/${_id}`}>
                 <div
                     className="p-2 "
                 // onClick={() => router.push(`/property-details/${_id}`)}

@@ -83,7 +83,7 @@ const Navbar = ({lng} : {lng: string;}) => {
                         </div>}
                     </div>
                     {/* Logo */}
-                    <NavLogo />
+                    <NavLogo lng={lng} />
 
                     {/* NavMenu - Visible for Version */}
                     <NavMenu lng={lng} />

@@ -101,7 +101,7 @@ const PropertyList = ({lng}: {lng : string;}) => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {properties?.map((property: Property, index: number) => (
-                    <PropertyCard key={index} property={property} />
+                    <PropertyCard lng={lng} key={index} property={property} />
                 ))}
             </div>
             <div className="my-10">

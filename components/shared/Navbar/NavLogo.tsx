@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-const NavLogo = () => {
+const NavLogo = ({lng} : {lng: string;}) => {
     const router = useRouter();
     const { setNavUserToggle } = useToggleContext();
     const pathname = usePathname();
     const isDashboard = pathname.includes('/dashboard')
     return (
         <Link
-            href={'/'}
+            href={`/${lng}`}
             onClick={() => setNavUserToggle(false)}
             className="h-[24px] md:h-[48px] md:w-[336px] w-[200px] relative">
             {!isDashboard ? <Image
@@ -22,7 +22,7 @@ const NavLogo = () => {
                 height={24}
                 width={336}
             /> : <Image
-                onClick={() => router.push("/")}
+                onClick={() => router.push(`/${lng}`)}
                 className="cursor-pointer"
                 src="/images/navlogo_transparent.png"
                 alt="Logo"
