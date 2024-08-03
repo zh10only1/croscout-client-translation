@@ -72,7 +72,7 @@ const Page = ({ params: { lng } }: { params: { lng: string } }) => {
     // Rendering user table
     return (
         <div className='bg-primary-50 px-3 py-3'>
-            <h4 className='text-xl mb-3 text-white-50'>{t("ALL_USERS:")}</h4>
+            <h4 className='text-xl mb-3 text-white-50'>{t("ALL_USERS")}</h4>
             <AllUsersTable lng={lng} data={users} tableFor="user" setUsers={setUsers} />
         </div>
     );
