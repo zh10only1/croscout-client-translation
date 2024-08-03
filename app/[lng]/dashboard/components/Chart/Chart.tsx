@@ -2,53 +2,59 @@
 // Import necessary modules and styles
 import styles from './chart.module.css'; // Import CSS module for styling
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'; // Import components from Recharts library
+import { useTranslation } from '@/app/i18n/client';
 
 //? Define data for the line chart
-const data = [
-    {
-        name: "Sun",
-        visit: 4000,
-        click: 2400,
-    },
-    {
-        name: "Mon",
-        visit: 3000,
-        click: 1398,
-    },
-    {
-        name: "Tue",
-        visit: 2000,
-        click: 3800,
-    },
-    {
-        name: "Wed",
-        visit: 2780,
-        click: 3908,
-    },
-    {
-        name: "Thu",
-        visit: 1890,
-        click: 4800,
-    },
-    {
-        name: "Fri",
-        visit: 2390,
-        click: 3800,
-    },
-    {
-        name: "Sat",
-        visit: 3490,
-        click: 4300,
-    },
-];
+
 
 //* Define the Chart functional component
-const Chart = () => {
+const Chart = ({lng}: {lng: string;}) => {
+    const { t } = useTranslation(lng, "dashboard");
+
+    const data = [
+        {
+            name: t("SUN"),
+            visit: 4000,
+            click: 2400,
+        },
+        {
+            name: t("MON"),
+            visit: 3000,
+            click: 1398,
+        },
+        {
+            name: t("TUE"),
+            visit: 2000,
+            click: 3800,
+        },
+        {
+            name: t("WED"),
+            visit: 2780,
+            click: 3908,
+        },
+        {
+            name: t("THU"),
+            visit: 1890,
+            click: 4800,
+        },
+        {
+            name: t("FRI"),
+            visit: 2390,
+            click: 3800,
+        },
+        {
+            name: t("SAT"),
+            visit: 3490,
+            click: 4300,
+        },
+    ];
+    
+
     return (
         <div className={styles.container}>
             {/*//* Title */}
 
-            <h2 className={styles.title}>Weekly Recap</h2>
+            <h2 className={styles.title}>{t("WEEKLY_RECAP")}</h2>
 
             {/*//* Responsive container for the line chart */}
             <ResponsiveContainer width="100%" height="90%">
