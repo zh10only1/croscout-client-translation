@@ -5,6 +5,7 @@ import { useAuthContext } from "@/providers/AuthProvider";
 import { getStoredToken } from "@/utils/tokenStorage";
 import { useEffect, useState } from "react";
 import AllUsersTable from "../../components/AllUsersTable/AllUsersTable";
+import { useTranslation } from "@/app/i18n/client";
 
 type User = {
     name: string
@@ -12,8 +13,8 @@ type User = {
     email: string
 };
 
-const AllAgentsPage = () => {
-
+const AllAgentsPage = ({ params: { lng } }: { params: { lng: string } }) => {
+    const { t } = useTranslation(lng, "agents");
     // State to hold the list of users
     const [users, setUsers] = useState([]);
 
@@ -59,14 +60,14 @@ const AllAgentsPage = () => {
 
     // If there are no users, render a message indicating that
     if (users.length <= 0) {
-        return <div className="text-center mt-20 text-white min-h-screen"><h1 className="lg:text-4xl text-2xl text-center">Don't have any agent yet.</h1></div>
+        return <div className="text-center mt-20 text-white min-h-screen"><h1 className="lg:text-4xl text-2xl text-center">{t("NO_AGENT_YET")}</h1></div>
     }
 
 
     return (
         <div className="bg-primary-50 px-3 py-3">
-            <h4 className='text-xl mb-3 text-white-50'>All Agents:</h4>
-            <AllUsersTable data={users} tableFor="agent" setUsers={setUsers}></AllUsersTable>
+            <h4 className='text-xl mb-3 text-white-50'>{t("ALL_AGENTS")}</h4>
+            <AllUsersTable lng={lng} data={users} tableFor="agent" setUsers={setUsers}></AllUsersTable>
         </div>
     );
 };
