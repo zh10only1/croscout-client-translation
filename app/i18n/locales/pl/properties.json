@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Lista nieruchomości jest pusta.",
+    "ARE_YOU_SURE": "Jesteś pewny?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Nie będziesz mógł tego cofnąć!",
+    "YES_DELETE_IT": "Tak, usuń!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Nieruchomość została pomyślnie usunięta",
+    "FAILED_TO_DELETE_PROPERTY": "Nie udało się usunąć nieruchomości",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Wystąpił błąd podczas usuwania nieruchomości",
+    "NIGHT": "noc",
+    "EDIT": "Edytuj",
+    "DELETE": "Usuń",
+    "CLOSE": "Zamknij"
+  }
+  

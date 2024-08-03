@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Список объектов пуст.",
+    "ARE_YOU_SURE": "Вы уверены?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Вы не сможете это отменить!",
+    "YES_DELETE_IT": "Да, удалить!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Объект успешно удален",
+    "FAILED_TO_DELETE_PROPERTY": "Не удалось удалить объект",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Произошла ошибка при удалении объекта",
+    "NIGHT": "ночь",
+    "EDIT": "Редактировать",
+    "DELETE": "Удалить",
+    "CLOSE": "Закрыть"
+  }
+  

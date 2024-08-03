@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Lijst met eigendommen is leeg.",
+    "ARE_YOU_SURE": "Weet je het zeker?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Je kunt dit niet ongedaan maken!",
+    "YES_DELETE_IT": "Ja, verwijder het!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Eigendom succesvol verwijderd",
+    "FAILED_TO_DELETE_PROPERTY": "Verwijderen van eigendom mislukt",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Er is een fout opgetreden bij het verwijderen van het eigendom",
+    "NIGHT": "nacht",
+    "EDIT": "Bewerken",
+    "DELETE": "Verwijderen",
+    "CLOSE": "Sluiten"
+  }
+  

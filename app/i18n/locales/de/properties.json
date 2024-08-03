@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Die Liste der Immobilien ist leer.",
+    "ARE_YOU_SURE": "Bist du sicher?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Du kannst dies nicht rückgängig machen!",
+    "YES_DELETE_IT": "Ja, löschen!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Immobilie erfolgreich gelöscht",
+    "FAILED_TO_DELETE_PROPERTY": "Fehler beim Löschen der Immobilie",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Fehler beim Löschen der Immobilie",
+    "NIGHT": "Nacht",
+    "EDIT": "Bearbeiten",
+    "DELETE": "Löschen",
+    "CLOSE": "Schließen"
+  }
+  

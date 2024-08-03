@@ -8,6 +8,7 @@ import { getStoredToken } from "@/utils/tokenStorage";
 import { useEffect, useState } from "react";
 import PropertiesCard from "./PropertiesCard";
 import { translateProperties } from "@/lib/database/getProperties";
+import { useTranslation } from "@/app/i18n/client";
 
 const MyProperties = ({
   params: { lng },
@@ -16,6 +17,7 @@ const MyProperties = ({
     lng: string;
   };
 }) => {
+  const { t } = useTranslation(lng, "properties");
   // Retrieving token from local storage
   const token = getStoredToken();
 
@@ -75,6 +77,7 @@ const MyProperties = ({
           myProperties?.length > 0 &&
             myProperties.map((property, id) => (
               <PropertiesCard
+                lng={lng}
                 key={id}
                 property={property}
                 setDelete={setDelete}
@@ -86,7 +89,7 @@ const MyProperties = ({
         // Rendering empty state message if no properties exist
         myProperties?.length < 1 && (
           <div className="empty-state">
-            <h1>Property list is empty.</h1>
+            <h1>{t("PROPERTY_LIST_IS_EMPTY")}</h1>
           </div>
         )
       }

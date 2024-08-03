@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Fastighetslistan är tom.",
+    "ARE_YOU_SURE": "Är du säker?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Du kommer inte att kunna återställa detta!",
+    "YES_DELETE_IT": "Ja, ta bort det!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Fastigheten har tagits bort framgångsrikt",
+    "FAILED_TO_DELETE_PROPERTY": "Kunde inte ta bort fastigheten",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Ett fel inträffade vid borttagning av fastigheten",
+    "NIGHT": "natt",
+    "EDIT": "Redigera",
+    "DELETE": "Ta bort",
+    "CLOSE": "Stäng"
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Eiendomsliste er tom.",
+    "ARE_YOU_SURE": "Er du sikker?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Du vil ikke kunne angre dette!",
+    "YES_DELETE_IT": "Ja, slett det!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Eiendom slettet vellykket",
+    "FAILED_TO_DELETE_PROPERTY": "Kunne ikke slette eiendom",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Det oppstod en feil ved sletting av eiendom",
+    "NIGHT": "natt",
+    "EDIT": "Rediger",
+    "DELETE": "Slett",
+    "CLOSE": "Lukk"
+  }
+  

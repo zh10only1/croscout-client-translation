@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Popis nekretnina je prazan.",
+    "ARE_YOU_SURE": "Jeste li sigurni?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Nećete moći poništiti ovo!",
+    "YES_DELETE_IT": "Da, izbriši!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Nekretnina uspješno izbrisana",
+    "FAILED_TO_DELETE_PROPERTY": "Neuspješno brisanje nekretnine",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Došlo je do pogreške prilikom brisanja nekretnine",
+    "NIGHT": "noć",
+    "EDIT": "Uredi",
+    "DELETE": "Izbriši",
+    "CLOSE": "Zatvori"
+  }
+  

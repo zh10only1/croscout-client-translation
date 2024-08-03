@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Seznam nemovitostí je prázdný.",
+    "ARE_YOU_SURE": "Jste si jisti?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Toto nebudete moci vrátit zpět!",
+    "YES_DELETE_IT": "Ano, smažte to!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Nemovitost byla úspěšně smazána",
+    "FAILED_TO_DELETE_PROPERTY": "Nepodařilo se smazat nemovitost",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Při mazání nemovitosti došlo k chybě",
+    "NIGHT": "noc",
+    "EDIT": "Upravit",
+    "DELETE": "Smazat",
+    "CLOSE": "Zavřít"
+  }
+  
