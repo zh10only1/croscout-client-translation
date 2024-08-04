@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { useTranslation } from "@/app/i18n";
+import { useTranslation } from "@/app/i18n/client";
 
 const PropertyDescription = async ({ description, image, lng }: { description: string, image: string, lng:string }) => {
-    const { t } = await useTranslation(lng, "propertyDetail");
+    const { t } = useTranslation(lng, "propertyDetail");
     return (
         <div className="">
             <div className='wrapper'>
