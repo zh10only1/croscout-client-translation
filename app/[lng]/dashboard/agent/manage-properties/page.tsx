@@ -7,6 +7,7 @@ import { getStoredToken } from "@/utils/tokenStorage";
 import { useEffect, useState } from "react";
 import PropertiesCard from "./PropertiesCard";
 import { translateProperties } from "@/lib/database/getProperties";
+import { useTranslation } from "@/app/i18n/client";
 
 //? Define MyProperties functional component
 const MyProperties = ({
@@ -16,6 +17,7 @@ const MyProperties = ({
     lng: string;
   };
 }) => {
+  const { t } = useTranslation(lng, "properties");
   //* Get token from local storage
   const token = getStoredToken();
 
@@ -64,6 +66,7 @@ const MyProperties = ({
         {myProperties?.length > 0 &&
           myProperties.map((property, id) => (
             <PropertiesCard
+              lng={lng}
               key={id}
               property={property}
               setDelete={setDelete}
@@ -73,7 +76,7 @@ const MyProperties = ({
       {myProperties?.length < 1 && (
         <div className="text-center mt-20 text-white">
           <h1 className="lg:text-4xl text-2xl text-center">
-            You haven't any Properties. Please Add Property
+            {t("PROPERTY_LIST_IS_EMPTY")}
           </h1>
         </div>
       )}
