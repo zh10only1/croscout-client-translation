@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const NavLogo = ({ lng }: { lng: string }) => {
     const { setNavUserToggle } = useToggleContext();
     const pathname = usePathname();
-    const isDashboard = pathname.includes('/dashboard');
+    const isDashboard = pathname.includes(`${lng}/dashboard`);
 
     return (
         <Link
