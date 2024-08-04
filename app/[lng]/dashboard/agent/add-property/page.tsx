@@ -2,10 +2,10 @@
 import React from 'react';
 import AddPropertyForm from './components/AddPropertyForm';
 
-const AddProperty = () => {
+const AddProperty = ({ params: { lng } }: { params: { lng: string } }) => {
     return (
         <div>
-            <AddPropertyForm />
+            <AddPropertyForm lng={lng} />
         </div>
     );
 };
