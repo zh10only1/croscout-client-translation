@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useTranslation } from "@/app/i18n/client";
 
-const PropertyDescription = async ({ description, image, lng }: { description: string, image: string, lng:string }) => {
+const PropertyDescription = ({ description, image, lng }: { description: string, image: string, lng:string }) => {
     const { t } = useTranslation(lng, "propertyDetail");
     return (
         <div className="">
