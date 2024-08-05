@@ -39,5 +39,8 @@
   "ADULTS": "Vuxna",
   "ADULTS_SUBTITLE": "Ålder 18 eller äldre",
   "CHILDREN": "Barn",
-  "CHILDREN_SUBTITLE": "Ålder 0-17"
+  "CHILDREN_SUBTITLE": "Ålder 0-17",
+  "NOT_MATCHED": "Inte matchad",
+  "PROPERTIES_NOT_FOUND": "Inga fastigheter hittades!",
+  "SHOW_MORE": "Visa mer"
 }

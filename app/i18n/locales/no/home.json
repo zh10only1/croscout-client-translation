@@ -39,5 +39,8 @@
   "ADULTS": "Voksne",
   "ADULTS_SUBTITLE": "Alder 18 eller eldre",
   "CHILDREN": "Barn",
-  "CHILDREN_SUBTITLE": "Alder 0-17"
+  "CHILDREN_SUBTITLE": "Alder 0-17",
+  "NOT_MATCHED": "Ikke samsvarende",
+  "PROPERTIES_NOT_FOUND": "Ingen eiendommer funnet!",
+  "SHOW_MORE": "Vis mer"
 }

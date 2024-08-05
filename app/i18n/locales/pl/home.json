@@ -39,5 +39,8 @@
   "ADULTS": "Dorośli",
   "ADULTS_SUBTITLE": "Wiek 18 lub więcej",
   "CHILDREN": "Dzieci",
-  "CHILDREN_SUBTITLE": "Wiek 0-17"
+  "CHILDREN_SUBTITLE": "Wiek 0-17",
+  "NOT_MATCHED": "Nie pasuje",
+  "PROPERTIES_NOT_FOUND": "Nie znaleziono nieruchomości!",
+  "SHOW_MORE": "Pokaż więcej"
 }

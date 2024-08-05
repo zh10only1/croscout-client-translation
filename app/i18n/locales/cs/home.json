@@ -39,5 +39,8 @@
   "ADULTS": "Dospělí",
   "ADULTS_SUBTITLE": "Věk 18 nebo více",
   "CHILDREN": "Děti",
-  "CHILDREN_SUBTITLE": "Věk 0-17"
+  "CHILDREN_SUBTITLE": "Věk 0-17",
+  "NOT_MATCHED": "Neshoduje se",
+  "PROPERTIES_NOT_FOUND": "Nemovitosti nebyly nalezeny!",
+  "SHOW_MORE": "Zobrazit více"
 }

@@ -3,5 +3,7 @@
     "SIGNUP": "Registrera dig",
     "CROSCOUT_YOUR_HOME": "Croscout ditt hem",
       "DASHBOARD": "Instrumentpanel",
-  "LOGOUT": "Logga ut"
+  "LOGOUT": "Logga ut",
+    "LOGOUT_SUCCESSFUL": "Utloggning lyckades",
+  "EMAIL_NOT_VERIFIED": "Din e-post är inte verifierad! Vänligen verifiera din e-post."
 }

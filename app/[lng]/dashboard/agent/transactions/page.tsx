@@ -6,6 +6,7 @@ import { getAllTrasaction, getTransactionById } from "@/lib/database/getTransact
 import Loading from "@/components/ui/Loading/Loading";
 import { useTranslation } from "@/app/i18n/client";
 
+
 //? Define the structure of transaction data
 interface TransactionData {
     success: boolean;
@@ -14,7 +15,7 @@ interface TransactionData {
 
 //? TransactionPage component
 const TransactionPage = ({ params: { lng } }: { params: { lng: string } }) => {
-
+    const { t } = useTranslation(lng, "transactions");
     //* State to store transaction data
     const [transaction, setTransaction] = useState<TransactionData | null>(null);
 

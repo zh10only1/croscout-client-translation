@@ -60,6 +60,7 @@ const page = ({
     <div className="min-h-screen">
       {/* <Bookings /> */}
       <BookingsTable
+        lng={lng}
         setBookings={setBookings}
         data={bookings}
         tableFor="user"

@@ -39,5 +39,8 @@
   "ADULTS": "Dospelí",
   "ADULTS_SUBTITLE": "Vek 18 alebo viac",
   "CHILDREN": "Deti",
-  "CHILDREN_SUBTITLE": "Vek 0-17"
+  "CHILDREN_SUBTITLE": "Vek 0-17",
+  "NOT_MATCHED": "Nezodpovedá",
+  "PROPERTIES_NOT_FOUND": "Nenašli sa žiadne nehnuteľnosti!",
+  "SHOW_MORE": "Zobraziť viac"
 }

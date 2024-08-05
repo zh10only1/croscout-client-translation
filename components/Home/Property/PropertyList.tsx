@@ -9,8 +9,10 @@ import Loading from "@/components/ui/Loading/Loading";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { removeSearchQuery, setSearchQuery } from "@/utils/searchQuery";
+import { useTranslation } from "@/app/i18n/client";
 
 const PropertyList = ({lng}: {lng : string;}) => {
+    const { t } = useTranslation(lng, "home");
     const [properties, setProperties] = useState([])
     const [isLoading, setIsLoading] = useState(true);
     const { isSearchBtnClicked, setCurrentFilter, setIsSearchBtnClicked, setActiveCat, setLocation, setLocationObject, setAdultsCount, setChildrenCount } = useSearchContext();
@@ -58,7 +60,7 @@ const PropertyList = ({lng}: {lng : string;}) => {
 
     if (properties.length < 1 && searchKey) {
         return <div className="flex flex-col lg:pb-60 lg:pt-20 pt-10 pb-20 items-center">
-            <h1 className="text-4xl font-bold text-white">Not Matched</h1>
+            <h1 className="text-4xl font-bold text-white">{t("NOT_MATCHED")}</h1>
             <ClearSearchButton onClick={() => {
                 setIsSearchBtnClicked(false);
                 // clearSearchInputValue();
@@ -75,7 +77,7 @@ const PropertyList = ({lng}: {lng : string;}) => {
 
     if (properties.length < 1) {
         return <div className="flex flex-col lg:pb-60 lg:pt-20 pt-10 pb-20 items-center">
-            <h1 className="text-4xl font-bold text-white">Properties are not found!</h1>
+            <h1 className="text-4xl font-bold text-white">{t("PROPERTIES_NOT_FOUND")}</h1>
         </div>
     }
 
@@ -107,7 +109,7 @@ const PropertyList = ({lng}: {lng : string;}) => {
             <div className="my-10">
                 {
                     properties.length >= 20 &&
-                    <PrimaryButton onClick={handleShowMore} className="px-5 lg:px-10">Show More</PrimaryButton>
+                    <PrimaryButton onClick={handleShowMore} className="px-5 lg:px-10">{t("SHOW_MORE")}</PrimaryButton>
                 }
             </div>
         </>

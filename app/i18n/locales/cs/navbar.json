@@ -3,5 +3,7 @@
     "SIGNUP": "Zaregistrovat se",
     "CROSCOUT_YOUR_HOME": "Croscout Váš domov",
       "DASHBOARD": "Dashboard",
-  "LOGOUT": "Odhlásit se"
+  "LOGOUT": "Odhlásit se",
+    "LOGOUT_SUCCESSFUL": "Odhlášení bylo úspěšné",
+  "EMAIL_NOT_VERIFIED": "Váš email není ověřen! Prosím, ověřte svůj email."
 }

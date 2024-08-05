@@ -3,5 +3,7 @@
     "SIGNUP": "Aanmelden",
     "CROSCOUT_YOUR_HOME": "Croscout Uw huis",
       "DASHBOARD": "Dashboard",
-  "LOGOUT": "Uitloggen"
+  "LOGOUT": "Uitloggen",
+    "LOGOUT_SUCCESSFUL": "Uitloggen succesvol",
+  "EMAIL_NOT_VERIFIED": "Je e-mail is niet geverifieerd! Verifieer je e-mail."
 }

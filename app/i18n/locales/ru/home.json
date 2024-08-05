@@ -39,5 +39,8 @@
     "ADULTS": "Взрослые",
     "ADULTS_SUBTITLE": "Возраст 18 лет и старше",
     "CHILDREN": "Дети",
-    "CHILDREN_SUBTITLE": "Возраст 0-17 лет"
+    "CHILDREN_SUBTITLE": "Возраст 0-17 лет",
+    "NOT_MATCHED": "Nicht übereinstimmend",
+    "PROPERTIES_NOT_FOUND": "Keine Immobilien gefunden!",
+    "SHOW_MORE": "Mehr anzeigen"
 }
