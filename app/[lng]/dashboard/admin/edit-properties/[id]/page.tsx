@@ -81,14 +81,6 @@ const EditProperties = ({
     try {
       if (typeof id === "string") {
         const propertiesData = await getPropertyById(id);
-        const translationResponse = await translateProperties(
-          [propertiesData.property],
-          lng,
-          true
-        );
-        if (translationResponse.success) {
-          propertiesData.property = translationResponse.translatedProperties[0];
-        }
         setPropertiesData(propertiesData);
         setImagesArr(propertiesData?.property.propertyImages);
         setAmenities([...propertiesData?.property.amenities]);
@@ -152,7 +144,7 @@ const EditProperties = ({
       const result = await response.json();
       if (result.success) {
         toast.success(result.message);
-        router.push("/dashboard/admin/all-properties");
+        router.push(`${lng}/dashboard/admin/all-properties`);
       } else {
         toast.error(result.error);
       }
@@ -412,6 +404,7 @@ const EditProperties = ({
                   )}
                   {/* Image Uploader Component */}
                   <ImageUploader
+                    lng={lng}
                     setImagesArr={setImagesArr}
                     defaultImages={propertiesData?.property.propertyImages}
                   />

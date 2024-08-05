@@ -25,25 +25,6 @@
   "NO_OF_GUESTS": "Antall gjester",
   "GUESTS_REQUIRED": "Antall gjester er påkrevd!",
   "SAVE": "Lagre",
-  "ENTER_NUMBER": "Skriv inn nummer",
-  "Istria": "Istria",
-  "Primorje": "Primorje",
-  "Lika-senj": "Lika-Senj",
-  "Zadar": "Zadar",
-  "Sibenik-Knin": "Sibenik-Knin",
-  "Split-Dalmatia": "Split-Dalmatia",
-  "Dubrovnik-Neretva": "Dubrovnik-Neretva",
-  "Karlovac": "Karlovac",
-  "Zagreb County": "Zagreb fylke",
-  "City of Zagreb": "Byen Zagreb",
-  "Krapina-Zagorje": "Krapina-Zagorje",
-  "Varazdin": "Varazdin",
-  "Koprivnica-Krizevci": "Koprivnica-Krizevci",
-  "Bjelovar-Bilogora": "Bjelovar-Bilogora",
-  "Virovitica-Podravina": "Virovitica-Podravina",
-  "Pozega-Slavonia": "Pozega-Slavonia",
-  "Brod Posavina": "Brod-Posavina",
-  "Osijek-Baranja": "Osijek-Baranja",
-  "Vukovar-Srijem": "Vukovar-Srijem",
-  "Medimurje": "Medimurje"
+  "ENTER_NUMBER": "Skriv inn nummer"
+
 }

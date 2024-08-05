@@ -107,7 +107,7 @@ const PropertiesCard = ({
             {/*//? Buttons for editing and deleting property */}
             <button
               onClick={() =>
-                router.push(`/{lng}/dashboard/admin/edit-properties/${_id}`)
+                router.push(`/${lng}/dashboard/admin/edit-properties/${_id}`)
               }
               className="hover:bg-green-500 border border-green-500"
             >

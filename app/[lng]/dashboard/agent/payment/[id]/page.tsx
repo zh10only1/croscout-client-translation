@@ -1,5 +1,5 @@
 "use client"
-import { IPaymentData } from '@/app/dashboard/user/payment-details/[id]/page';
+import { IPaymentData } from '@/app/[lng]/dashboard/user/payment-details/[id]/page';
 import { getPaymentDetailsById } from '@/lib/database/getPaymentDetails';
 import { getStoredToken } from '@/utils/tokenStorage';
 import { useParams } from 'next/navigation';

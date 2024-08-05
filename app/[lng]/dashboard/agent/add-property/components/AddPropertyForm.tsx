@@ -300,7 +300,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
                       </option>
                       {/* <option value="Bangladesh">Bangladesh</option> */}
                       {/* <option value="Germany">Germany</option> */}
-                      <option value="Croatia">{t("CROATIA")}</option>
+                      <option value="Croatia">Croatia</option>
                     </select>
 
                     {/*//! Error */}
@@ -324,7 +324,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
                       </option>
                       {defaultStatesForMap?.map((state, indx) => (
                         <option key={indx} value={state.label}>
-                          {t(state.label)}
+                          {state.label}
                         </option>
                       ))}
                     </select>

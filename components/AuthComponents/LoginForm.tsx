@@ -86,11 +86,11 @@ const LoginForm = ({ lng }: { lng: string }) => {
           if (token) {
             setCookie("authToken", token.split(" ")[1], 24);
             if (userRole === "agent" || userRole === "admin") {
-              router.push("/dashboard");
+              router.push(`${lng}/dashboard`);
               setLoginModal(false);
               // setLoginModal
             } else if (userRole === "user") {
-              router.push("/dashboard/user/my-bookings");
+              router.push(`${lng}/dashboard/user/my-bookings`);
               setLoginModal(false);
             }
           }

@@ -42,7 +42,7 @@ export interface IBooking {
 const BookingDetailsPage = () => {
     const [bookingDetails, setBookingDetails] = useState<IPropertyDetailsData>();
     console.log(bookingDetails);
-    const { id } = useParams();
+    const { id, lng } = useParams();
 
     const router = useRouter();
     useEffect(() => {
@@ -60,7 +60,7 @@ const BookingDetailsPage = () => {
             {bookingDetails && (
                 <div className="flex flex-col gap-4 p-4 lg:p-16 bg-primary-50 text-secondary-50">
                     <div className="flex items-center gap-4 mb-2">
-                        <button onClick={() => router.push("/dashboard/user/my-bookings")} className="text-secondary-50 border rounded-md px-2 py-1">
+                        <button onClick={() => router.push(`${lng}/dashboard/user/my-bookings`)} className="text-secondary-50 border rounded-md px-2 py-1">
                             <IoArrowBack />
                         </button>
                         <h1 className="font-semibold text-gray-300 text-lg md:text-xl">
