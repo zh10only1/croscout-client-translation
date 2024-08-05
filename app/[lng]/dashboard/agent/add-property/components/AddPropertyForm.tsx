@@ -65,9 +65,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
     //* Check if user has completed their profile
     if (!user.isCompletedProfile) {
       setIsLoading(false);
-      return toast.error(
-        t("COMPLETE_PROFILE")
-      );
+      return toast.error(t("COMPLETE_PROFILE"));
     }
 
     //* Check if images are uploaded
@@ -148,9 +146,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
   if (!user?.isCompletedProfile) {
     return (
       <div className="empty-state text-center">
-        <h1 className="text-2xl font-bold">
-          {t("COMPLETE_PROFILE_MESSAGE")}
-        </h1>
+        <h1 className="text-2xl font-bold">{t("COMPLETE_PROFILE_MESSAGE")}</h1>
         <Link
           className="border border-accent py-2 px-10 mt-5 rounded-lg hover:border-white duration-150 flex gap-x-2 items-center"
           href={`${lng}/dashboard/agent/profile`}
@@ -243,7 +239,9 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
                 <div className="grid md:grid-cols-2 gap-4">
                   {/*//* Price Per Night */}
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="pricePerNight">{t("PRICE_PER_NIGHT")}</label>
+                    <label htmlFor="pricePerNight">
+                      {t("PRICE_PER_NIGHT")}
+                    </label>
                     <input
                       type="number"
                       id="pricePerNight"
@@ -298,7 +296,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
                       {...register("location", { required: true })}
                     >
                       <option value="" disabled defaultValue="Croatia">
-                       {t("SELECT_OPTION")}
+                        {t("SELECT_OPTION")}
                       </option>
                       {/* <option value="Bangladesh">Bangladesh</option> */}
                       {/* <option value="Germany">Germany</option> */}
@@ -326,7 +324,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
                       </option>
                       {defaultStatesForMap?.map((state, indx) => (
                         <option key={indx} value={state.label}>
-                          {state.label}
+                          {t(state.label)}
                         </option>
                       ))}
                     </select>
