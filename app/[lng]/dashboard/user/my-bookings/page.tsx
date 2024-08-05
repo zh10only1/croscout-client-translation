@@ -6,6 +6,7 @@ import { getBookingsById } from "@/lib/database/getUserBooking";
 import Loading from "@/components/ui/Loading/Loading";
 import EmptyPage from "@/components/common/EmptyPage";
 import { translateBookings } from "@/lib/database/getBookings";
+import { useTranslation } from "@/app/i18n/client";
 
 const page = ({
   params: { lng },
@@ -14,6 +15,7 @@ const page = ({
     lng: string;
   };
 }) => {
+  const { t } = useTranslation(lng, "bookings");
   const [bookings, setBookings] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -29,14 +31,14 @@ const page = ({
       try {
         setIsLoading(true);
         const bookingsData = await getBookingsById(userId);
-        // const translationResponse = await translateBookings(
-        //     bookingsData.bookings,
-        //     lng,
-        //     true
-        // );
-        // if (translationResponse.success) {
-        //     bookingsData.bookings = translationResponse.translatedBookings;
-        // }
+        const translationResponse = await translateBookings(
+            bookingsData.bookings,
+            lng,
+            true
+        );
+        if (translationResponse.success) {
+            bookingsData.bookings = translationResponse.translatedBookings;
+        }
         setBookings(bookingsData.bookings);
         setIsLoading(false);
       } catch (error) {
@@ -53,7 +55,7 @@ const page = ({
   }
 
   if (!bookings || bookings.length === 0) {
-    return <EmptyPage>No bookings found. Please book a property.</EmptyPage>;
+    return <EmptyPage>{t("NO_BOOKINGS_FOUND")}</EmptyPage>;
   }
 
   return (
