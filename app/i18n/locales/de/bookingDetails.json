@@ -1,0 +1,19 @@
+{
+  "RESERVATION_DETAILS": "Reservierungsdetails",
+  "BOOKING_STATUS": "Buchungsstatus",
+  "PROPERTY_IMAGE": "Objekt",
+  "NO_IMAGE_AVAILABLE": "Kein Bild verfügbar.",
+  "GUEST_NAME": "Name des Gastes",
+  "OWNER_NAME": "Name des Eigentümers",
+  "CONFIRMATION_STATUS": "Bestätigungsstatus",
+  "CHECK_IN": "Check-in",
+  "CHECK_OUT": "Check-out",
+  "LOCATION": "Standort",
+  "ROOM_TYPE": "Zimmertyp",
+  "NUMBER_OF_GUESTS": "Anzahl der Gäste",
+  "GUESTS": "Gäste",
+  "TOTAL_PRICE": "Gesamtpreis",
+  "SPECIAL_REQUESTS": "Sonderwünsche",
+  "NO_SMOKING_ROOM": "Nichtraucherzimmer",
+  "DESCRIPTION": "Beschreibung"
+}

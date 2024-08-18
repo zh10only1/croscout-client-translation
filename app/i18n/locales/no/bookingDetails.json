@@ -1,0 +1,20 @@
+{
+    "RESERVATION_DETAILS": "Reservasjonsdetaljer",
+    "BOOKING_STATUS": "Bestillingsstatus",
+    "PROPERTY_IMAGE": "Eiendom",
+    "NO_IMAGE_AVAILABLE": "Ingen bilde tilgjengelig.",
+    "GUEST_NAME": "Gjestenavn",
+    "OWNER_NAME": "Eiers navn",
+    "CONFIRMATION_STATUS": "Bekreftelsesstatus",
+    "CHECK_IN": "Innsjekking",
+    "CHECK_OUT": "Utsjekking",
+    "LOCATION": "Plassering",
+    "ROOM_TYPE": "Romtype",
+    "NUMBER_OF_GUESTS": "Antall gjester",
+    "GUESTS": "Gjester",
+    "TOTAL_PRICE": "Totalpris",
+    "SPECIAL_REQUESTS": "Spesielle forespørsler",
+    "NO_SMOKING_ROOM": "Røykfritt rom",
+    "DESCRIPTION": "Beskrivelse"
+  }
+  

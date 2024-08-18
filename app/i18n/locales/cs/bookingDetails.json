@@ -1,0 +1,20 @@
+{
+    "RESERVATION_DETAILS": "Podrobnosti rezervace",
+    "BOOKING_STATUS": "Stav rezervace",
+    "PROPERTY_IMAGE": "Nemovitost",
+    "NO_IMAGE_AVAILABLE": "Obrázek není k dispozici.",
+    "GUEST_NAME": "Jméno hosta",
+    "OWNER_NAME": "Jméno majitele",
+    "CONFIRMATION_STATUS": "Stav potvrzení",
+    "CHECK_IN": "Příjezd",
+    "CHECK_OUT": "Odjezd",
+    "LOCATION": "Místo",
+    "ROOM_TYPE": "Typ pokoje",
+    "NUMBER_OF_GUESTS": "Počet hostů",
+    "GUESTS": "Hosté",
+    "TOTAL_PRICE": "Celková cena",
+    "SPECIAL_REQUESTS": "Zvláštní požadavky",
+    "NO_SMOKING_ROOM": "Pokoj pro nekuřáky",
+    "DESCRIPTION": "Popis"
+  }
+  

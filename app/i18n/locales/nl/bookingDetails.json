@@ -1,0 +1,20 @@
+{
+    "RESERVATION_DETAILS": "Reserveringsdetails",
+    "BOOKING_STATUS": "Boekingsstatus",
+    "PROPERTY_IMAGE": "Eigendom",
+    "NO_IMAGE_AVAILABLE": "Geen afbeelding beschikbaar.",
+    "GUEST_NAME": "Naam van de gast",
+    "OWNER_NAME": "Naam van de eigenaar",
+    "CONFIRMATION_STATUS": "Bevestigingsstatus",
+    "CHECK_IN": "Inchecken",
+    "CHECK_OUT": "Uitchecken",
+    "LOCATION": "Locatie",
+    "ROOM_TYPE": "Kamertype",
+    "NUMBER_OF_GUESTS": "Aantal gasten",
+    "GUESTS": "Gasten",
+    "TOTAL_PRICE": "Totale prijs",
+    "SPECIAL_REQUESTS": "Speciale verzoeken",
+    "NO_SMOKING_ROOM": "Niet-roken kamer",
+    "DESCRIPTION": "Beschrijving"
+  }
+  

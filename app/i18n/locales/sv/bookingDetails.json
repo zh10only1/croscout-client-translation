@@ -1,0 +1,20 @@
+{
+    "RESERVATION_DETAILS": "Bokningsdetaljer",
+    "BOOKING_STATUS": "Bokningsstatus",
+    "PROPERTY_IMAGE": "Fastighet",
+    "NO_IMAGE_AVAILABLE": "Ingen bild tillgänglig.",
+    "GUEST_NAME": "Gästnamn",
+    "OWNER_NAME": "Ägarens namn",
+    "CONFIRMATION_STATUS": "Bekräftelsestatus",
+    "CHECK_IN": "Incheckning",
+    "CHECK_OUT": "Utcheckning",
+    "LOCATION": "Plats",
+    "ROOM_TYPE": "Rumstyp",
+    "NUMBER_OF_GUESTS": "Antal gäster",
+    "GUESTS": "Gäster",
+    "TOTAL_PRICE": "Totalpris",
+    "SPECIAL_REQUESTS": "Särskilda önskemål",
+    "NO_SMOKING_ROOM": "Rökfritt rum",
+    "DESCRIPTION": "Beskrivning"
+  }
+  

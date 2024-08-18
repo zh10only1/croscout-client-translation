@@ -1,0 +1,19 @@
+{
+  "RESERVATION_DETAILS": "Детали бронирования",
+  "BOOKING_STATUS": "Статус бронирования",
+  "PROPERTY_IMAGE": "Объект",
+  "NO_IMAGE_AVAILABLE": "Изображение недоступно.",
+  "GUEST_NAME": "Имя гостя",
+  "OWNER_NAME": "Имя владельца",
+  "CONFIRMATION_STATUS": "Статус подтверждения",
+  "CHECK_IN": "Заезд",
+  "CHECK_OUT": "Выезд",
+  "LOCATION": "Местоположение",
+  "ROOM_TYPE": "Тип комнаты",
+  "NUMBER_OF_GUESTS": "Количество гостей",
+  "GUESTS": "Гости",
+  "TOTAL_PRICE": "Итоговая цена",
+  "SPECIAL_REQUESTS": "Особые пожелания",
+  "NO_SMOKING_ROOM": "Номер для некурящих",
+  "DESCRIPTION": "Описание"
+}
