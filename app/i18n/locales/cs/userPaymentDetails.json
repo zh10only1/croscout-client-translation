@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token je požadován pro získání oblíbených položek",
+    "EMAIL": "E-mail",
+    "PAYMENT_INFORMATION": "Platební informace",
+    "PAYMENT_CONFIRMATION": "Potvrzení platby",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Zadejte své ID transakce pro ověření",
+    "TRANSACTION_ID": "ID transakce",
+    "ENTER_TRANSACTION_ID": "Zadejte své ID transakce",
+    "TRANSACTION_ID_REQUIRED": "ID transakce je povinné!",
+    "PENDING_REQUEST": "Máte čekající žádost o rezervaci na",
+    "AGENT_REVIEWING": "Vezměte prosím na vědomí, že náš agent právě prověřuje vaši žádost. Prosím, čekejte na další potvrzení.",
+      "SUBMIT": "Odeslat"
+  }
+  

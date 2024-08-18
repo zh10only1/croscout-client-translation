@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token je potreban za dohvaćanje favorita",
+    "EMAIL": "E-mail",
+    "PAYMENT_INFORMATION": "Informacije o plačanju",
+    "PAYMENT_CONFIRMATION": "Potvrda plačanja",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Unesite svoj ID transakcije za verifikaciju",
+    "TRANSACTION_ID": "ID transakcije",
+    "ENTER_TRANSACTION_ID": "Unesite svoj ID transakcije",
+    "TRANSACTION_ID_REQUIRED": "ID transakcije je obavezan!",
+    "PENDING_REQUEST": "Imate čekajući zahtjev za rezervaciju za",
+    "AGENT_REVIEWING": "Molimo imajte na umu da naš agent trenutno pregledava vaš zahtjev. Molimo pričekajte daljnju potvrdu.",
+      "SUBMIT": "Pošalji"
+  }
+  

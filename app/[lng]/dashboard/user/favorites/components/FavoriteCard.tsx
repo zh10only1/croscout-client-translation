@@ -58,7 +58,7 @@ const FavoriteCard = ({ favorite, setRemove, lng }: any) => {
             className={'cursor-pointer relative border border-accent p-[5px] bg-secondary rounded-[8px] text-white '}
         >
             <div className="h-[15rem] w-full relative rounded-t-[4px] overflow-hidden">
-                <ImageCarousel propertyId={_id} propertyImages={propertyImages} />
+                <ImageCarousel lng={lng} propertyId={_id} propertyImages={propertyImages} />
             </div>
             <div
                 className="p-2 "

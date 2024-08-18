@@ -149,7 +149,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
         <h1 className="text-2xl font-bold">{t("COMPLETE_PROFILE_MESSAGE")}</h1>
         <Link
           className="border border-accent py-2 px-10 mt-5 rounded-lg hover:border-white duration-150 flex gap-x-2 items-center"
-          href={`${lng}/dashboard/agent/profile`}
+          href={`/${lng}/dashboard/agent/profile`}
         >
           <span>{t("GO_TO_PROFILE")}</span>
           <FaArrowRightLong />

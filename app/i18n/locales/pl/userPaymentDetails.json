@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token jest wymagany do uzyskania ulubionych",
+    "EMAIL": "Email",
+    "PAYMENT_INFORMATION": "Informacje o płatności",
+    "PAYMENT_CONFIRMATION": "Potwierdzenie płatności",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Wprowadź swój identyfikator transakcji do weryfikacji",
+    "TRANSACTION_ID": "Identyfikator transakcji",
+    "ENTER_TRANSACTION_ID": "Wprowadź swój identyfikator transakcji",
+    "TRANSACTION_ID_REQUIRED": "Identyfikator transakcji jest wymagany!",
+    "PENDING_REQUEST": "Masz oczekującą prośbę o rezerwację na",
+    "AGENT_REVIEWING": "Proszę pamiętać, że nasz agent obecnie przegląda Twoją prośbę. Proszę oczekiwać dalszego potwierdzenia.",
+      "SUBMIT": "Wyślij"
+  }
+  

@@ -153,7 +153,7 @@ export default function PropertyHero({
     const responseData = await response.json();
     if (responseData.success) {
       setIsLoading(false);
-      router.push(`${lng}/dashboard/user/my-bookings`);
+      router.push(`/${lng}/dashboard/user/my-bookings`);
       return toast.success(responseData?.message);
     } else {
       setIsLoading(false);

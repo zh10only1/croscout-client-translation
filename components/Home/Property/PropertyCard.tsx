@@ -176,9 +176,9 @@ export default function PropertyCard({ property, lng }: Property & any,) {
             className={`cursor-pointer relative border border-accent p-[5px] bg-secondary rounded-[8px] text-white `}
         >
             <div className="h-[15rem] w-full relative rounded-t-[4px] overflow-hidden">
-                <ImageCarousel propertyId={_id} propertyImages={propertyImages} />
+                <ImageCarousel lng={lng} propertyId={_id} propertyImages={propertyImages} />
             </div>
-            <Link href={`${lng}/property-details/${_id}`}>
+            <Link href={`/${lng}/property-details/${_id}`}>
                 <div
                     className="p-2 "
                 // onClick={() => router.push(`/property-details/${_id}`)}

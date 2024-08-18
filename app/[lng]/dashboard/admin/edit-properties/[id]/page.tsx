@@ -140,7 +140,7 @@ const EditProperties = ({
       const result = await response.json();
       if (result.success) {
         toast.success(result.message);
-        router.push(`${lng}/dashboard/admin/all-properties`);
+        router.push(`/${lng}/dashboard/admin/all-properties`);
       } else {
         toast.error(result.error);
       }

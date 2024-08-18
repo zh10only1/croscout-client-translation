@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token er påkrevd for å hente favoritter",
+    "EMAIL": "E-post",
+    "PAYMENT_INFORMATION": "Betalingsinformasjon",
+    "PAYMENT_CONFIRMATION": "Betalingsbekreftelse",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Skriv inn din transaksjons-ID for bekreftelse",
+    "TRANSACTION_ID": "Transaksjons-ID",
+    "ENTER_TRANSACTION_ID": "Skriv inn din transaksjons-ID",
+    "TRANSACTION_ID_REQUIRED": "Transaksjons-ID er påkrevd!",
+    "PENDING_REQUEST": "Du har en ventende bestillingsforespørsel for",
+    "AGENT_REVIEWING": "Vennligst merk at vår agent for øyeblikket vurderer forespørselen din. Vennligst vent på videre bekreftelse.",
+      "SUBMIT": "Send"
+  }
+  

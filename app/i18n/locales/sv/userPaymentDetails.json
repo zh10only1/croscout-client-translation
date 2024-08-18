@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token krävs för att hämta favoriter",
+    "EMAIL": "E-post",
+    "PAYMENT_INFORMATION": "Betalningsinformation",
+    "PAYMENT_CONFIRMATION": "Betalningsbekräftelse",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Ange ditt transaktions-ID för verifiering",
+    "TRANSACTION_ID": "Transaktions-ID",
+    "ENTER_TRANSACTION_ID": "Ange ditt transaktions-ID",
+    "TRANSACTION_ID_REQUIRED": "Transaktions-ID är obligatoriskt!",
+    "PENDING_REQUEST": "Du har en väntande bokningsbegäran för",
+    "AGENT_REVIEWING": "Observera att vår agent för närvarande granskar din begäran. Vänligen vänta på ytterligare bekräftelse.",
+      "SUBMIT": "Skicka"
+  }
+  

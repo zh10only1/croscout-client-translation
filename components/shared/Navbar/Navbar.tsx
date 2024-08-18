@@ -67,11 +67,11 @@ const Navbar = ({ lng }: { lng: string }) => {
 
   const profileRoute =
     user?.role === "user"
-      ? `${lng}/dashboard/user/profile`
+      ? `/${lng}/dashboard/user/profile`
       : user?.role === "agent"
-      ? `${lng}/dashboard/agent/profile`
+      ? `/${lng}/dashboard/agent/profile`
       : user?.role === "admin"
-      ? `${lng}/dashboard/admin/profile`
+      ? `/${lng}/dashboard/admin/profile`
       : "";
 
   const isVerifed = user?.isEmailVerified;
@@ -152,8 +152,8 @@ const Navbar = ({ lng }: { lng: string }) => {
                   className={navbarStyles.dashboardBtn}
                   href={
                     user.role === "user"
-                      ? `${lng}/dashboard/user/my-bookings`
-                      : `${lng}/dashboard`
+                      ? `/${lng}/dashboard/user/my-bookings`
+                      : `/${lng}/dashboard`
                   }
                 >
                   {t("DASHBOARD")}

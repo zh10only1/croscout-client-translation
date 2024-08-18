@@ -156,7 +156,7 @@ const EditProperties = ({
       const result = await response.json();
       if (result.success) {
         toast.success(result.message);
-        router.push(`${lng}/dashboard/agent/manage-properties`);
+        router.push(`/${lng}/dashboard/agent/manage-properties`);
       } else {
         //!Error
         toast.error(result.error);
