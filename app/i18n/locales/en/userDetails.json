@@ -1,0 +1,14 @@
+{
+    "USER_DETAILS": "User Details",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "TELEPHONE": "Telephone",
+    "ROLE": "Role",
+    "ADDRESS": "Address",
+    "STREET": "Street",
+    "HOUSE": "House",
+    "POSTCODE": "Postcode",
+    "CITY": "City",
+    "STATE": "State",
+    "NOT_UPDATED": "Not Updated"
+  }

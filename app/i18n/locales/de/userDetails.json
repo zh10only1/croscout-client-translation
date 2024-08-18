@@ -1,0 +1,15 @@
+{
+    "USER_DETAILS": "Benutzerdetails",
+    "NAME": "Name",
+    "EMAIL": "E-Mail",
+    "TELEPHONE": "Telefon",
+    "ROLE": "Rolle",
+    "ADDRESS": "Adresse",
+    "STREET": "Straße",
+    "HOUSE": "Haus",
+    "POSTCODE": "Postleitzahl",
+    "CITY": "Stadt",
+    "STATE": "Bundesland",
+    "NOT_UPDATED": "Nicht aktualisiert"
+  }
+  

@@ -1,0 +1,15 @@
+{
+    "USER_DETAILS": "Användardetaljer",
+    "NAME": "Namn",
+    "EMAIL": "E-post",
+    "TELEPHONE": "Telefon",
+    "ROLE": "Roll",
+    "ADDRESS": "Adress",
+    "STREET": "Gata",
+    "HOUSE": "Hus",
+    "POSTCODE": "Postnummer",
+    "CITY": "Stad",
+    "STATE": "Stat",
+    "NOT_UPDATED": "Ej uppdaterad"
+  }
+  

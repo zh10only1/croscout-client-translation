@@ -1,0 +1,15 @@
+{
+    "USER_DETAILS": "Brukerdetaljer",
+    "NAME": "Navn",
+    "EMAIL": "E-post",
+    "TELEPHONE": "Telefon",
+    "ROLE": "Rolle",
+    "ADDRESS": "Adresse",
+    "STREET": "Gate",
+    "HOUSE": "Hus",
+    "POSTCODE": "Postnummer",
+    "CITY": "By",
+    "STATE": "Stat",
+    "NOT_UPDATED": "Ikke oppdatert"
+  }
+  

@@ -1,0 +1,15 @@
+{
+    "USER_DETAILS": "Korisnički podaci",
+    "NAME": "Ime",
+    "EMAIL": "E-mail",
+    "TELEPHONE": "Telefon",
+    "ROLE": "Uloga",
+    "ADDRESS": "Adresa",
+    "STREET": "Ulica",
+    "HOUSE": "Kuća",
+    "POSTCODE": "Poštanski broj",
+    "CITY": "Grad",
+    "STATE": "Država",
+    "NOT_UPDATED": "Nije ažurirano"
+  }
+  
