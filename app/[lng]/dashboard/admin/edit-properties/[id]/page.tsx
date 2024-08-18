@@ -12,7 +12,7 @@ import ImageUploader from "@/app/[lng]/dashboard/agent/add-property/components/I
 import styles from "@/app/[lng]/dashboard/agent/add-property/components/addProperty.module.css";
 import Loading from "@/components/ui/Loading/Loading";
 import { getStoredToken } from "@/utils/tokenStorage";
-import { translateProperties } from "@/lib/database/getProperties";
+import { useTranslation } from "@/app/i18n/client";
 
 type Inputs = {
   name: string;
@@ -68,6 +68,7 @@ const EditProperties = ({
   const [amenities, setAmenities] = useState<AmenitiesState>([]);
   const { user } = useAuthContext();
   const router = useRouter();
+  const { t } = useTranslation(lng, "editProperties")
 
   const removeImage = (index: number) => {
     setImagesArr((prevImages) => prevImages.filter((_, i) => i !== index));
@@ -98,25 +99,21 @@ const EditProperties = ({
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     if (!user) {
-      toast.error("Login First");
+      toast.error(t("LOGIN_FIRST"));
       return;
     }
     if (!user?.isCompletedProfile) {
-      return toast.error(
-        "At first complete your profile in the dashboard settings."
-      );
+      return toast.error(t("COMPLETE_PROFILE"));
     }
     if (imagesArr.length < 1) {
-      return setImagesArrError("Image is required!");
+      return setImagesArrError(t("IMAGE_REQUIRED"));
     }
     setImagesArrError("");
     if (amenities.length === 0) {
       return setAmenitiesError(true);
     }
     setAmenitiesError(false);
-    // Convert the amenities string into an array
-
-    // Construct the final object with the amenities array
+    
     const finalData = {
       ...data,
       amenities: amenities,
@@ -140,7 +137,6 @@ const EditProperties = ({
         }
       );
 
-      // console.log(57, response);
       const result = await response.json();
       if (result.success) {
         toast.success(result.message);
@@ -184,11 +180,11 @@ const EditProperties = ({
                 <div className={` grid gap-4`}>
                   {/* Property Name */}
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="property-name">Property name</label>
+                    <label htmlFor="property-name">{t("PROPERTY_NAME")}</label>
                     <input
                       type="text"
                       id="property-name"
-                      placeholder="Property name"
+                      placeholder={t("PROPERTY_NAME")}
                       defaultValue={propertiesData?.property?.name || ""}
                       {...register("name", { required: true })}
                     />
@@ -196,17 +192,17 @@ const EditProperties = ({
                     {/*//! Error */}
                     {errors?.name && (
                       <p className="text-red-600 mt-1 lg:text-base text-sm">
-                        Property name is required!
+                        {t("PROPERTY_NAME_REQUIRED")}
                       </p>
                     )}
                   </div>
 
                   {/* Description */}
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description">{t("DESCRIPTION")}</label>
                     <textarea
                       id="description"
-                      placeholder="Description"
+                      placeholder={t("DESCRIPTION")}
                       defaultValue={propertiesData?.property?.description}
                       {...register("description", { required: true })}
                     ></textarea>
@@ -214,7 +210,7 @@ const EditProperties = ({
                     {/*//! Error */}
                     {errors?.description && (
                       <p className="text-red-600 mt-1 lg:text-base text-sm">
-                        Description name is required!
+                        {t("DESCRIPTION_REQUIRED")}
                       </p>
                     )}
                   </div>
@@ -223,7 +219,7 @@ const EditProperties = ({
                 <div className="grid gap-4">
                   {/*Amenities  */}
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="amenities">Amenities</label>
+                    <label htmlFor="amenities">{t("AMENITIES")}</label>
                     <p className="flex w-full rounded-md border-none outline-none text-sm lg:text-base text-secondary-50 placeholder:text-sm">
                       {amenities?.map((amenity, indx) => (
                         <span key={indx}> {amenity}, </span>
@@ -233,29 +229,29 @@ const EditProperties = ({
                       <input
                         id="amenities"
                         className=""
-                        placeholder="Input amenity and press the button"
+                        placeholder={t("INPUT_AMENITY")}
                       />
                       <span
                         onClick={handleAddAminity}
                         className="absolute text-white bg-gradient-to-l from-cyan-400 to-cyan-500 py-3 rounded-r-md cursor-pointer  px-10 flex-center gap-x-2 right-0"
                       >
-                        + Add Amenity
+                        + {t("ADD_AMENITY")}
                       </span>
                     </div>
                     {amenitiesError && (
                       <p className="text-red-600 mt-1 lg:text-base text-sm">
-                        Amenities is required!
+                        {t("AMENITIES_REQUIRED")}
                       </p>
                     )}
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     {/* Price Per Night */}
                     <div className="flex flex-col gap-1.5">
-                      <label htmlFor="pricePerNight">Price per night</label>
+                      <label htmlFor="pricePerNight">{t("PRICE_PER_NIGHT")}</label>
                       <input
                         type="number"
                         id="pricePerNight"
-                        placeholder="PricePerNight"
+                        placeholder={t("PRICE_PER_NIGHT")}
                         min="1"
                         defaultValue={propertiesData?.property?.pricePerNight}
                         {...register("pricePerNight", { required: true })}
@@ -264,14 +260,14 @@ const EditProperties = ({
                       {/*//! Error */}
                       {errors?.pricePerNight && (
                         <p className="text-red-600 mt-1 lg:text-base text-sm">
-                          Price is required!
+                          {t("PRICE_REQUIRED")}
                         </p>
                       )}
                     </div>
 
                     {/* Property Type */}
                     <div className={`flex flex-col gap-1.5 `}>
-                      <label htmlFor="property-type">Property type</label>
+                      <label htmlFor="property-type">{t("PROPERTY_TYPE")}</label>
                       <select
                         id="input-field"
                         className="form-select"
@@ -289,7 +285,7 @@ const EditProperties = ({
                       {/*//! Error */}
                       {errors?.propertyType && (
                         <p className="text-red-600 mt-1 lg:text-base text-sm">
-                          Property type name is required!
+                          {t("PROPERTY_TYPE_REQUIRED")}
                         </p>
                       )}
                     </div>
@@ -298,7 +294,7 @@ const EditProperties = ({
                   <div className={`grid md:grid-cols-2 gap-4 ${styles.state}`}>
                     {/* Location */}
                     <div className="flex flex-col gap-1.5">
-                      <label htmlFor="location">Location</label>
+                      <label htmlFor="location">{t("LOCATION")}</label>
                       <select
                         id="input-field"
                         className="form-select"
@@ -306,7 +302,7 @@ const EditProperties = ({
                         {...register("location", { required: true })}
                       >
                         <option value="" disabled defaultValue="Croatia">
-                          Select an option
+                        {t("SELECT_OPTION")}
                         </option>
                         <option value="Croatia">Croatia</option>
                       </select>
@@ -314,14 +310,14 @@ const EditProperties = ({
                       {/*//! Error */}
                       {errors?.location && (
                         <p className="text-red-600 mt-1 lg:text-base text-sm">
-                          Location is required!
+                          {t("LOCATION_REQUIRED")}
                         </p>
                       )}
                     </div>
 
                     {/* State */}
                     <div className="flex flex-col gap-1.5">
-                      <label htmlFor="state">State</label>
+                      <label htmlFor="state">{t("STATE")}</label>
                       <select
                         id="state"
                         className="form-select"
@@ -329,7 +325,7 @@ const EditProperties = ({
                         {...register("state", { required: true })}
                       >
                         <option value="" disabled>
-                          Select an option
+                          {t("SELECT_OPTION")}
                         </option>
                         {defaultStates.map((state, indx) => (
                           <option key={indx} value={state}>
@@ -341,7 +337,7 @@ const EditProperties = ({
                       {/*//! Error */}
                       {errors?.state && (
                         <p className="text-red-600 mt-1 lg:text-base text-sm">
-                          State name is required!
+                          {t("STATE_REQUIRED")}
                         </p>
                       )}
                     </div>
@@ -349,14 +345,14 @@ const EditProperties = ({
 
                   {/* Guests */}
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="guests">Number of guests</label>
+                    <label htmlFor="guests">{t("GUESTS_NUMBER")}</label>
                     <input
                       type="number"
                       className=""
                       id="guests"
                       max={15}
                       min={1}
-                      placeholder="Enter number"
+                      placeholder={t("ENTER_NUMBER")}
                       defaultValue={propertiesData?.property?.guests}
                       onInput={(e) => {
                         const inputValue = +(e.target as HTMLInputElement)
@@ -371,7 +367,7 @@ const EditProperties = ({
                     {/*//! Error */}
                     {errors?.guests && (
                       <p className="text-red-600 mt-1 lg:text-base text-sm">
-                        Guest is required!
+                        {t("GUESTS_REQUIRED")}
                       </p>
                     )}
                   </div>
@@ -422,7 +418,7 @@ const EditProperties = ({
                     type="submit"
                     className="  bg-blue-500  rounded-md text-white lg:w-1/2 w-full px-5 py-3 cursor-pointer"
                   >
-                    Save
+                    {t("SAVE")}
                   </button>
                 </div>
               </form>

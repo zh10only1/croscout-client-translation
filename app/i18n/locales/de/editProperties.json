@@ -1,0 +1,27 @@
+{
+    "SAVE": "Speichern",
+    "GUESTS_REQUIRED": "Die Anzahl der Gäste ist erforderlich",
+    "ENTER_NUMBER": "Nummer eingeben",
+    "GUESTS_NUMBER": "Anzahl der Gäste",
+    "STATE_REQUIRED": "Der Name des Bundeslandes ist erforderlich!",
+    "SELECT_OPTION": "Option auswählen",
+    "STATE": "Bundesland",
+    "LOCATION_REQUIRED": "Der Standort ist erforderlich!",
+    "LOCATION": "Standort",
+    "PROPERTY_TYPE_REQUIRED": "Der Name des Immobilientyps ist erforderlich!",
+    "PROPERTY_TYPE": "Immobilientyp",
+    "PRICE_REQUIRED": "Der Preis ist erforderlich!",
+    "PRICE_PER_NIGHT": "Preis pro Nacht",
+    "AMENITIES_REQUIRED": "Die Annehmlichkeiten sind erforderlich!",
+    "INPUT_AMENITY": "Annehmlichkeit eingeben und den Knopf drücken",
+    "ADD_AMENITY": "Annehmlichkeit hinzufügen",
+    "AMENITIES": "Annehmlichkeiten",
+    "DESCRIPTION_REQUIRED": "Der Name der Beschreibung ist erforderlich!",
+    "DESCRIPTION": "Beschreibung",
+    "PROPERTY_NAME_REQUIRED": "Der Name der Immobilie ist erforderlich!",
+    "PROPERTY_NAME": "Immobilienname",
+    "IMAGE_REQUIRED": "Mindestens ein Bild ist erforderlich",
+    "LOGIN_FIRST": "Bitte zuerst einloggen",
+    "COMPLETE_PROFILE": "Bitte vervollständigen Sie Ihr Profil"
+  }
+  

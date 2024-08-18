@@ -1,0 +1,27 @@
+{
+    "SAVE": "Uložit",
+    "GUESTS_REQUIRED": "Počet hostů je povinný",
+    "ENTER_NUMBER": "Zadejte číslo",
+    "GUESTS_NUMBER": "Počet hostů",
+    "STATE_REQUIRED": "Název státu je povinný!",
+    "SELECT_OPTION": "Vyberte možnost",
+    "STATE": "Stát",
+    "LOCATION_REQUIRED": "Místo je povinné!",
+    "LOCATION": "Místo",
+    "PROPERTY_TYPE_REQUIRED": "Název typu nemovitosti je povinný!",
+    "PROPERTY_TYPE": "Typ nemovitosti",
+    "PRICE_REQUIRED": "Cena je povinná!",
+    "PRICE_PER_NIGHT": "Cena za noc",
+    "AMENITIES_REQUIRED": "Vybavení je povinné!",
+    "INPUT_AMENITY": "Zadejte vybavení a stiskněte tlačítko",
+    "ADD_AMENITY": "Přidat vybavení",
+    "AMENITIES": "Vybavení",
+    "DESCRIPTION_REQUIRED": "Název popisu je povinný!",
+    "DESCRIPTION": "Popis",
+    "PROPERTY_NAME_REQUIRED": "Název nemovitosti je povinný!",
+    "PROPERTY_NAME": "Název nemovitosti",
+    "IMAGE_REQUIRED": "Je vyžadován alespoň jeden obrázek",
+    "LOGIN_FIRST": "Nejprve se prosím přihlaste",
+    "COMPLETE_PROFILE": "Prosím, dokončete svůj profil"
+  }
+  

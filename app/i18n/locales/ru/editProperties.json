@@ -1,0 +1,27 @@
+{
+    "SAVE": "Сохранить",
+    "GUESTS_REQUIRED": "Количество гостей обязательно",
+    "ENTER_NUMBER": "Введите число",
+    "GUESTS_NUMBER": "Количество гостей",
+    "STATE_REQUIRED": "Название региона обязательно!",
+    "SELECT_OPTION": "Выберите вариант",
+    "STATE": "Регион",
+    "LOCATION_REQUIRED": "Местоположение обязательно!",
+    "LOCATION": "Местоположение",
+    "PROPERTY_TYPE_REQUIRED": "Название типа недвижимости обязательно!",
+    "PROPERTY_TYPE": "Тип недвижимости",
+    "PRICE_REQUIRED": "Цена обязательна!",
+    "PRICE_PER_NIGHT": "Цена за ночь",
+    "AMENITIES_REQUIRED": "Удобства обязательны!",
+    "INPUT_AMENITY": "Введите удобство и нажмите кнопку",
+    "ADD_AMENITY": "Добавить удобство",
+    "AMENITIES": "Удобства",
+    "DESCRIPTION_REQUIRED": "Название описания обязательно!",
+    "DESCRIPTION": "Описание",
+    "PROPERTY_NAME_REQUIRED": "Название объекта обязательно!",
+    "PROPERTY_NAME": "Название объекта",
+    "IMAGE_REQUIRED": "Требуется хотя бы одно изображение",
+    "LOGIN_FIRST": "Пожалуйста, сначала войдите в систему",
+    "COMPLETE_PROFILE": "Пожалуйста, завершите ваш профиль"
+  }
+  

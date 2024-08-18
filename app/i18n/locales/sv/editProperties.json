@@ -1,0 +1,27 @@
+{
+    "SAVE": "Spara",
+    "GUESTS_REQUIRED": "Antal gäster är obligatoriskt",
+    "ENTER_NUMBER": "Ange nummer",
+    "GUESTS_NUMBER": "Antal gäster",
+    "STATE_REQUIRED": "Statens namn är obligatoriskt!",
+    "SELECT_OPTION": "Välj ett alternativ",
+    "STATE": "Stat",
+    "LOCATION_REQUIRED": "Plats är obligatoriskt!",
+    "LOCATION": "Plats",
+    "PROPERTY_TYPE_REQUIRED": "Namn på fastighetstyp är obligatoriskt!",
+    "PROPERTY_TYPE": "Fastighetstyp",
+    "PRICE_REQUIRED": "Pris är obligatoriskt!",
+    "PRICE_PER_NIGHT": "Pris per natt",
+    "AMENITIES_REQUIRED": "Faciliteter är obligatoriska!",
+    "INPUT_AMENITY": "Ange bekvämlighet och tryck på knappen",
+    "ADD_AMENITY": "Lägg till bekvämlighet",
+    "AMENITIES": "Faciliteter",
+    "DESCRIPTION_REQUIRED": "Beskrivningsnamn är obligatoriskt!",
+    "DESCRIPTION": "Beskrivning",
+    "PROPERTY_NAME_REQUIRED": "Fastighetsnamn är obligatoriskt!",
+    "PROPERTY_NAME": "Fastighetsnamn",
+    "IMAGE_REQUIRED": "Minst en bild krävs",
+    "LOGIN_FIRST": "Logga in först",
+    "COMPLETE_PROFILE": "Vänligen komplettera din profil"
+  }
+  

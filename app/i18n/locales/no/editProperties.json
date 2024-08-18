@@ -1,0 +1,27 @@
+{
+    "SAVE": "Lagre",
+    "GUESTS_REQUIRED": "Antall gjester er påkrevd",
+    "ENTER_NUMBER": "Skriv inn nummer",
+    "GUESTS_NUMBER": "Antall gjester",
+    "STATE_REQUIRED": "Statens navn er påkrevd!",
+    "SELECT_OPTION": "Velg et alternativ",
+    "STATE": "Stat",
+    "LOCATION_REQUIRED": "Sted er påkrevd!",
+    "LOCATION": "Sted",
+    "PROPERTY_TYPE_REQUIRED": "Eiendomstypens navn er påkrevd!",
+    "PROPERTY_TYPE": "Eiendomstype",
+    "PRICE_REQUIRED": "Pris er påkrevd!",
+    "PRICE_PER_NIGHT": "Pris per natt",
+    "AMENITIES_REQUIRED": "Fasiliteter er påkrevd!",
+    "INPUT_AMENITY": "Angi fasilitet og trykk på knappen",
+    "ADD_AMENITY": "Legg til fasilitet",
+    "AMENITIES": "Fasiliteter",
+    "DESCRIPTION_REQUIRED": "Beskrivelsesnavn er påkrevd!",
+    "DESCRIPTION": "Beskrivelse",
+    "PROPERTY_NAME_REQUIRED": "Eiendomsnavn er påkrevd!",
+    "PROPERTY_NAME": "Eiendomsnavn",
+    "IMAGE_REQUIRED": "Minst ett bilde er påkrevd",
+    "LOGIN_FIRST": "Vennligst logg inn først",
+    "COMPLETE_PROFILE": "Vennligst fullfør profilen din"
+  }
+  
