@@ -1,0 +1,16 @@
+{
+    "PAYMENT_DETAILS_HEADER": "Betalningsdetaljer",
+    "PAYMENT_DETAILS_DESCRIPTION": "Ange dina betalningsuppgifter för att skicka till kunden.",
+    "PAYPAL_EMAIL": "PayPal E-post",
+    "PAYPAL_EMAIL_PLACEHOLDER": "Ange din PayPal e-post",
+    "PAYPAL_EMAIL_REQUIRED": "E-post är obligatorisk!",
+    "DESCRIPTION": "Beskrivning",
+    "DESCRIPTION_PLACEHOLDER": "Betalningsinstruktion",
+    "DESCRIPTION_REQUIRED": "Beskrivning är obligatorisk!",
+    "TRANSACTION_ID_FROM_USER": "Transaktions-ID från användare",
+    "TRANSACTION_ID_PLACEHOLDER": "Ange ditt PayPal transaktions-ID",
+    "PAYMENT_REQUEST_SENT": "Betalningsbegäran har redan skickats",
+    "SEND_PAYMENT_REQUEST": "Skicka betalningsbegäran med betalningsdetaljer",
+    "LOGIN_FIRST": "Vänligen logga in först"
+  }
+  

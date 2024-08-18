@@ -1,0 +1,16 @@
+{
+    "PAYMENT_DETAILS_HEADER": "Podrobnosti o platbě",
+    "PAYMENT_DETAILS_DESCRIPTION": "Zadejte své platební údaje pro odeslání zákazníkovi.",
+    "PAYPAL_EMAIL": "PayPal E-mail",
+    "PAYPAL_EMAIL_PLACEHOLDER": "Zadejte svůj PayPal e-mail",
+    "PAYPAL_EMAIL_REQUIRED": "E-mail je povinný!",
+    "DESCRIPTION": "Popis",
+    "DESCRIPTION_PLACEHOLDER": "Pokyny k platbě",
+    "DESCRIPTION_REQUIRED": "Popis je povinný!",
+    "TRANSACTION_ID_FROM_USER": "ID transakce od uživatele",
+    "TRANSACTION_ID_PLACEHOLDER": "Zadejte své PayPal ID transakce",
+    "PAYMENT_REQUEST_SENT": "Žádost o platbu již byla odeslána",
+    "SEND_PAYMENT_REQUEST": "Odeslat žádost o platbu s podrobnostmi",
+    "LOGIN_FIRST": "Nejprve se prosím přihlaste"
+  }
+  
