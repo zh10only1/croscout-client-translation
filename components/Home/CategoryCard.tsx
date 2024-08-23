@@ -29,7 +29,8 @@ export default function CategoryCard({ category, activeCat, lng }: IProps) {
         onMouseLeave={handleHoverOut}
         className={`text-white relative px-2 lg:px-4 py-2 border rounded-[3px] bg-secondary hover:border-accent flex flex-col items-center hover:text-accent ${
           activeCat === category.name && "border-accent"
-        } hover:shadow-xl cursor-pointer transition-all duration-300`}
+        } hover:shadow-xl cursor-pointer transition-all duration-300 flex flex-col justify-center`}
+         style={{height: "5rem"}}
       >
         <Image
           src={
