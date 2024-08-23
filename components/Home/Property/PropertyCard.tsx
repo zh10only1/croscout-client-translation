@@ -18,6 +18,7 @@ import Link from "next/link";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
 import { getStoredToken } from "@/utils/tokenStorage";
 import { getUser } from "@/lib/database/authUser";
+import { useTranslation } from "@/app/i18n/client";
 
 
 
@@ -33,6 +34,8 @@ export default function PropertyCard({ property, lng }: Property & any,) {
     const [isActive, setIsActive] = useState(false);
     const [isFav, setIsFav] = useState(false);
     const [isProgressive, setIsProgressive] = useState(false);
+
+    const { t } = useTranslation(lng, "properties")
 
     const {
         _id,
@@ -204,7 +207,7 @@ export default function PropertyCard({ property, lng }: Property & any,) {
                         {/* Price and Ratings */}
                         <div className="flex justify-between mt-[10px]">
                             {/* Price */}
-                            <div className="text-accent font-semibold">€ {pricePerNight} night</div>
+                            <div className="text-accent font-semibold">€ {pricePerNight} {t("NIGHT")}</div>
                             <div className="flex items-center gap-1.5 border-b border-b-accent">
                                 <div className="">
                                     <Image src={StarIcon} height={14} width={14} alt="img" />
