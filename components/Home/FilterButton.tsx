@@ -163,7 +163,7 @@ const FilterButton = ({lng} : {lng: string}) => {
                         </button>
                     </div>
 
-                    <div className="border px-[0.875rem] rounded-[3px] py-1 lg:py-3">
+                    {/* <div className="border px-[0.875rem] rounded-[3px] py-1 lg:py-3">
                         <div className="flex items-center gap-2 relative text-white">
                             <div className="">{t("HOME_FILTER_TAXES_TOGGLE")}</div>
                             <button
@@ -176,7 +176,7 @@ const FilterButton = ({lng} : {lng: string}) => {
                                 ></div>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
