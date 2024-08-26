@@ -20,5 +20,6 @@
     "THU": "Tor",
     "FRI": "Fre",
     "SAT": "Lör",
-    "WEEKLY_RECAP": "Veckosammanfattning"
+    "WEEKLY_RECAP": "Veckosammanfattning",
+    "confirmed": "bekräftad"
 }

@@ -20,5 +20,6 @@
     "THU": "Cz",
     "FRI": "Pt",
     "SAT": "Sb",
-    "WEEKLY_RECAP": "Tygodniowe podsumowanie"
+    "WEEKLY_RECAP": "Tygodniowe podsumowanie",
+    "confirmed": "potwierdzone"
 }

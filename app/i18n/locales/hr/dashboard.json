@@ -20,5 +20,6 @@
     "THU": "Čet",
     "FRI": "Pet",
     "SAT": "Sub",
-    "WEEKLY_RECAP": "Tjedni pregled"
+    "WEEKLY_RECAP": "Tjedni pregled",
+    "confirmed": "potvrđeno"
 }

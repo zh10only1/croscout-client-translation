@@ -12,6 +12,7 @@ import { MdSupervisedUserCircle } from "react-icons/md";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import { useTranslation } from "@/app/i18n/client";
+import { translateBookings } from "@/lib/database/getBookings";
 
 // Define the interface for booking data
 export interface IBooking {
@@ -45,6 +46,7 @@ export interface DashboardStats {
 // Dashboard component that fetches and displays dashboard statistics
 const Dashboard = ({ params: { lng } }: { params: { lng: string } }) => {
   const { t } = useTranslation(lng, "dashboard");
+  
 
   // State to track loading status and dashboard statistics
   const [loading, setLoading] = useState(true);
@@ -60,6 +62,17 @@ const Dashboard = ({ params: { lng } }: { params: { lng: string } }) => {
       try {
         setLoading(true);
         const data = await getDashboardStats(user._id);
+        console.log(data.stats);
+        const bookingsToTranslate = user?.role === "admin" ? data.stats?.latestBookings : data.stats?.latestAgentBookings;
+        const translationResponse = await translateBookings(
+          bookingsToTranslate,
+          lng,
+          true
+        );
+        if (translationResponse.success) {
+          if (user?.role === "admin") data.stats.latestBookings = translationResponse.translatedBookings;
+          else data.stats.latestAgentBookings = translationResponse.translatedBookings;
+        }
         setDashboardStats(data.stats);
       } catch (error) {
         console.error("Error fetching dashboard stats:", error);

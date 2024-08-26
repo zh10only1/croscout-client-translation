@@ -45,7 +45,7 @@ const Transactions = ({ dashboardStats, lng }: { dashboardStats: any; lng: strin
                 }
 
                 <td>
-                  <span className={`${styles.status} ${item?.status === "confirmed" ? styles.done : styles.pending}`}>
+                  <span className={`${styles.status} ${item?.status === t("confirmed") ? styles.done : styles.pending}`}>
                     {item?.status}
                   </span>
                 </td>
