@@ -62,36 +62,36 @@ const Footer = ({ lng }: { lng: string }) => {
             <div className="mt-20 md:mt-0">
               <div className="grid grid-cols-3 gap-10 md:gap-[120px]">
                 <div className="col-span-3 md:col-span-1">
-                  <h2 className="text-xl font-semibold">{t("SUPPORT")}</h2>
+                  <h2 className="text-xl font-semibold">{t("TRAVEL")}</h2>
                   <div className="mt-6 flex flex-col leading-[200%] text-[#CBC9C9]">
-                    <Link href={"#"}>{t("HELP_CENTER")}</Link>
-                    <Link href={"#"}>{t("AIRCOVER")}</Link>
-                    <Link href={"#"}>{t("ANTI_DISCRIMINATION")}</Link>
-                    <Link href={"#"}>{t("DISABILITY_SUPPORT")}</Link>
-                    <Link href={"#"}>{t("CANCELLATION_OPTIONS")}</Link>
-                    <Link href={"#"}>{t("REPORT_NEIGHBORHOOD_CONCERN")}</Link>
+                    <Link href={"https://kroatien-flug.de"}>{t("FLIGHTS_TO_CROATIA")}</Link>
+                    <Link href={"https://kroatien-mietwagen.eu"}>{t("CAR_RENTAL_FOR_CROATIA")}</Link>
+                    <Link href={"https://kroatien-hotels.eu"}>{t("HOTELS_IN_CROATIA")}</Link>
+                    <Link href={"https://croatia-guide.de"}>{t("TRAVEL_GUIDE_FOR_CROATIA")}</Link>
+                    <Link href={"https://kroatien-tip.de"}>{t("TIPS_FOR_CROATIA")}</Link>
+                    <Link href={"https://kroatien-ausflug.de"}>{t("ADVENTURE_IN_CROATIA")}</Link>
                   </div>
                 </div>
                 <div className="col-span-3 md:col-span-1">
-                  <h2 className="text-xl font-semibold">{t("HOSTING")}</h2>
+                  <h2 className="text-xl font-semibold">{t("TIPS")}</h2>
                   <div className="mt-6 flex flex-col leading-[200%] text-[#CBC9C9]">
-                    <Link href={"#"}>{t("CROSCOUT_YOUR_HOME")}</Link>
-                    <Link href={"#"}>{t("CROSCOUT_FOR_HOSTS")}</Link>
-                    <Link href={"#"}>{t("HOSTING_RESOURCES")}</Link>
-                    <Link href={"#"}>{t("COMMUNITY_FORUM")}</Link>
-                    <Link href={"#"}>{t("HOSTING_RESPONSIBLY")}</Link>
-                    <Link href={"#"}>{t("CROSCOUT_FRIENDLY_APARTMENTS")}</Link>
+                    <Link href={"https://inselwelt-kroatien.de"}>{t("ISLANDS_IN_CROATIA")}</Link>
+                    <Link href={"https://kroatien-bikes.de"}>{t("BIKE_TOURS_IN_CROATIA")}</Link>
+                    <Link href={"https://wetter-kroatien.eu"}>{t("WEATHER_IN_CROATIA")}</Link>
+                    <Link href={"https://kroatien-food.de"}>{t("CROATIAN_FOOD")}</Link>
+                    <Link href={"https://echarging-kroatien.de"}>{t("E_CHARGING_STATIONS_IN_CROATIA")}</Link>
+                    <Link href={"https://ultra-kroatien.de"}>{t("ULTRA_FESTIVAL_IN_SPLIT")}</Link>
                   </div>
                 </div>
                 <div className="col-span-3 md:col-span-1">
-                  <h2 className="text-xl font-semibold">{t("CROSCOUT")}</h2>
+                  <h2 className="text-xl font-semibold">{t("OFFERS")}</h2>
                   <div className="mt-6 flex flex-col leading-[200%] text-[#CBC9C9]">
-                    <Link href={"#"}>{t("NEWSROOM")}</Link>
-                    <Link href={"#"}>{t("NEW_FEATURES")}</Link>
-                    <Link href={"#"}>{t("CAREERS")}</Link>
-                    <Link href={"#"}>{t("INVESTORS")}</Link>
-                    <Link href={"#"}>{t("GIFT_CARDS")}</Link>
-                    <Link href={"#"}>{t("CROSCOUT_EU_EMERGENCY_STAYS")}</Link>
+                    <Link href={"https://kroatien-angebote.de"}>{t("HOLIDAY_DEALS_IN_CROATIA")}</Link>
+                    <Link href={"https://kroatien-vergleich.de"}>{t("TRAVEL_COMPARISON_FOR_CROATIA")}</Link>
+                    <Link href={"https://croatia-portal.de"}>{t("HOLIDAY_OFFERS_FOR_CROATIA")}</Link>
+                    <Link href={"https://kroatien-rabatt.de"}>{t("DISCOUNTS_IN_CROATIA")}</Link>
+                    <Link href={"https://kroatien-trip.de"}>{t("CROATIAN_TRIPS")}</Link>
+                    <Link href={"https://sex-kroatien.de"}>{t("EROTIC_GUIDE_FOR_CROATIA")}</Link>
                   </div>
                 </div>
               </div>
