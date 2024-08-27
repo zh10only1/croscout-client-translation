@@ -13,7 +13,7 @@ export default async function ({
   const { t } = await useTranslation(lng, "termsAndConditions");
 
   return (
-    <div className="text-white">
+    <div className="text-white w-[75%] mx-auto py-16">
       <h5>{t("TERMS_AND_CONDITIONS_TITLE")}</h5>
       <p>{t("TERMS_AND_CONDITIONS_INTRO")}</p>
       <p>{t("TERMS_AND_CONDITIONS_CLOSING")}</p>
