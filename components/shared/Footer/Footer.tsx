@@ -105,7 +105,7 @@ const Footer = ({ lng }: { lng: string }) => {
               © {currentYear} Croscout, Inc.
             </div>
             <div className="flex gap-4 md:gap-[32px] text-sm md:text-lg text-[#CBC9C9] font-medium">
-              <a href={`@/FAQ.html`}>{t("FAQ")}</a>
+              <Link href={`/${lng}/faq`}>{t("FAQ")}</Link>
               <Link href={`/${lng}/imprint`}>{t("IMPRINT")}</Link>
               <Link href={`/${lng}/privacy-protection`}>{t("PRIVACY")}</Link>
               <Link href={`/${lng}/terms-conditions`}>{t("AGB")}</Link>
