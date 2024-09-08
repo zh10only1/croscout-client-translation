@@ -1,0 +1,15 @@
+{
+    "USER_DETAILS": "Gebruikersgegevens",
+    "NAME": "Naam",
+    "EMAIL": "E-mail",
+    "TELEPHONE": "Telefoon",
+    "ROLE": "Rol",
+    "ADDRESS": "Adres",
+    "STREET": "Straat",
+    "HOUSE": "Huis",
+    "POSTCODE": "Postcode",
+    "CITY": "Stad",
+    "STATE": "Staat",
+    "NOT_UPDATED": "Niet bijgewerkt"
+  }
+  

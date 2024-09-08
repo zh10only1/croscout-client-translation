@@ -1,5 +1,9 @@
 {
     "LOGIN": "Logg inn",
     "SIGNUP": "Registrer deg",
-    "CROSCOUT_YOUR_HOME": "Croscout hjemmet ditt"
+    "CROSCOUT_YOUR_HOME": "Croscout hjemmet ditt",
+      "DASHBOARD": "Dashbord",
+  "LOGOUT": "Logg ut",
+    "LOGOUT_SUCCESSFUL": "Utlogging vellykket",
+  "EMAIL_NOT_VERIFIED": "E-posten din er ikke bekreftet! Vennligst bekreft e-posten din."
 }

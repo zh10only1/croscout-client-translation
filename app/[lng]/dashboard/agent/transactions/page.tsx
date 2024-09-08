@@ -4,6 +4,8 @@ import TransactionForm from "../../components/TransactionForm/TransactionForm";
 import { User, useAuthContext } from "@/providers/AuthProvider";
 import { getAllTrasaction, getTransactionById } from "@/lib/database/getTransactions";
 import Loading from "@/components/ui/Loading/Loading";
+import { useTranslation } from "@/app/i18n/client";
+
 
 //? Define the structure of transaction data
 interface TransactionData {
@@ -12,8 +14,8 @@ interface TransactionData {
 }
 
 //? TransactionPage component
-const TransactionPage = () => {
-
+const TransactionPage = ({ params: { lng } }: { params: { lng: string } }) => {
+    const { t } = useTranslation(lng, "transactions");
     //* State to store transaction data
     const [transaction, setTransaction] = useState<TransactionData | null>(null);
 
@@ -57,7 +59,7 @@ const TransactionPage = () => {
     if (!transaction?.transactions || (Array.isArray(transaction?.transactions) && transaction.transactions.length === 0)) {
         return (
             <div className='lg:min-h-screen flex-center mt-32 lg:mt-0'>
-                <h1 className='lg:text-4xl text-2xl font-bold text-white-50'>No Payment History Found.</h1>
+                <h1 className='lg:text-4xl text-2xl font-bold text-white-50'>{t("NO_PAYMENT_HISTORY")}</h1>
             </div>
         );
     }
@@ -65,7 +67,7 @@ const TransactionPage = () => {
     //* Render TransactionForm component if transaction data is available
     return (
         <div className="min-h-screen md:bg-primary-50 md:px-5 py-10">
-            {transaction?.success && <TransactionForm transaction={transaction} />}
+            {transaction?.success && <TransactionForm lng={lng} transaction={transaction} />}
         </div>
     );
 };

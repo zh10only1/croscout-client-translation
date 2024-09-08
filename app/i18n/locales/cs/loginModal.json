@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Zapomněli jste heslo",
+    "LOGIN": "Přihlásit se",
+    "YOUR_EMAIL": "Váš e-mail",
+    "EMAIL": "E-mail",
+    "ENTER_YOUR_EMAIL": "Zadejte svůj e-mail",
+    "PASSWORD": "Heslo",
+    "ENTER_YOUR_PASSWORD": "Zadejte své heslo",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Přihlásit se pomocí e-mailu a hesla?",
+    "SEND_RESET_LINK": "Odeslat odkaz pro resetování",
+    "DONT_HAVE_AN_ACCOUNT": "Nemáte účet?",
+    "SIGN_UP": "Zaregistrujte se"
+}

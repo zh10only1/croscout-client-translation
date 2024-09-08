@@ -1,0 +1,14 @@
+{
+    "PROPERTY_LIST_IS_EMPTY": "Zoznam nehnuteľností je prázdny.",
+    "ARE_YOU_SURE": "Ste si istí?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Nebudete môcť toto vrátiť späť!",
+    "YES_DELETE_IT": "Áno, odstrániť!",
+    "PROPERTY_DELETED_SUCCESSFULLY": "Nehnuteľnosť bola úspešne odstránená",
+    "FAILED_TO_DELETE_PROPERTY": "Nepodarilo sa odstrániť nehnuteľnosť",
+    "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "Pri odstraňovaní nehnuteľnosti došlo k chybe",
+    "NIGHT": "noc",
+    "EDIT": "Upraviť",
+    "DELETE": "Odstrániť",
+    "CLOSE": "Zavrieť"
+  }
+  

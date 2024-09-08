@@ -1,0 +1,9 @@
+{
+    "NO_PAYMENT_HISTORY": "Brak historii płatności.",
+    "NUMBER": "#",
+    "TRANSACTION_ID": "ID transakcji",
+    "BOOKING_ID": "ID rezerwacji",
+    "PAYMENT_METHOD": "Metoda płatności",
+    "TRANSACTION_DATE": "Data transakcji",
+    "AMOUNT": "Kwota"
+}

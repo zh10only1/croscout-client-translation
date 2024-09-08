@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Žádní uživatelé nejsou registrováni.",
+    "ALL_USERS:": "Všichni uživatelé:",
+    "ARE_YOU_SURE": "Jste si jisti?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "To nebudete moci vrátit!",
+    "YES_DELETE_IT": "Ano, smazat!",
+    "USER_DELETED_SUCCESSFULLY": "Uživatel byl úspěšně smazán",
+    "FAILED_TO_DELETE_USER": "Nepodařilo se smazat uživatele",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Při mazání uživatele došlo k chybě",
+    "NUMBER": "#",
+    "NAME": "Jméno",
+    "EMAIL": "E-mail",
+    "TAX_ID": "DIČ",
+    "USER_ID": "ID uživatele",
+    "JOINED_AT": "Připojen",
+    "DETAILS": "Detaily",
+    "ACTIONS": "Akce",
+    "AGENT_DETAILS": "Detaily agenta",
+    "USER_DETAILS": "Detaily uživatele",
+    "DELETE": "Smazat"
+  }
+  

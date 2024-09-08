@@ -1,0 +1,16 @@
+{
+    "PAYMENT_DETAILS_HEADER": "Zahlungsdetails",
+    "PAYMENT_DETAILS_DESCRIPTION": "Geben Sie Ihre Zahlungsinformationen ein, um sie an den Kunden zu senden.",
+    "PAYPAL_EMAIL": "PayPal E-Mail",
+    "PAYPAL_EMAIL_PLACEHOLDER": "Geben Sie Ihre PayPal-E-Mail-Adresse ein",
+    "PAYPAL_EMAIL_REQUIRED": "E-Mail ist erforderlich!",
+    "DESCRIPTION": "Beschreibung",
+    "DESCRIPTION_PLACEHOLDER": "Zahlungsanweisung",
+    "DESCRIPTION_REQUIRED": "Beschreibung ist erforderlich!",
+    "TRANSACTION_ID_FROM_USER": "Transaktions-ID vom Benutzer",
+    "TRANSACTION_ID_PLACEHOLDER": "Geben Sie Ihre PayPal-Transaktions-ID ein",
+    "PAYMENT_REQUEST_SENT": "Zahlungsanforderung bereits gesendet",
+    "SEND_PAYMENT_REQUEST": "Zahlungsanforderung mit Zahlungsdetails senden",
+    "LOGIN_FIRST": "Bitte zuerst einloggen"
+  }
+  

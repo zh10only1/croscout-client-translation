@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Geen boekingen gevonden. Boek een eigendom alstublieft.",
+    "ARE_YOU_SURE": "Weet je het zeker?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Deze boeking wordt overal verwijderd!",
+    "CLOSE": "Sluiten",
+    "YES_CANCEL_IT": "Ja, annuleer!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "De status van deze boeking wordt veranderd naar bevestigd!",
+    "YES_CONFIRM_IT": "Ja, bevestig!",
+    "CONFIRMED": "Bevestigd",
+    "PENDING": "In afwachting",
+    "CANCEL": "Annuleer",
+    "CONFIRM": "Bevestigen",
+    "NAME": "Naam",
+    "STATUS": "Status",
+    "LAST_BOOKING": "Laatste boeking",
+    "CHECK_IN_CHECK_OUT": "Inchecken - Uitchecken",
+    "TOTAL_PRICE": "Totaalprijs",
+    "BOOKING_DETAILS": "Boekingsdetails",
+    "PAYMENT_DETAILS": "Betaalgegevens",
+    "FEEDBACK": "Feedback",
+    "pending": "in afwachting",
+    "confirmed": "bevestigd"
+  }
+  

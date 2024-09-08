@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Passwort vergessen",
+    "LOGIN": "Anmelden",
+    "YOUR_EMAIL": "Ihre E-Mail",
+    "EMAIL": "E-Mail",
+    "ENTER_YOUR_EMAIL": "Geben Sie Ihre E-Mail ein",
+    "PASSWORD": "Passwort",
+    "ENTER_YOUR_PASSWORD": "Geben Sie Ihr Passwort ein",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Mit E-Mail und Passwort anmelden?",
+    "SEND_RESET_LINK": "Link zum Zurücksetzen senden",
+    "DONT_HAVE_AN_ACCOUNT": "Haben Sie kein Konto?",
+    "SIGN_UP": "Registrieren"
+}

@@ -1,0 +1,27 @@
+{
+    "SAVE": "Zapisz",
+    "GUESTS_REQUIRED": "Liczba gości jest wymagana",
+    "ENTER_NUMBER": "Wprowadź numer",
+    "GUESTS_NUMBER": "Liczba gości",
+    "STATE_REQUIRED": "Nazwa stanu jest wymagana!",
+    "SELECT_OPTION": "Wybierz opcję",
+    "STATE": "Stan",
+    "LOCATION_REQUIRED": "Lokalizacja jest wymagana!",
+    "LOCATION": "Lokalizacja",
+    "PROPERTY_TYPE_REQUIRED": "Nazwa typu nieruchomości jest wymagana!",
+    "PROPERTY_TYPE": "Typ nieruchomości",
+    "PRICE_REQUIRED": "Cena jest wymagana!",
+    "PRICE_PER_NIGHT": "Cena za noc",
+    "AMENITIES_REQUIRED": "Udogodnienia są wymagane!",
+    "INPUT_AMENITY": "Wprowadź udogodnienie i naciśnij przycisk",
+    "ADD_AMENITY": "Dodaj udogodnienie",
+    "AMENITIES": "Udogodnienia",
+    "DESCRIPTION_REQUIRED": "Nazwa opisu jest wymagana!",
+    "DESCRIPTION": "Opis",
+    "PROPERTY_NAME_REQUIRED": "Nazwa nieruchomości jest wymagana!",
+    "PROPERTY_NAME": "Nazwa nieruchomości",
+    "IMAGE_REQUIRED": "Wymagany jest co najmniej jeden obraz",
+    "LOGIN_FIRST": "Najpierw się zaloguj",
+    "COMPLETE_PROFILE": "Proszę dokończyć swój profil"
+  }
+  

@@ -1,5 +1,9 @@
 {
     "LOGIN": "Prihlásiť sa",
     "SIGNUP": "Zaregistrujte sa",
-    "CROSCOUT_YOUR_HOME": "Croscout Váš domov"
+    "CROSCOUT_YOUR_HOME": "Croscout Váš domov",
+      "DASHBOARD": "Nástrojová lišta",
+  "LOGOUT": "Odhlásiť sa",
+    "LOGOUT_SUCCESSFUL": "Odhlásenie úspešné",
+  "EMAIL_NOT_VERIFIED": "Váš email nie je overený! Prosím, overte svoj email."
 }

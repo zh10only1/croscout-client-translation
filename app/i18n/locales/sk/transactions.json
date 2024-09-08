@@ -1,0 +1,9 @@
+{
+    "NO_PAYMENT_HISTORY": "História platieb nebola nájdená.",
+    "NUMBER": "#",
+    "TRANSACTION_ID": "ID transakcie",
+    "BOOKING_ID": "ID rezervácie",
+    "PAYMENT_METHOD": "Spôsob platby",
+    "TRANSACTION_DATE": "Dátum transakcie",
+    "AMOUNT": "Suma"
+}

@@ -1,0 +1,27 @@
+{
+    "SAVE": "Spremi",
+    "GUESTS_REQUIRED": "Broj gostiju je obavezan",
+    "ENTER_NUMBER": "Unesite broj",
+    "GUESTS_NUMBER": "Broj gostiju",
+    "STATE_REQUIRED": "Naziv države je obavezan!",
+    "SELECT_OPTION": "Odaberite opciju",
+    "STATE": "Država",
+    "LOCATION_REQUIRED": "Lokacija je obavezna!",
+    "LOCATION": "Lokacija",
+    "PROPERTY_TYPE_REQUIRED": "Naziv vrste nekretnine je obavezan!",
+    "PROPERTY_TYPE": "Vrsta nekretnine",
+    "PRICE_REQUIRED": "Cijena je obavezna!",
+    "PRICE_PER_NIGHT": "Cijena po noćenju",
+    "AMENITIES_REQUIRED": "Potreban je popis pogodnosti!",
+    "INPUT_AMENITY": "Unesite pogodnost i pritisnite gumb",
+    "ADD_AMENITY": "Dodaj pogodnost",
+    "AMENITIES": "Pogodnosti",
+    "DESCRIPTION_REQUIRED": "Naziv opisa je obavezan!",
+    "DESCRIPTION": "Opis",
+    "PROPERTY_NAME_REQUIRED": "Naziv nekretnine je obavezan!",
+    "PROPERTY_NAME": "Naziv nekretnine",
+    "IMAGE_REQUIRED": "Potrebna je barem jedna slika",
+    "LOGIN_FIRST": "Molimo prijavite se prvo",
+    "COMPLETE_PROFILE": "Molimo dovršite svoj profil"
+  }
+  

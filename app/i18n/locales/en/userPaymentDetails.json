@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token is required for get Favorites",
+    "EMAIL": "Email",
+    "PAYMENT_INFORMATION": "Payment Information",
+    "PAYMENT_CONFIRMATION": "Payment Confirmation",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Enter your Transaction ID for verification",
+    "TRANSACTION_ID": "Transaction ID",
+    "ENTER_TRANSACTION_ID": "Enter your transaction ID",
+    "TRANSACTION_ID_REQUIRED": "Transaction ID is required!",
+    "PENDING_REQUEST": "You have a pending booking request for",
+    "AGENT_REVIEWING": "Please note that our agent is currently reviewing your request. Kindly await further confirmation.",
+      "SUBMIT": "Submit"
+  }
+  

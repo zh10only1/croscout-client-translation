@@ -1,0 +1,9 @@
+{
+    "NO_PAYMENT_HISTORY": "Geen betalingsgeschiedenis gevonden.",
+    "NUMBER": "#",
+    "TRANSACTION_ID": "Transactie-ID",
+    "BOOKING_ID": "Boeking-ID",
+    "PAYMENT_METHOD": "Betalingsmethode",
+    "TRANSACTION_DATE": "Transactiedatum",
+    "AMOUNT": "Bedrag"
+}

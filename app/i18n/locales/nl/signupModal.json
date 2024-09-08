@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Aanmelden",
+    "YOUR_NAME": "Jouw naam",
+    "NAME": "Naam",
+    "ENTER_YOUR_NAME": "Voer je naam in.",
+    "YOUR_EMAIL": "Jouw e-mail",
+    "EMAIL": "E-mail",
+    "ENTER_YOUR_EMAIL": "Voer je e-mail in.",
+    "PASSWORD": "Wachtwoord",
+    "ENTER_YOUR_PASSWORD": "Voer je wachtwoord in.",
+    "TAX_NUMBER": "Belastingnummer",
+    "ENTER_TAX_NUMBER": "Voer een belastingnummer in.",
+    "REGISTER_AS_AGENT": "Registreer als agent.",
+    "REGISTER": "Registreren",
+    "ALREADY_HAVE_AN_ACCOUNT": "Heb je al een account?",
+    "LOG_IN": "Inloggen",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Inloggen met sociale accounts"
+}

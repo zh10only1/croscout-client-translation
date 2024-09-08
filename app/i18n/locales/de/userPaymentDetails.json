@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token ist erforderlich, um Favoriten abzurufen",
+    "EMAIL": "E-Mail",
+    "PAYMENT_INFORMATION": "Zahlungsinformationen",
+    "PAYMENT_CONFIRMATION": "Zahlungsbestätigung",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Geben Sie Ihre Transaktions-ID zur Überprüfung ein",
+    "TRANSACTION_ID": "Transaktions-ID",
+    "ENTER_TRANSACTION_ID": "Geben Sie Ihre Transaktions-ID ein",
+    "TRANSACTION_ID_REQUIRED": "Transaktions-ID ist erforderlich!",
+    "PENDING_REQUEST": "Sie haben eine ausstehende Buchungsanfrage für",
+    "AGENT_REVIEWING": "Bitte beachten Sie, dass unser Agent Ihre Anfrage derzeit prüft. Bitte warten Sie auf eine weitere Bestätigung.",
+      "SUBMIT": "Absenden"
+  }
+  

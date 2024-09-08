@@ -1,0 +1,15 @@
+{
+    "USER_DETAILS": "Detaily uživatele",
+    "NAME": "Jméno",
+    "EMAIL": "E-mail",
+    "TELEPHONE": "Telefon",
+    "ROLE": "Role",
+    "ADDRESS": "Adresa",
+    "STREET": "Ulice",
+    "HOUSE": "Dům",
+    "POSTCODE": "PSČ",
+    "CITY": "Město",
+    "STATE": "Stát",
+    "NOT_UPDATED": "Neaktualizováno"
+  }
+  

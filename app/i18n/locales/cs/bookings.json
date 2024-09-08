@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Žádné rezervace nebyly nalezeny. Prosím, rezervujte si nemovitost.",
+    "ARE_YOU_SURE": "Jste si jisti?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Tato rezervace bude odstraněna ze všech míst!",
+    "CLOSE": "Zavřít",
+    "YES_CANCEL_IT": "Ano, zrušit!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Stav této rezervace bude změněn na potvrzený!",
+    "YES_CONFIRM_IT": "Ano, potvrdit!",
+    "CONFIRMED": "Potvrzeno",
+    "PENDING": "Čekající",
+    "CANCEL": "Zrušit",
+    "CONFIRM": "Potvrdit",
+    "NAME": "Jméno",
+    "STATUS": "Stav",
+    "LAST_BOOKING": "Poslední rezervace",
+    "CHECK_IN_CHECK_OUT": "Příjezd - Odjezd",
+    "TOTAL_PRICE": "Celková cena",
+    "BOOKING_DETAILS": "Podrobnosti rezervace",
+    "PAYMENT_DETAILS": "Podrobnosti platby",
+    "FEEDBACK": "Zpětná vazba",
+    "pending": "čekající",
+    "confirmed": "potvrzeno"
+  }
+  

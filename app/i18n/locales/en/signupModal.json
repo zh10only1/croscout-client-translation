@@ -1,0 +1,18 @@
+{
+    "SIGNUP": "Signup",
+    "YOUR_NAME": "Your Name",
+    "NAME": "Name",
+    "ENTER_YOUR_NAME": "Enter your name.",
+    "YOUR_EMAIL": "Your Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Enter your email.",
+    "PASSWORD": "Password",
+    "ENTER_YOUR_PASSWORD": "Enter your password.",
+    "TAX_NUMBER": "Tax Number",
+    "ENTER_TAX_NUMBER": "Enter a Tax Number.",
+    "REGISTER_AS_AGENT": "Register as an agent.",
+    "REGISTER": "Register",
+    "ALREADY_HAVE_AN_ACCOUNT": "Already have an account?",
+    "LOG_IN": "Log In",
+    "LOGIN_WITH_SOCIAL_ACCOUNTS": "Login with social accounts"
+}

@@ -18,6 +18,7 @@ import Link from "next/link";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
 import { getStoredToken } from "@/utils/tokenStorage";
 import { getUser } from "@/lib/database/authUser";
+import { useTranslation } from "@/app/i18n/client";
 
 
 
@@ -27,12 +28,14 @@ interface Event {
     _id: string;
 }
 
-export default function PropertyCard({ property }: Property & any,) {
+export default function PropertyCard({ property, lng }: Property & any,) {
     const { setLoginModal } = useModalContext();
     const { user, setUser } = useAuthContext();
     const [isActive, setIsActive] = useState(false);
     const [isFav, setIsFav] = useState(false);
     const [isProgressive, setIsProgressive] = useState(false);
+
+    const { t } = useTranslation(lng, "properties")
 
     const {
         _id,
@@ -176,9 +179,9 @@ export default function PropertyCard({ property }: Property & any,) {
             className={`cursor-pointer relative border border-accent p-[5px] bg-secondary rounded-[8px] text-white `}
         >
             <div className="h-[15rem] w-full relative rounded-t-[4px] overflow-hidden">
-                <ImageCarousel propertyId={_id} propertyImages={propertyImages} />
+                <ImageCarousel lng={lng} propertyId={_id} propertyImages={propertyImages} />
             </div>
-            <Link href={`/property-details/${_id}`}>
+            <Link href={`/${lng}/property-details/${_id}`}>
                 <div
                     className="p-2 "
                 // onClick={() => router.push(`/property-details/${_id}`)}
@@ -204,7 +207,7 @@ export default function PropertyCard({ property }: Property & any,) {
                         {/* Price and Ratings */}
                         <div className="flex justify-between mt-[10px]">
                             {/* Price */}
-                            <div className="text-accent font-semibold">€ {pricePerNight} night</div>
+                            <div className="text-accent font-semibold">€ {pricePerNight} {t("NIGHT")}</div>
                             <div className="flex items-center gap-1.5 border-b border-b-accent">
                                 <div className="">
                                     <Image src={StarIcon} height={14} width={14} alt="img" />

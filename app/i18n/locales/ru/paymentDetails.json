@@ -1,0 +1,16 @@
+{
+    "PAYMENT_DETAILS_HEADER": "Детали платежа",
+    "PAYMENT_DETAILS_DESCRIPTION": "Введите информацию о платеже для отправки клиенту.",
+    "PAYPAL_EMAIL": "Email PayPal",
+    "PAYPAL_EMAIL_PLACEHOLDER": "Введите ваш PayPal email",
+    "PAYPAL_EMAIL_REQUIRED": "Email обязателен!",
+    "DESCRIPTION": "Описание",
+    "DESCRIPTION_PLACEHOLDER": "Инструкция по оплате",
+    "DESCRIPTION_REQUIRED": "Описание обязательно!",
+    "TRANSACTION_ID_FROM_USER": "ID транзакции от пользователя",
+    "TRANSACTION_ID_PLACEHOLDER": "Введите ID транзакции PayPal",
+    "PAYMENT_REQUEST_SENT": "Запрос на оплату уже отправлен",
+    "SEND_PAYMENT_REQUEST": "Отправить запрос на оплату с деталями",
+    "LOGIN_FIRST": "Пожалуйста, сначала войдите в систему"
+  }
+  

@@ -24,9 +24,9 @@ export default function Home({ params: { lng } }: {
     <>
       <Hero lng={lng} />
       <div className="wrapper">
-        <FilterButton />
-        <CategoryList />
-        <PropertyList />
+        <FilterButton lng={lng} />
+        <CategoryList lng={lng} />
+        <PropertyList lng={lng} />
       </div>
     </>
   );

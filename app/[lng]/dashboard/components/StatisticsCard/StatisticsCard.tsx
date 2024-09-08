@@ -1,7 +1,9 @@
 import { MdSupervisedUserCircle } from "react-icons/md";
 import styles from "./card.module.css";
+import { useTranslation } from "@/app/i18n/client";
 
-const StatisticsCard = ({ item }: any) => {
+const StatisticsCard =  ({ item, lng }: any) => {
+    const { t } = useTranslation(lng, "dashboard");
     return (
         <div className={styles.container}>
             {item?.icon}
@@ -12,7 +14,7 @@ const StatisticsCard = ({ item }: any) => {
                     <span className={item.change > 0 ? styles.positive : styles.negative}>
                         {item.change}%
                     </span>{" "}
-                    {item.change > 0 ? "more" : "less"} than previous week
+                    {item.change > 0 ? t('MORE') : t('LESS')} {t('THAN_PREVIOUS_WEEK')}
                 </span>
             </div>
         </div>

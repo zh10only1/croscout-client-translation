@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Zabudli ste heslo",
+    "LOGIN": "Prihlásiť sa",
+    "YOUR_EMAIL": "Váš e-mail",
+    "EMAIL": "E-mail",
+    "ENTER_YOUR_EMAIL": "Zadajte svoj e-mail",
+    "PASSWORD": "Heslo",
+    "ENTER_YOUR_PASSWORD": "Zadajte svoje heslo",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Prihlásiť sa pomocou e-mailu a hesla?",
+    "SEND_RESET_LINK": "Odoslať odkaz na obnovenie",
+    "DONT_HAVE_AN_ACCOUNT": "Nemáte účet?",
+    "SIGN_UP": "Zaregistrujte sa"
+}

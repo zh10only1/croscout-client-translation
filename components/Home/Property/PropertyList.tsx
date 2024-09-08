@@ -9,9 +9,10 @@ import Loading from "@/components/ui/Loading/Loading";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { removeSearchQuery, setSearchQuery } from "@/utils/searchQuery";
-import { getCurrentLng } from "@/utils/translation";
+import { useTranslation } from "@/app/i18n/client";
 
-const PropertyList = () => {
+const PropertyList = ({lng}: {lng : string;}) => {
+    const { t } = useTranslation(lng, "home");
     const [properties, setProperties] = useState([])
     const [isLoading, setIsLoading] = useState(true);
     const { isSearchBtnClicked, setCurrentFilter, setIsSearchBtnClicked, setActiveCat, setLocation, setLocationObject, setAdultsCount, setChildrenCount } = useSearchContext();
@@ -34,12 +35,9 @@ const PropertyList = () => {
             try {
                 setIsLoading(true)
                 const data = await getAllProperty(queryString);
-                const lng : string = getCurrentLng();
-                console.log(lng)
-                const {translatedProperties} = await translateProperties(data, lng);
-                console.log(translatedProperties)
-                // api call to translate
-                setProperties(translatedProperties || []);
+                const translationResponse = await translateProperties(data, lng, false);
+                translationResponse.success ? setProperties(translationResponse.translatedProperties || [])
+                                            : setProperties(data || []);
                 setIsLoading(false);
             } catch (error) {
                 setIsLoading(false)
@@ -62,7 +60,7 @@ const PropertyList = () => {
 
     if (properties.length < 1 && searchKey) {
         return <div className="flex flex-col lg:pb-60 lg:pt-20 pt-10 pb-20 items-center">
-            <h1 className="text-4xl font-bold text-white">Not Matched</h1>
+            <h1 className="text-4xl font-bold text-white">{t("NOT_MATCHED")}</h1>
             <ClearSearchButton onClick={() => {
                 setIsSearchBtnClicked(false);
                 // clearSearchInputValue();
@@ -79,7 +77,7 @@ const PropertyList = () => {
 
     if (properties.length < 1) {
         return <div className="flex flex-col lg:pb-60 lg:pt-20 pt-10 pb-20 items-center">
-            <h1 className="text-4xl font-bold text-white">Properties are not found!</h1>
+            <h1 className="text-4xl font-bold text-white">{t("PROPERTIES_NOT_FOUND")}</h1>
         </div>
     }
 
@@ -105,13 +103,13 @@ const PropertyList = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {properties?.map((property: Property, index: number) => (
-                    <PropertyCard key={index} property={property} />
+                    <PropertyCard lng={lng} key={index} property={property} />
                 ))}
             </div>
             <div className="my-10">
                 {
                     properties.length >= 20 &&
-                    <PrimaryButton onClick={handleShowMore} className="px-5 lg:px-10">Show More</PrimaryButton>
+                    <PrimaryButton onClick={handleShowMore} className="px-5 lg:px-10">{t("SHOW_MORE")}</PrimaryButton>
                 }
             </div>
         </>

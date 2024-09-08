@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Keine Buchungen gefunden. Bitte buchen Sie eine Unterkunft.",
+    "ARE_YOU_SURE": "Bist du sicher?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Diese Buchung wird überall entfernt!",
+    "CLOSE": "Schließen",
+    "YES_CANCEL_IT": "Ja, stornieren!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Der Status dieser Buchung wird auf bestätigt geändert!",
+    "YES_CONFIRM_IT": "Ja, bestätigen!",
+    "CONFIRMED": "Bestätigt",
+    "PENDING": "Ausstehend",
+    "CANCEL": "Stornieren",
+    "CONFIRM": "Bestätigen",
+    "NAME": "Name",
+    "STATUS": "Status",
+    "LAST_BOOKING": "Letzte Buchung",
+    "CHECK_IN_CHECK_OUT": "Check-in - Check-out",
+    "TOTAL_PRICE": "Gesamtpreis",
+    "BOOKING_DETAILS": "Buchungsdetails",
+    "PAYMENT_DETAILS": "Zahlungsdetails",
+    "FEEDBACK": "Feedback",
+    "pending": "ausstehend",
+    "confirmed": "bestätigt"
+  }
+  

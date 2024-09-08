@@ -1,0 +1,27 @@
+{
+    "SAVE": "Opslaan",
+    "GUESTS_REQUIRED": "Aantal gasten is verplicht",
+    "ENTER_NUMBER": "Voer nummer in",
+    "GUESTS_NUMBER": "Aantal gasten",
+    "STATE_REQUIRED": "Naam van de staat is verplicht!",
+    "SELECT_OPTION": "Selecteer een optie",
+    "STATE": "Staat",
+    "LOCATION_REQUIRED": "Locatie is verplicht!",
+    "LOCATION": "Locatie",
+    "PROPERTY_TYPE_REQUIRED": "Naam van het type eigendom is verplicht!",
+    "PROPERTY_TYPE": "Type eigendom",
+    "PRICE_REQUIRED": "Prijs is verplicht!",
+    "PRICE_PER_NIGHT": "Prijs per nacht",
+    "AMENITIES_REQUIRED": "Voorzieningen zijn verplicht!",
+    "INPUT_AMENITY": "Voer voorziening in en druk op de knop",
+    "ADD_AMENITY": "Voeg voorziening toe",
+    "AMENITIES": "Voorzieningen",
+    "DESCRIPTION_REQUIRED": "Naam van de beschrijving is verplicht!",
+    "DESCRIPTION": "Beschrijving",
+    "PROPERTY_NAME_REQUIRED": "Naam van het onroerend goed is verplicht!",
+    "PROPERTY_NAME": "Naam van het onroerend goed",
+    "IMAGE_REQUIRED": "Minstens één afbeelding is verplicht",
+    "LOGIN_FIRST": "Log eerst in",
+    "COMPLETE_PROFILE": "Voltooi uw profiel"
+  }
+  

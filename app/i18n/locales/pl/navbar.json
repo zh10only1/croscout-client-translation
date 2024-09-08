@@ -1,5 +1,9 @@
 {
     "LOGIN": "Zaloguj się",
     "SIGNUP": "Zarejestruj się",
-    "CROSCOUT_YOUR_HOME": "Croscout Twój dom"
+    "CROSCOUT_YOUR_HOME": "Croscout Twój dom",
+      "DASHBOARD": "Panel sterowania",
+  "LOGOUT": "Wyloguj się",
+    "LOGOUT_SUCCESSFUL": "Wylogowano pomyślnie",
+  "EMAIL_NOT_VERIFIED": "Twój email nie jest zweryfikowany! Proszę zweryfikować swój email."
 }

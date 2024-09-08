@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Forgot Password",
+    "LOGIN": "Login",
+    "YOUR_EMAIL": "Your Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Enter your email",
+    "PASSWORD": "Password",
+    "ENTER_YOUR_PASSWORD": "Enter your password",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Login with email and password?",
+    "SEND_RESET_LINK": "Send Reset Link",
+    "DONT_HAVE_AN_ACCOUNT": "Don't have an account?",
+    "SIGN_UP": "Sign up"
+}

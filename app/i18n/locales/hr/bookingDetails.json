@@ -1,0 +1,20 @@
+{
+    "RESERVATION_DETAILS": "Detalji rezervacije",
+    "BOOKING_STATUS": "Status rezervacije",
+    "PROPERTY_IMAGE": "Nekretnina",
+    "NO_IMAGE_AVAILABLE": "Slika nije dostupna.",
+    "GUEST_NAME": "Ime gosta",
+    "OWNER_NAME": "Ime vlasnika",
+    "CONFIRMATION_STATUS": "Status potvrde",
+    "CHECK_IN": "Prijava",
+    "CHECK_OUT": "Odjava",
+    "LOCATION": "Lokacija",
+    "ROOM_TYPE": "Vrsta sobe",
+    "NUMBER_OF_GUESTS": "Broj gostiju",
+    "GUESTS": "Gosti",
+    "TOTAL_PRICE": "Ukupna cijena",
+    "SPECIAL_REQUESTS": "Posebni zahtjevi",
+    "NO_SMOKING_ROOM": "Soba za nepušače",
+    "DESCRIPTION": "Opis"
+  }
+  

@@ -9,7 +9,7 @@ import propertyStyles from "./property.module.css"
 import React from 'react'
 import Link from "next/link";
 
-export default function ImageCarousel({ propertyImages, propertyId }: any) {
+export default function ImageCarousel({ propertyImages, propertyId, lng }: any) {
     const router = useRouter();
 
     const customLeftControl = (
@@ -34,7 +34,7 @@ export default function ImageCarousel({ propertyImages, propertyId }: any) {
         <div className="h-full">
             <Carousel slide={false}>
                 {
-                    propertyImages.map((img: any, i: number) => <Link className="h-full w-full" href={`/property-details/${propertyId}`}><Image key={i}
+                    propertyImages.map((img: any, i: number) => <Link className="h-full w-full" href={`/${lng}/property-details/${propertyId}`}><Image key={i}
                         // onClick={() => router.push(`/property-details/${propertyId}`)}
                         src={img}
                         alt="Property Image"

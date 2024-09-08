@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Бронирования не найдены. Пожалуйста, забронируйте объект.",
+    "ARE_YOU_SURE": "Вы уверены?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Это бронирование будет удалено везде!",
+    "CLOSE": "Закрыть",
+    "YES_CANCEL_IT": "Да, отменить!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Статус этого бронирования будет изменен на подтвержденный!",
+    "YES_CONFIRM_IT": "Да, подтвердить!",
+    "CONFIRMED": "Подтверждено",
+    "PENDING": "В ожидании",
+    "CANCEL": "Отменить",
+    "CONFIRM": "Подтвердить",
+    "NAME": "Имя",
+    "STATUS": "Статус",
+    "LAST_BOOKING": "Последнее бронирование",
+    "CHECK_IN_CHECK_OUT": "Дата заезда - дата выезда",
+    "TOTAL_PRICE": "Итоговая цена",
+    "BOOKING_DETAILS": "Детали бронирования",
+    "PAYMENT_DETAILS": "Детали оплаты",
+    "FEEDBACK": "Отзыв",
+    "pending": "в ожидании",
+    "confirmed": "подтверждено"
+  }
+  

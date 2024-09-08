@@ -1,5 +1,9 @@
 {
     "LOGIN": "Anmelden",
     "SIGNUP": "Registrieren",
-    "CROSCOUT_YOUR_HOME": "Croscout Ihr Zuhause"
+    "CROSCOUT_YOUR_HOME": "Croscout Ihr Zuhause",
+      "DASHBOARD": "Dashboard",
+  "LOGOUT": "Abmelden",
+    "LOGOUT_SUCCESSFUL": "Abmeldung erfolgreich",
+  "EMAIL_NOT_VERIFIED": "Ihre E-Mail ist nicht verifiziert! Bitte überprüfen Sie Ihre E-Mail."
 }

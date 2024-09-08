@@ -1,0 +1,9 @@
+{
+    "NO_PAYMENT_HISTORY": "Ingen betalningshistorik hittades.",
+    "NUMBER": "#",
+    "TRANSACTION_ID": "Transaktions-ID",
+    "BOOKING_ID": "Boknings-ID",
+    "PAYMENT_METHOD": "Betalningsmetod",
+    "TRANSACTION_DATE": "Transaktionsdatum",
+    "AMOUNT": "Belopp"
+}

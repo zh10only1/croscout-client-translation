@@ -1,0 +1,23 @@
+{
+  "NO_BOOKINGS_FOUND": "No bookings found. Please book a property.",
+  "ARE_YOU_SURE": "Are you sure?",
+  "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "This booking will be removed from everywhere!",
+  "CLOSE": "Close",
+  "YES_CANCEL_IT": "Yes, cancel it!",
+  "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "This booking status will be changed to confirmed!",
+  "YES_CONFIRM_IT": "Yes, confirm it!",
+  "CONFIRMED": "Confirmed",
+  "PENDING": "Pending",
+  "CANCEL": "Cancel",
+  "CONFIRM": "Confirm",
+  "NAME": "Name",
+  "STATUS": "Status",
+  "LAST_BOOKING": "Last Booking",
+  "CHECK_IN_CHECK_OUT": "Check in - Check out",
+  "TOTAL_PRICE": "Total Price",
+  "BOOKING_DETAILS": "Booking Details",
+  "PAYMENT_DETAILS": "Payment Details",
+  "FEEDBACK": "Feedback",
+  "pending": "pending",
+  "confirmed": "confirmed"
+}

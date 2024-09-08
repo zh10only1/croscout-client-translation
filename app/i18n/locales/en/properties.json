@@ -1,0 +1,13 @@
+{
+  "PROPERTY_LIST_IS_EMPTY": "Property list is empty.",
+  "ARE_YOU_SURE": "Are you sure?",
+  "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "You won't be able to revert this!",
+  "YES_DELETE_IT": "Yes, delete it!",
+  "PROPERTY_DELETED_SUCCESSFULLY": "Property deleted successfully",
+  "FAILED_TO_DELETE_PROPERTY": "Failed to delete property",
+  "ERROR_OCCURED_WHILE_DELETING_PROPERTY": "An error occurred while deleting the property",
+  "NIGHT": "night",
+  "EDIT": "Edit",
+  "DELETE": "Delete",
+  "CLOSE": "Close"
+}

@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Ingen brukere registrert.",
+    "ALL_USERS": "Alle brukere:",
+    "ARE_YOU_SURE": "Er du sikker?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Du vil ikke kunne angre dette!",
+    "YES_DELETE_IT": "Ja, slett det!",
+    "USER_DELETED_SUCCESSFULLY": "Bruker slettet vellykket",
+    "FAILED_TO_DELETE_USER": "Mislyktes med å slette bruker",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "En feil oppstod under sletting av bruker",
+    "NUMBER": "#",
+    "NAME": "Navn",
+    "EMAIL": "E-post",
+    "TAX_ID": "Skatt-ID",
+    "USER_ID": "Bruker-ID",
+    "JOINED_AT": "Ble med",
+    "DETAILS": "Detaljer",
+    "ACTIONS": "Handlinger",
+    "AGENT_DETAILS": "Agentdetaljer",
+    "USER_DETAILS": "Brukerdetaljer",
+    "DELETE": "Slett"
+  }
+  

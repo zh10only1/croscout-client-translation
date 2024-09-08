@@ -9,8 +9,10 @@ import { useAuthContext } from "@/providers/AuthProvider";
 import toast from "react-hot-toast";
 import { getUser } from "@/lib/database/authUser";
 import { getStoredToken } from "@/utils/tokenStorage";
+import { useTranslation } from "@/app/i18n/client";
 
-const FavoriteCard = ({ favorite, setRemove }: any) => {
+const FavoriteCard = ({ favorite, setRemove, lng }: any) => {
+    const { t } = useTranslation(lng, "favorites");
     const { user, userRefetch, setUser } = useAuthContext();
     const {
         _id,
@@ -42,7 +44,7 @@ const FavoriteCard = ({ favorite, setRemove }: any) => {
             }
             setRemove((prev: boolean) => !prev);
 
-            toast.success('Favorite successfully removed');
+            toast.success(t("FAVORITE_REMOVED"));
             const { user: refetchUser } = await getUser({ token });
             setUser(refetchUser)
 
@@ -56,7 +58,7 @@ const FavoriteCard = ({ favorite, setRemove }: any) => {
             className={'cursor-pointer relative border border-accent p-[5px] bg-secondary rounded-[8px] text-white '}
         >
             <div className="h-[15rem] w-full relative rounded-t-[4px] overflow-hidden">
-                <ImageCarousel propertyId={_id} propertyImages={propertyImages} />
+                <ImageCarousel lng={lng} propertyId={_id} propertyImages={propertyImages} />
             </div>
             <div
                 className="p-2 "
@@ -77,7 +79,7 @@ const FavoriteCard = ({ favorite, setRemove }: any) => {
                     {/* Price and Ratings */}
                     <div className="flex justify-between mt-[10px]">
                         {/* Price */}
-                        <div className="text-accent font-semibold">€ {pricePerNight} night</div>
+                        <div className="text-accent font-semibold">€ {pricePerNight} {t("NIGHT")}</div>
                         <div className="flex items-center gap-1.5 border-b border-b-accent">
                             <div className="">
                                 {/* <Image src={StartIcon} height={14} width={14} alt="img" /> */}
@@ -95,12 +97,12 @@ const FavoriteCard = ({ favorite, setRemove }: any) => {
                     <div className={`flex gap-3 mt-4 ${favoritesButton.favoritesButton}`}>
 
                         {/* View Details Button */}
-                        <button onClick={() => router.push(`/property-details/${_id}`)} className='hover:bg-green-500  border border-green-500'>View Details</button>
+                        <button onClick={() => router.push(`/${lng}/property-details/${_id}`)} className='hover:bg-green-500  border border-green-500'>{t("VIEW_DETAILS")}</button>
 
                         {/* Remove Button */}
                         <button
                             onClick={handleRemove}
-                            className='hover:bg-[#d33] border border-red-500'>Remove</button>
+                            className='hover:bg-[#d33] border border-red-500'>{t("REMOVE")}</button>
                     </div>
                 </div>
             </div>

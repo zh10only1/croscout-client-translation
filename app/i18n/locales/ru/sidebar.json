@@ -1,0 +1,19 @@
+{
+    "PAGES": "Страницы",
+    "MY_BOOKINGS": "Мои Бронирования",
+    "TRANSACTIONS": "Транзакции",
+    "FAVORITES": "Избранное",
+    "FEEDBACK": "Отзывы",
+    "ANALYTICS": "Аналитика",
+    "REVENUE": "Доход",
+    "USER": "Пользователь",
+    "PROFILE_SETTINGS": "Настройки Профиля",
+    "DASHBOARD": "Панель Управления",
+    "ADD_PROPERTY": "Добавить Недвижимость",
+    "MANAGE_PROPERTIES": "Управление Недвижимостью",
+    "CUSTOMER_BOOKINGS": "Бронирования Клиентов",
+    "USERS": "Пользователи",
+    "AGENTS": "Агенты",
+    "ALL_BOOKINGS": "Все Бронирования",
+    "ALL_PROPERTIES": "Все Недвижимости"
+}

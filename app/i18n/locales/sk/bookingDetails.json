@@ -1,0 +1,20 @@
+{
+    "RESERVATION_DETAILS": "Podrobnosti rezervácie",
+    "BOOKING_STATUS": "Stav rezervácie",
+    "PROPERTY_IMAGE": "Nehnuteľnosť",
+    "NO_IMAGE_AVAILABLE": "Obrázok nie je k dispozícii.",
+    "GUEST_NAME": "Meno hosťa",
+    "OWNER_NAME": "Meno vlastníka",
+    "CONFIRMATION_STATUS": "Stav potvrdenia",
+    "CHECK_IN": "Registrácia",
+    "CHECK_OUT": "Odhlásenie",
+    "LOCATION": "Poloha",
+    "ROOM_TYPE": "Typ izby",
+    "NUMBER_OF_GUESTS": "Počet hostí",
+    "GUESTS": "Hostia",
+    "TOTAL_PRICE": "Celková cena",
+    "SPECIAL_REQUESTS": "Špeciálne požiadavky",
+    "NO_SMOKING_ROOM": "Nefajčiarska izba",
+    "DESCRIPTION": "Popis"
+  }
+  

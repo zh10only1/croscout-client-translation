@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Wachtwoord vergeten",
+    "LOGIN": "Inloggen",
+    "YOUR_EMAIL": "Jouw e-mail",
+    "EMAIL": "E-mail",
+    "ENTER_YOUR_EMAIL": "Voer je e-mail in",
+    "PASSWORD": "Wachtwoord",
+    "ENTER_YOUR_PASSWORD": "Voer je wachtwoord in",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Inloggen met e-mail en wachtwoord?",
+    "SEND_RESET_LINK": "Verzend resetlink",
+    "DONT_HAVE_AN_ACCOUNT": "Heb je geen account?",
+    "SIGN_UP": "Aanmelden"
+}

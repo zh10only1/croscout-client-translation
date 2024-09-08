@@ -1,5 +1,9 @@
 {
     "LOGIN": "Prijava",
     "SIGNUP": "Registracija",
-    "CROSCOUT_YOUR_HOME": "Croscout vaš dom"
+    "CROSCOUT_YOUR_HOME": "Croscout vaš dom",
+    "DASHBOARD": "Nadzorna ploča",
+  "LOGOUT": "Odjavi se",
+    "LOGOUT_SUCCESSFUL": "Odjava uspješna",
+  "EMAIL_NOT_VERIFIED": "Vaš email nije verificiran! Molimo potvrdite svoj email."
 }

@@ -1,0 +1,24 @@
+{
+    "NO_BOOKINGS_FOUND": "Nema rezervacija. Molimo rezervirajte objekt.",
+    "ARE_YOU_SURE": "Jeste li sigurni?",
+    "THIS_BOOKING_WILL_BE_REMOVED_FROM_EVERYWHERE": "Ova rezervacija bit će uklonjena sa svih mjesta!",
+    "CLOSE": "Zatvori",
+    "YES_CANCEL_IT": "Da, otkaži!",
+    "THIS_BOOKING_STATUS_WILL_BE_CHANGED_TO_CONFIRMED": "Status ove rezervacije bit će promijenjen u potvrđen!",
+    "YES_CONFIRM_IT": "Da, potvrdi!",
+    "CONFIRMED": "Potvrđeno",
+    "PENDING": "Na čekanju",
+    "CANCEL": "Otkaži",
+    "CONFIRM": "Potvrdi",
+    "NAME": "Ime",
+    "STATUS": "Status",
+    "LAST_BOOKING": "Posljednja rezervacija",
+    "CHECK_IN_CHECK_OUT": "Prijava - Odjava",
+    "TOTAL_PRICE": "Ukupna cijena",
+    "BOOKING_DETAILS": "Detalji rezervacije",
+    "PAYMENT_DETAILS": "Detalji plačanja",
+    "FEEDBACK": "Povratne informacije",
+    "pending": "na čekanju",
+    "confirmed": "potvrđeno"
+  }
+  

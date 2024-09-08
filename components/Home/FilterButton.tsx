@@ -12,15 +12,14 @@ import { MdEvent } from "react-icons/md";
 import { FaSortAlphaDown } from "react-icons/fa";
 import { setSearchQuery } from "@/utils/searchQuery";
 import { GiSettingsKnobs } from "react-icons/gi";
+import { useTranslation } from "@/app/i18n/client";
 
 
-
-
-
-const FilterButton = () => {
+const FilterButton = ({lng} : {lng: string}) => {
     const { taxToggle, setTaxToggle, filterToggle, setFilterToggle } = useToggleContext();
     const { isFilterSection, setIsFilterSection, currentFilter, setCurrentFilter } = useSearchContext();
 
+    
     useEffect(() => {
         if (isFilterSection) {
             goToSpecificSection('filter-section');
@@ -29,7 +28,9 @@ const FilterButton = () => {
             setIsFilterSection(false);
         }, 2000);
     }, [isFilterSection]);
-
+    
+    const { t } = useTranslation(lng, 'home');
+    
     // function for remove search query
     const removeSearchQuery = (current: string) => {
         setCurrentFilter(current);
@@ -130,7 +131,7 @@ const FilterButton = () => {
                     <button className="border px-[0.875rem] rounded-[3px] py-1 lg:py-3" onClick={() => setFilterToggle(pre => !pre)}>
                         <div className="flex items-center gap-2 text-white">
                             <GiSettingsKnobs className="rotate-90 text-xl" />
-                            <div className="">Filters</div>
+                            <div className=""> {t("HOME_FILTER_BUTTON")}</div>
                         </div>
                     </button>
 
@@ -138,33 +139,33 @@ const FilterButton = () => {
                         <button
                             className={currentFilter === "newest" ? filterButtonStyles.activeButton : ""}
                             onClick={() => handleNewestFilter()}>
-                            Newest <MdEvent className="inline" />
+                            {t("HOME_FILTER_NEWEST")} <MdEvent className="inline" />
                         </button>
                         <button
                             className={currentFilter === "alphabateASC" ? filterButtonStyles.activeButton : ""}
                             onClick={() => handleAphabaticFilter("asc")}>
-                            Sort A to Z <FaSortAlphaDown className="inline" />
+                            {t("HOME_FILTER_SORT_A_TO_Z")} <FaSortAlphaDown className="inline" />
                         </button>
                         <button
                             className={currentFilter === "alphabateDESC" ? filterButtonStyles.activeButton : ""}
                             onClick={() => handleAphabaticFilter("desc")}>
-                            Sort Z to A <FaSortAlphaDownAlt className="inline" />
+                            {t("HOME_FILTER_SORT_Z_TO_A")} <FaSortAlphaDownAlt className="inline" />
                         </button>
                         <button
                             className={currentFilter === "priceASC" ? filterButtonStyles.activeButton : ""}
                             onClick={() => handlePriceFilter("asc")}>
-                            Price: Low To High <FaArrowUp className="inline" />
+                            {t("HOME_FILTER_PRICE_L_TO_H")} <FaArrowUp className="inline" />
                         </button>
                         <button
                             className={currentFilter === "priceDESC" ? filterButtonStyles.activeButton : ""}
                             onClick={() => handlePriceFilter("desc")}>
-                            Price: High To Low <FaArrowDown className="inline" />
+                            {t("HOME_FILTER_PRICE_H_TO_L")} <FaArrowDown className="inline" />
                         </button>
                     </div>
 
-                    <div className="border px-[0.875rem] rounded-[3px] py-1 lg:py-3">
+                    {/* <div className="border px-[0.875rem] rounded-[3px] py-1 lg:py-3">
                         <div className="flex items-center gap-2 relative text-white">
-                            <div className="">Display total before taxes</div>
+                            <div className="">{t("HOME_FILTER_TAXES_TOGGLE")}</div>
                             <button
                                 onClick={() => setTaxToggle((prev) => !prev)}
                                 className={`relative w-11 h-6  rounded-full inline-flex items-center cursor-pointer duration-100 ${taxToggle ? 'bg-accent' : 'bg-gray-200'}`}
@@ -175,7 +176,7 @@ const FilterButton = () => {
                                 ></div>
                             </button>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>

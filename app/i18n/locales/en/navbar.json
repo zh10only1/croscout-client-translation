@@ -1,5 +1,9 @@
 {
-    "LOGIN": "Login",
-    "SIGNUP": "Signup",
-    "CROSCOUT_YOUR_HOME": "Croscout Your Home"
+  "LOGIN": "Login",
+  "SIGNUP": "Signup",
+  "CROSCOUT_YOUR_HOME": "Croscout Your Home",
+  "DASHBOARD": "Dashboard",
+  "LOGOUT": "Logout",
+  "LOGOUT_SUCCESSFUL": "Logout successful",
+  "EMAIL_NOT_VERIFIED": "Your email is not verified! Please verify your email."
 }

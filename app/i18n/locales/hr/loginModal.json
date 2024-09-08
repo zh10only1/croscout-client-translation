@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Zaboravili ste lozinku",
+    "LOGIN": "Prijavite se",
+    "YOUR_EMAIL": "Vaš Email",
+    "EMAIL": "Email",
+    "ENTER_YOUR_EMAIL": "Unesite svoj email",
+    "PASSWORD": "Lozinka",
+    "ENTER_YOUR_PASSWORD": "Unesite svoju lozinku",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Prijaviti se s emailom i lozinkom?",
+    "SEND_RESET_LINK": "Pošaljite vezu za resetiranje",
+    "DONT_HAVE_AN_ACCOUNT": "Nemate račun?",
+    "SIGN_UP": "Registrirajte se"
+}

@@ -1,0 +1,16 @@
+{
+    "PAYMENT_DETAILS_HEADER": "Detalji Plačanja",
+    "PAYMENT_DETAILS_DESCRIPTION": "Unesite svoje podatke za plačanje kako biste ih poslali kupcu.",
+    "PAYPAL_EMAIL": "PayPal E-mail",
+    "PAYPAL_EMAIL_PLACEHOLDER": "Unesite svoju PayPal e-mail adresu",
+    "PAYPAL_EMAIL_REQUIRED": "E-mail je obavezan!",
+    "DESCRIPTION": "Opis",
+    "DESCRIPTION_PLACEHOLDER": "Upute za plačanje",
+    "DESCRIPTION_REQUIRED": "Opis je obavezan!",
+    "TRANSACTION_ID_FROM_USER": "ID Transakcije od Korisnika",
+    "TRANSACTION_ID_PLACEHOLDER": "Unesite svoj PayPal ID transakcije",
+    "PAYMENT_REQUEST_SENT": "Zahtjev za plačanje već poslan",
+    "SEND_PAYMENT_REQUEST": "Pošaljite zahtjev za plačanje s detaljima",
+    "LOGIN_FIRST": "Molimo prijavite se prvo"
+  }
+  

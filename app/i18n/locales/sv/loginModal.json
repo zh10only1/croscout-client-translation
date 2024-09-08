@@ -1,0 +1,13 @@
+{
+    "FORGOT_PASSWORD": "Glömt lösenord",
+    "LOGIN": "Logga in",
+    "YOUR_EMAIL": "Din e-post",
+    "EMAIL": "E-post",
+    "ENTER_YOUR_EMAIL": "Skriv in din e-post",
+    "PASSWORD": "Lösenord",
+    "ENTER_YOUR_PASSWORD": "Skriv in ditt lösenord",
+    "LOGIN_WITH_EMAIL_AND_PASSWORD": "Logga in med e-post och lösenord?",
+    "SEND_RESET_LINK": "Skicka återställningslänk",
+    "DONT_HAVE_AN_ACCOUNT": "Har du inget konto?",
+    "SIGN_UP": "Registrera dig"
+}

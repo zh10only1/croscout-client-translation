@@ -1,5 +1,9 @@
 {
     "LOGIN": "Войти",
     "SIGNUP": "Регистрация",
-    "CROSCOUT_YOUR_HOME": "Croscout Ваш Дом"
+    "CROSCOUT_YOUR_HOME": "Croscout Ваш Дом",
+    "DASHBOARD": "Панель управления",
+  "LOGOUT": "Выйти",
+    "LOGOUT_SUCCESSFUL": "Вы успешно вышли из системы",
+  "EMAIL_NOT_VERIFIED": "Ваш email не подтвержден! Пожалуйста, подтвердите свой email."
 }

@@ -1,0 +1,22 @@
+{
+    "NO_USERS_REGISTERED": "Nema registriranih korisnika.",
+    "ALL_USERS": "Svi korisnici:",
+    "ARE_YOU_SURE": "Jeste li sigurni?",
+    "YOU_WONT_BE_ABLE_TO_REVERT_THIS": "Nećete moći poništiti ovo!",
+    "YES_DELETE_IT": "Da, obriši!",
+    "USER_DELETED_SUCCESSFULLY": "Korisnik uspješno obrisan",
+    "FAILED_TO_DELETE_USER": "Neuspješno brisanje korisnika",
+    "ERROR_OCCURED_WHILE_DELETING_USER": "Došlo je do pogreške prilikom brisanja korisnika",
+    "NUMBER": "#",
+    "NAME": "Ime",
+    "EMAIL": "E-mail",
+    "TAX_ID": "Porezni ID",
+    "USER_ID": "ID korisnika",
+    "JOINED_AT": "Pridružen",
+    "DETAILS": "Detalji",
+    "ACTIONS": "Akcije",
+    "AGENT_DETAILS": "Detalji agenta",
+    "USER_DETAILS": "Detalji korisnika",
+    "DELETE": "Obriši"
+  }
+  

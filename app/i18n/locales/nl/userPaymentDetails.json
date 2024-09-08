@@ -1,0 +1,14 @@
+{
+    "TOKEN_REQUIRED": "Token is vereist om favorieten op te halen",
+    "EMAIL": "E-mail",
+    "PAYMENT_INFORMATION": "Betalingsinformatie",
+    "PAYMENT_CONFIRMATION": "Betalingsbevestiging",
+    "ENTER_TRANSACTION_ID_VERIFICATION": "Voer uw transactie-ID in voor verificatie",
+    "TRANSACTION_ID": "Transactie-ID",
+    "ENTER_TRANSACTION_ID": "Voer uw transactie-ID in",
+    "TRANSACTION_ID_REQUIRED": "Transactie-ID is verplicht!",
+    "PENDING_REQUEST": "U heeft een uitstaande boekingsaanvraag voor",
+    "AGENT_REVIEWING": "Let op dat onze agent uw aanvraag momenteel beoordeelt. Wacht alstublieft op verdere bevestiging.",
+      "SUBMIT": "Verzenden"
+  }
+  

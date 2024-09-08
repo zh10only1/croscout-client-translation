@@ -1,0 +1,16 @@
+{
+    "PAYMENT_DETAILS_HEADER": "Betalingsgegevens",
+    "PAYMENT_DETAILS_DESCRIPTION": "Voer uw betalingsinformatie in om naar de klant te sturen.",
+    "PAYPAL_EMAIL": "PayPal E-mail",
+    "PAYPAL_EMAIL_PLACEHOLDER": "Voer uw PayPal e-mail in",
+    "PAYPAL_EMAIL_REQUIRED": "E-mail is verplicht!",
+    "DESCRIPTION": "Beschrijving",
+    "DESCRIPTION_PLACEHOLDER": "Betalingsinstructie",
+    "DESCRIPTION_REQUIRED": "Beschrijving is verplicht!",
+    "TRANSACTION_ID_FROM_USER": "Transactie-ID van gebruiker",
+    "TRANSACTION_ID_PLACEHOLDER": "Voer uw PayPal transactie-ID in",
+    "PAYMENT_REQUEST_SENT": "Betalingsverzoek is al verzonden",
+    "SEND_PAYMENT_REQUEST": "Verstuur betalingsverzoek met betalingsgegevens",
+    "LOGIN_FIRST": "Log eerst in"
+  }
+  
