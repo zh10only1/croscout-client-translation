@@ -47,7 +47,7 @@ const Favorites = ({
   useEffect(() => {
     const fetchBookings = async () => {
       if (!user?._id) {
-        console.log("User ID is undefined, skipping fetch");
+        // console.log("User ID is undefined, skipping fetch");
         return;
       }
       try {
@@ -60,7 +60,7 @@ const Favorites = ({
                 translationResponse.success ? setFavorites(translationResponse.translatedProperties || [])
                                             : setFavorites(data?.favoritList || []);
         } else {
-          console.log(data);
+          // console.log(data);
         }
         // console.log('Setting isLoading to false');
         setLoading(false);

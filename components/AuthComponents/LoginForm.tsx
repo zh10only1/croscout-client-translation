@@ -102,7 +102,7 @@ const LoginForm = ({ lng }: { lng: string }) => {
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
-      console.log(error);
+      // console.log(error);
     }
   };
 

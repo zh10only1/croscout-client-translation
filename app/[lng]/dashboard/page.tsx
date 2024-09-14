@@ -62,7 +62,7 @@ const Dashboard = ({ params: { lng } }: { params: { lng: string } }) => {
       try {
         setLoading(true);
         const data = await getDashboardStats(user._id);
-        console.log(data.stats);
+        // console.log(data.stats);
         const bookingsToTranslate = user?.role === "admin" ? data.stats?.latestBookings : data.stats?.latestAgentBookings;
         const translationResponse = await translateBookings(
           bookingsToTranslate,

@@ -51,7 +51,7 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
 
   const removeImage = (index: number) => {
     setImagesArr((prevImages) => prevImages.filter((_, i) => i !== index));
-    console.log(imagesArr);
+    // console.log(imagesArr);
   };
 
   // Define onSubmit function to handle form submission

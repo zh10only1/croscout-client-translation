@@ -23,7 +23,7 @@ const page = () => {
     const searchParams = useSearchParams()
 
     const property_id = searchParams.get("property_id")
-    console.log(property_id);
+    // console.log(property_id);
 
 
     const { register, handleSubmit, watch, reset, setValue, formState: { errors } } = useForm<Inputs>();
@@ -42,7 +42,7 @@ const page = () => {
 
     // Function to handle submit button click and log the selected rating
     const onSubmit = async (data: any) => {
-        console.log(data);
+        // console.log(data);
 
         const token = getStoredToken();
         if (!token) throw new Error('Token is required for get Favorites');

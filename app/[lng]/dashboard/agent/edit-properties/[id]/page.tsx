@@ -75,7 +75,7 @@ const EditProperties = ({
   const router = useRouter();
   const removeImage = (index: number) => {
     setImagesArr((prevImages) => prevImages.filter((_, i) => i !== index));
-    console.log(imagesArr);
+    // console.log(imagesArr);
   };
 
   const { id } = useParams();

@@ -45,7 +45,7 @@ const Navbar = ({ lng }: { lng: string }) => {
       router.push("/");
       toast.success(t("LOGOUT_SUCCESSFUL"));
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 
