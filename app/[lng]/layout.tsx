@@ -66,7 +66,7 @@ export default function RootLayout({
                   <LocationModal lng={lng} />
                   <CalenderModal lng={lng} />
                   <GuestModal lng={lng} />
-                  <LanguageModal />
+                  <LanguageModal lng={lng} />
 
                   <div className="flex min-h-screen flex-col ">
                     <Navbar lng={lng} />

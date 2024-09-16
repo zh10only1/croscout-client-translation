@@ -24,8 +24,8 @@ const TransactionPage = ({
   const { t } = useTranslation(lng, "transactions");
   const [transaction, setTransaction] = useState<TransactionData | null>(null);
   const { user } = useAuthContext();
-  console.log(user?._id);
-  console.log(transaction);
+  // console.log(user?._id);
+  // console.log(transaction);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const TransactionPage = ({
         setIsLoading(true);
         if (user && user._id) {
           const data = await getTransactionById(user?._id);
-          console.log(data);
+          // console.log(data);
           setTransaction(data);
         } else {
           // Handle the case where user or user._id is undefined
@@ -42,7 +42,7 @@ const TransactionPage = ({
         }
         setIsLoading(false);
       } catch (error) {
-        console.log("Error occurred, setting isLoading to false", error);
+        // console.log("Error occurred, setting isLoading to false", error);
         setIsLoading(false);
       }
     };

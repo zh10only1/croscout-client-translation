@@ -14,7 +14,7 @@ interface TransactionData {
 const TransactionPage = ({ params: { lng } }: { params: { lng: string } }) => {
     const { t } = useTranslation(lng, "transactions");
     const [transaction, setTransaction] = useState<TransactionData | null>(null);
-    console.log(transaction);
+    // console.log(transaction);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -23,13 +23,13 @@ const TransactionPage = ({ params: { lng } }: { params: { lng: string } }) => {
                 // console.log('Setting isLoading to true');
                 setIsLoading(true);
                 const data = await getAllTrasaction();
-                console.log(data);
+                // console.log(data);
                 setTransaction(data);
 
                 // console.log('Setting isLoading to false');
                 setIsLoading(false);
             } catch (error) {
-                console.log('Error occurred, setting isLoading to false', error);
+                // console.log('Error occurred, setting isLoading to false', error);
                 setIsLoading(false);
             }
         };

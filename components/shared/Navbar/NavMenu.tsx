@@ -25,7 +25,7 @@ const NavMenu = ({ lng }: { lng: string }) => {
       className={`hidden md:flex items-center font-bold gap-7 text-[#f5f5f5] ${navbarStyles.navMenu}`}
     >
       <li>
-        <Link href="#">{t('CROSCOUT_YOUR_HOME')}</Link>
+        <Link href="#">{t("CROSCOUT_YOUR_HOME")}</Link>
       </li>
       <li>
         <Link
@@ -36,7 +36,7 @@ const NavMenu = ({ lng }: { lng: string }) => {
           <span>
             <VscGlobe />{" "}
           </span>
-          <span>{selectedLanguage ? selectedLanguage : "English"}</span>
+          <span>{selectedLanguage ? t(selectedLanguage) : t("German")}</span>
         </Link>
       </li>
       <li>
@@ -62,5 +62,7 @@ const NavMenu = ({ lng }: { lng: string }) => {
     </ul>
   );
 };
+
+
 
 export default NavMenu;

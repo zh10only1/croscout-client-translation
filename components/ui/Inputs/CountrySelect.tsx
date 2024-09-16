@@ -33,7 +33,7 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, isAddPro
                 // onMenuClose={handleMenuClose}
 
                 onChange={(value) => {
-                    console.log("Selected value:", value);
+                    // console.log("Selected value:", value);
                     onChange(value as CountrySelectValue);
                 }}
                 formatOptionLabel={(option: any) => (

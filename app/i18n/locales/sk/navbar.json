@@ -5,5 +5,15 @@
       "DASHBOARD": "Nástrojová lišta",
   "LOGOUT": "Odhlásiť sa",
     "LOGOUT_SUCCESSFUL": "Odhlásenie úspešné",
-  "EMAIL_NOT_VERIFIED": "Váš email nie je overený! Prosím, overte svoj email."
+  "EMAIL_NOT_VERIFIED": "Váš email nie je overený! Prosím, overte svoj email.",
+  "German": "Nemčina",
+  "Croatian": "Chorvátčina",
+  "English": "Angličtina",
+  "Polish": "Poľština",
+  "Czech": "Čeština",
+  "Russian": "Ruština",
+  "Swedish": "Švédčina",
+  "Norway": "Nórčina",
+  "Slovak": "Slovenčina",
+  "Dutch": "Holandčina"
 }

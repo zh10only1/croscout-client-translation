@@ -31,7 +31,7 @@ export default function ResetPassword() {
             setIsLoading(true);
             const newPassword = passwordRef.current?.value;
             const dbResponse = await resetPassword({ token: token as string, newPassword });
-            console.log(dbResponse)
+            // console.log(dbResponse)
             if (dbResponse.success) {
                 toast.success('Password reset successful. Now you can login with your new updated password', { duration: 5000 });
                 setIsLoading(false);
@@ -45,7 +45,7 @@ export default function ResetPassword() {
             setIsLoading(false);
         } catch (error) {
             setIsLoading(false);
-            console.log(error);
+            // console.log(error);
         }
     }
     return (

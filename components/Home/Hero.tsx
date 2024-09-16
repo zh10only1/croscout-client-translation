@@ -1,14 +1,16 @@
-import HeroSearchForm from "./HeroSearchForm";
-import { useTranslation } from "@/app/i18n";
+"use client"
 
-const Hero = async ({lng} : {lng: string;}) => {
-    const { t } = await useTranslation(lng, 'home');
+import HeroSearchForm from "./HeroSearchForm";
+import { useTranslation } from "@/app/i18n/client";
+
+const Hero =  ({lng} : {lng: string;}) => {
+    const { t } = useTranslation(lng, 'home');
 
     return (
         <section
             className=" bg-white bg-cover bg-no-repeat pt-10 lg:pt-[8.125rem] lg:h-[35.56rem] pb-20 lg:pb-0 px-2 lg:px-0"
             style={{
-                backgroundImage: `url(/images/hero-bg.png)`
+                backgroundImage: `url(/images/hero-bg-1.webp)`
             }}
         >
             <h1

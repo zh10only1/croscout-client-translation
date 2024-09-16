@@ -26,7 +26,7 @@ const page = ({
     const fetchBookings = async () => {
       // If the user ID is not available, log a message and skip fetching
       if (!userId) {
-        console.log("User ID is undefined, skipping fetch");
+        // console.log("User ID is undefined, skipping fetch");
         return;
       }
       try {

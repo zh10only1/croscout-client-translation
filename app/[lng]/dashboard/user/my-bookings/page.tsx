@@ -25,7 +25,7 @@ const page = ({
   useEffect(() => {
     const fetchBookings = async () => {
       if (!userId) {
-        console.log("User ID is undefined, skipping fetch");
+        // console.log("User ID is undefined, skipping fetch");
         return;
       }
       try {

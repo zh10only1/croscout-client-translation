@@ -3,7 +3,7 @@
 import LoginForm from "@/components/AuthComponents/LoginForm";
 import { useModalContext } from "@/providers/ModalProvider";
 import { IoIosCloseCircle } from "react-icons/io";
-import CountrySelect, { CountrySelectValue } from "../Inputs/CountrySelect";
+// import CountrySelect, { CountrySelectValue } from "../Inputs/CountrySelect";
 import { useMemo, useState } from "react";
 import { useSearchContext } from "@/providers/SearchProvider";
 import dynamic from "next/dynamic";
@@ -12,8 +12,8 @@ import { useTranslation } from "@/app/i18n/client";
 const LocationModal = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng, "home");
   const { locationModal, setLocationModal } = useModalContext();
-  const { location, setLocation, locationObject, setLocationObject } =
-    useSearchContext();
+  const { location, setLocation, locationObject, setLocationObject } = useSearchContext();
+  const CountrySelect = dynamic(() => import('../Inputs/CountrySelect'), { ssr: false });
 
   const Map = useMemo(
     () =>

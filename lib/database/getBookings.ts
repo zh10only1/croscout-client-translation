@@ -16,7 +16,7 @@ export const getAllBookings = async () => {
 }
 
 export const translateBookings = async (bookings: any[], lng: string, statusOnly: boolean = false) => {
-    console.log(bookings);
+    // console.log(bookings);
     try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/bookings/translateBookings`, {
             method: 'POST',

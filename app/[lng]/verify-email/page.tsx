@@ -30,7 +30,7 @@ const page = () => {
                     const dbResponse = await verifyEmail({ token });
                     if (dbResponse?.success) {
                         setVerifyMessage(dbResponse?.message);
-                        console.log(dbResponse);
+                        // console.log(dbResponse);
                         const userToken = getStoredToken();
                         if (!userToken) throw new Error("token is missing");
                         const { user } = await getUser({ token: userToken });
@@ -63,7 +63,7 @@ const page = () => {
         return <Loading />
     }
 
-    console.log(verifyMessage);
+    // console.log(verifyMessage);
 
 
     return (

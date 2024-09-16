@@ -31,7 +31,7 @@ export default function ImageUploader({ setImagesArr, defaultImages, lng }: Imag
 
             //* Extract the image URL from the result
             const imageUrl = result.info.secure_url;
-            console.log('Uploaded image URL:', imageUrl);
+            // console.log('Uploaded image URL:', imageUrl);
 
             //* Update the images array using setImagesArr
             setImagesArr((prevImagesArr) => [...prevImagesArr, imageUrl]);

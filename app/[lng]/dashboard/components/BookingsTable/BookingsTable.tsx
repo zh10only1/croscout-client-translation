@@ -95,7 +95,7 @@ const BookingsTable: React.FC<IAllBookingsTable> = ({
             Swal.close();
           } else {
             toast.error(dbResponse.error, { duration: 5000 });
-            console.log(dbResponse.error);
+            // console.log(dbResponse.error);
           }
         }
         //* Resetting dropdown value
@@ -130,7 +130,7 @@ const BookingsTable: React.FC<IAllBookingsTable> = ({
             setBookings(bookingsData.bookings);
             Swal.close();
           } else {
-            console.log(dbResponse.error);
+            // console.log(dbResponse.error);
             const optionSelect = document.getElementById(
               id
             ) as HTMLInputElement;

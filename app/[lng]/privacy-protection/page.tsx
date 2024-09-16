@@ -1,5 +1,4 @@
 "use server";
-import Main from "@/app/[lng]/Main";
 import { useTranslation } from "@/app/i18n";
 
 export default async function ({

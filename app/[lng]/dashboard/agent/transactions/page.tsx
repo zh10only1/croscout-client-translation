@@ -34,7 +34,7 @@ const TransactionPage = ({ params: { lng } }: { params: { lng: string } }) => {
 
                     //* Fetch transaction data by user ID
                     const data = await getTransactionById(user?._id);
-                    console.log(data);
+                    // console.log(data);
                     setTransaction(data);
                 } else {
                     //! Handle the case where user or user._id is undefined
@@ -42,7 +42,7 @@ const TransactionPage = ({ params: { lng } }: { params: { lng: string } }) => {
                 }
                 setIsLoading(false);
             } catch (error) {
-                console.log('Error occurred, setting isLoading to false', error);
+                // console.log('Error occurred, setting isLoading to false', error);
                 setIsLoading(false);
             }
         };

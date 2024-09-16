@@ -6,19 +6,21 @@ import { useLocalizationContext } from "@/providers/LocalizationContext";
 import { useModalContext } from "@/providers/ModalProvider";
 import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
+import { useTranslation } from "@/app/i18n/client";
 
-const LanguageModal = () => {
+const LanguageModal = ({lng}: {lng : string}) => {
     const router = useRouter();
     const { languageModal, setLanguageModal } = useModalContext();
     const { setSelectedLanguage, selectedLanguage } = useLocalizationContext();
     const [language, setLanguage] = useState('');
+    const { t } = useTranslation(lng, "languageModal");
 
     const updateLanguage = () => {
-        setLanguageModal(false);
         setSelectedLanguage(language);
-        const lng = supportedLngs[language];
-        const basePath = `/${lng}`;
+        setLanguageModal(false);
+        const updatedLng = supportedLngs[language];
+        const basePath = `/${updatedLng}`;
         const currentPathname = typeof window !== 'undefined' ? window.location.pathname : '/';
         const newPathname = currentPathname.replace(/^\/[a-z]{2}/, basePath);
         router.push(newPathname);
@@ -45,7 +47,7 @@ const LanguageModal = () => {
                                 onClick={() => {
                                     setLanguage(lang);
                                 }}
-                            >{lang}</button>
+                            >{t(lang)}</button>
                         ))
                     }
                 </div>

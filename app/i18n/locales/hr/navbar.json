@@ -1,9 +1,19 @@
 {
-    "LOGIN": "Prijava",
-    "SIGNUP": "Registracija",
-    "CROSCOUT_YOUR_HOME": "Croscout vaš dom",
-    "DASHBOARD": "Nadzorna ploča",
+  "LOGIN": "Prijava",
+  "SIGNUP": "Registracija",
+  "CROSCOUT_YOUR_HOME": "Croscout vaš dom",
+  "DASHBOARD": "Nadzorna ploča",
   "LOGOUT": "Odjavi se",
-    "LOGOUT_SUCCESSFUL": "Odjava uspješna",
-  "EMAIL_NOT_VERIFIED": "Vaš email nije verificiran! Molimo potvrdite svoj email."
+  "LOGOUT_SUCCESSFUL": "Odjava uspješna",
+  "EMAIL_NOT_VERIFIED": "Vaš email nije verificiran! Molimo potvrdite svoj email.",
+  "German": "Njemački",
+  "Croatian": "Hrvatski",
+  "English": "Engleski",
+  "Polish": "Poljski",
+  "Czech": "Češki",
+  "Russian": "Ruski",
+  "Swedish": "Švedski",
+  "Norway": "Norveški",
+  "Slovak": "Slovački",
+  "Dutch": "Nizozemski"
 }

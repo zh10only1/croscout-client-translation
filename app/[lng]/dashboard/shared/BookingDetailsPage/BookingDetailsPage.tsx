@@ -41,7 +41,7 @@ export interface IBooking {
 
 const BookingDetailsPage = () => {
     const [bookingDetails, setBookingDetails] = useState<IPropertyDetailsData>();
-    console.log(bookingDetails);
+    // console.log(bookingDetails);
     const { id, lng } = useParams();
 
     const router = useRouter();

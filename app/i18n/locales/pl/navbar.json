@@ -1,9 +1,19 @@
 {
-    "LOGIN": "Zaloguj się",
-    "SIGNUP": "Zarejestruj się",
-    "CROSCOUT_YOUR_HOME": "Croscout Twój dom",
-      "DASHBOARD": "Panel sterowania",
+  "LOGIN": "Zaloguj się",
+  "SIGNUP": "Zarejestruj się",
+  "CROSCOUT_YOUR_HOME": "Croscout Twój dom",
+  "DASHBOARD": "Panel sterowania",
   "LOGOUT": "Wyloguj się",
-    "LOGOUT_SUCCESSFUL": "Wylogowano pomyślnie",
-  "EMAIL_NOT_VERIFIED": "Twój email nie jest zweryfikowany! Proszę zweryfikować swój email."
+  "LOGOUT_SUCCESSFUL": "Wylogowano pomyślnie",
+  "EMAIL_NOT_VERIFIED": "Twój email nie jest zweryfikowany! Proszę zweryfikować swój email.",
+  "German": "Niemiecki",
+  "Croatian": "Chorwacki",
+  "English": "Angielski",
+  "Polish": "Polski",
+  "Czech": "Czeski",
+  "Russian": "Rosyjski",
+  "Swedish": "Szwedzki",
+  "Norway": "Norweski",
+  "Slovak": "Słowacki",
+  "Dutch": "Holenderski"
 }

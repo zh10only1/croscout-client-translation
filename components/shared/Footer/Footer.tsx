@@ -102,7 +102,7 @@ const Footer = ({ lng }: { lng: string }) => {
         <div className="wrapper">
           <div className="flex flex-col md:flex-row justify-between text-white py-5">
             <div className="text-lg font-medium">
-              © {currentYear} Croscout, Inc.
+              © {currentYear} Croscout
             </div>
             <div className="flex gap-4 md:gap-[32px] text-sm md:text-lg text-[#CBC9C9] font-medium">
               <Link href={`/${lng}/faq`}>{t("FAQ")}</Link>
