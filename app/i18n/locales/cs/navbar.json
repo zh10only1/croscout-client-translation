@@ -5,5 +5,15 @@
       "DASHBOARD": "Dashboard",
   "LOGOUT": "Odhlásit se",
     "LOGOUT_SUCCESSFUL": "Odhlášení bylo úspěšné",
-  "EMAIL_NOT_VERIFIED": "Váš email není ověřen! Prosím, ověřte svůj email."
+  "EMAIL_NOT_VERIFIED": "Váš email není ověřen! Prosím, ověřte svůj email.",
+  "German": "Němčina",
+    "Croatian": "Chorvatština",
+    "English": "Angličtina",
+    "Polish": "Polština",
+    "Czech": "Čeština",
+    "Russian": "Ruština",
+    "Swedish": "Švédština",
+    "Norway": "Norština",
+    "Slovak": "Slovenština",
+    "Dutch": "Nizozemština"
 }

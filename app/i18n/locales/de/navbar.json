@@ -1,9 +1,19 @@
 {
-    "LOGIN": "Anmelden",
-    "SIGNUP": "Registrieren",
-    "CROSCOUT_YOUR_HOME": "Croscout Ihr Zuhause",
-      "DASHBOARD": "Dashboard",
+  "LOGIN": "Anmelden",
+  "SIGNUP": "Registrieren",
+  "CROSCOUT_YOUR_HOME": "Croscout Ihr Zuhause",
+  "DASHBOARD": "Dashboard",
   "LOGOUT": "Abmelden",
-    "LOGOUT_SUCCESSFUL": "Abmeldung erfolgreich",
-  "EMAIL_NOT_VERIFIED": "Ihre E-Mail ist nicht verifiziert! Bitte überprüfen Sie Ihre E-Mail."
+  "LOGOUT_SUCCESSFUL": "Abmeldung erfolgreich",
+  "EMAIL_NOT_VERIFIED": "Ihre E-Mail ist nicht verifiziert! Bitte überprüfen Sie Ihre E-Mail.",
+  "German": "Deutsch",
+  "Croatian": "Kroatisch",
+  "English": "Englisch",
+  "Polish": "Polnisch",
+  "Czech": "Tschechisch",
+  "Russian": "Russisch",
+  "Swedish": "Schwedisch",
+  "Norway": "Norwegisch",
+  "Slovak": "Slowakisch",
+  "Dutch": "Niederländisch"
 }

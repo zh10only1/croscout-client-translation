@@ -1,9 +1,19 @@
 {
-    "LOGIN": "Logga in",
-    "SIGNUP": "Registrera dig",
-    "CROSCOUT_YOUR_HOME": "Croscout ditt hem",
-      "DASHBOARD": "Instrumentpanel",
+  "LOGIN": "Logga in",
+  "SIGNUP": "Registrera dig",
+  "CROSCOUT_YOUR_HOME": "Croscout ditt hem",
+  "DASHBOARD": "Instrumentpanel",
   "LOGOUT": "Logga ut",
-    "LOGOUT_SUCCESSFUL": "Utloggning lyckades",
-  "EMAIL_NOT_VERIFIED": "Din e-post är inte verifierad! Vänligen verifiera din e-post."
+  "LOGOUT_SUCCESSFUL": "Utloggning lyckades",
+  "EMAIL_NOT_VERIFIED": "Din e-post är inte verifierad! Vänligen verifiera din e-post.",
+  "German": "Tyska",
+  "Croatian": "Kroatiska",
+  "English": "Engelska",
+  "Polish": "Polska",
+  "Czech": "Tjeckiska",
+  "Russian": "Ryska",
+  "Swedish": "Svenska",
+  "Norway": "Norska",
+  "Slovak": "Slovakiska",
+  "Dutch": "Holländska"
 }

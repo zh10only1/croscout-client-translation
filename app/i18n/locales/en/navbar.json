@@ -5,5 +5,15 @@
   "DASHBOARD": "Dashboard",
   "LOGOUT": "Logout",
   "LOGOUT_SUCCESSFUL": "Logout successful",
-  "EMAIL_NOT_VERIFIED": "Your email is not verified! Please verify your email."
+  "EMAIL_NOT_VERIFIED": "Your email is not verified! Please verify your email.",
+  "German": "German",
+  "Croatian": "Croatian",
+  "English": "English",
+  "Polish": "Polish",
+  "Czech": "Czech",
+  "Russian": "Russian",
+  "Swedish": "Swedish",
+  "Norway": "Norway",
+  "Slovak": "Slovak",
+  "Dutch": "Dutch"
 }

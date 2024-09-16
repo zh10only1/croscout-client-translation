@@ -1,9 +1,19 @@
 {
-    "LOGIN": "Inloggen",
-    "SIGNUP": "Aanmelden",
-    "CROSCOUT_YOUR_HOME": "Croscout Uw huis",
-      "DASHBOARD": "Dashboard",
+  "LOGIN": "Inloggen",
+  "SIGNUP": "Aanmelden",
+  "CROSCOUT_YOUR_HOME": "Croscout Uw huis",
+  "DASHBOARD": "Dashboard",
   "LOGOUT": "Uitloggen",
-    "LOGOUT_SUCCESSFUL": "Uitloggen succesvol",
-  "EMAIL_NOT_VERIFIED": "Je e-mail is niet geverifieerd! Verifieer je e-mail."
+  "LOGOUT_SUCCESSFUL": "Uitloggen succesvol",
+  "EMAIL_NOT_VERIFIED": "Je e-mail is niet geverifieerd! Verifieer je e-mail.",
+  "German": "Duits",
+  "Croatian": "Kroatisch",
+  "English": "Engels",
+  "Polish": "Pools",
+  "Czech": "Tsjechisch",
+  "Russian": "Russisch",
+  "Swedish": "Zweeds",
+  "Norway": "Noors",
+  "Slovak": "Slowaaks",
+  "Dutch": "Nederlands"
 }
