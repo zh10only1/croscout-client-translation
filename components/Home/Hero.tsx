@@ -1,8 +1,10 @@
-import HeroSearchForm from "./HeroSearchForm";
-import { useTranslation } from "@/app/i18n";
+"use client"
 
-const Hero = async ({lng} : {lng: string;}) => {
-    const { t } = await useTranslation(lng, 'home');
+import HeroSearchForm from "./HeroSearchForm";
+import { useTranslation } from "@/app/i18n/client";
+
+const Hero =  ({lng} : {lng: string;}) => {
+    const { t } = useTranslation(lng, 'home');
 
     return (
         <section
