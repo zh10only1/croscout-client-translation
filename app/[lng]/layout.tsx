@@ -22,10 +22,6 @@ import Main from "./Main";
 import { dir } from "i18next";
 import { languages } from "../i18n/settings";
 
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
-}
-
 const onest = Onest({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
