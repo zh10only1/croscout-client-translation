@@ -15,5 +15,8 @@
     "USERS": "Korisnici",
     "AGENTS": "Agenti",
     "ALL_BOOKINGS": "Sve Rezervacije",
-    "ALL_PROPERTIES": "Sve Nekretnine"
+    "ALL_PROPERTIES": "Sve Nekretnine",
+    "ROLE_USER": "Korisnik",
+    "ROLE_AGENT": "Agent",
+    "ROLE_ADMIN": "Administrator"
 }

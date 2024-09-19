@@ -225,7 +225,7 @@ export default function Sidebar({ lng }: { lng: string }) {
           />
           <div className="flex flex-col">
             <span>{user?.name}</span>
-            <span className="text-sm text-gray-300">{user?.role}</span>
+            <span className="text-sm text-gray-300">{role == 'admin' ? t("ROLE_ADMIN"): role == 'agent' ? t("ROLE_AGENT") : t("ROLE_USER")}</span>
           </div>
         </div>
 

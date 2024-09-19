@@ -15,5 +15,8 @@
     "USERS": "Používatelia",
     "AGENTS": "Agenti",
     "ALL_BOOKINGS": "Všetky Rezervácie",
-    "ALL_PROPERTIES": "Všetky Nehnuteľnosti"
+    "ALL_PROPERTIES": "Všetky Nehnuteľnosti",
+    "ROLE_USER": "Používateľ",
+    "ROLE_AGENT": "Agent",
+    "ROLE_ADMIN": "Administrátor"
 }

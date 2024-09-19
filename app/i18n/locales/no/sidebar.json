@@ -15,5 +15,8 @@
     "USERS": "Brukere",
     "AGENTS": "Agenter",
     "ALL_BOOKINGS": "Alle Bestillinger",
-    "ALL_PROPERTIES": "Alle Eiendommer"
+    "ALL_PROPERTIES": "Alle Eiendommer",
+    "ROLE_USER": "Bruker",
+    "ROLE_AGENT": "Agent",
+    "ROLE_ADMIN": "Administrator"
 }

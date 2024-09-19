@@ -15,5 +15,8 @@
     "USERS": "Användare",
     "AGENTS": "Agenter",
     "ALL_BOOKINGS": "Alla Bokningar",
-    "ALL_PROPERTIES": "Alla Fastigheter"
+    "ALL_PROPERTIES": "Alla Fastigheter",
+    "ROLE_USER": "Användare",
+    "ROLE_AGENT": "Agent",
+    "ROLE_ADMIN": "Administratör"
 }

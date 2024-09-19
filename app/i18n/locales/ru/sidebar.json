@@ -15,5 +15,8 @@
     "USERS": "Пользователи",
     "AGENTS": "Агенты",
     "ALL_BOOKINGS": "Все Бронирования",
-    "ALL_PROPERTIES": "Все Недвижимости"
+    "ALL_PROPERTIES": "Все Недвижимости",
+    "ROLE_USER": "Пользователь",
+    "ROLE_AGENT": "Агент",
+    "ROLE_ADMIN": "Администратор"
 }

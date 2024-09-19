@@ -15,5 +15,8 @@
     "USERS": "Users",
     "AGENTS": "Agents",
     "ALL_BOOKINGS": "All Bookings",
-    "ALL_PROPERTIES": "All Properties"
+    "ALL_PROPERTIES": "All Properties",
+    "ROLE_USER" : "User",
+    "ROLE_AGENT" : "Agent",
+    "ROLE_ADMIN" : "Admin"
 }

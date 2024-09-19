@@ -15,5 +15,8 @@
     "USERS": "Gebruikers",
     "AGENTS": "Agenten",
     "ALL_BOOKINGS": "Alle Boekingen",
-    "ALL_PROPERTIES": "Alle Eigendommen"
+    "ALL_PROPERTIES": "Alle Eigendommen",
+    "ROLE_USER": "Gebruiker",
+    "ROLE_AGENT": "Agent",
+    "ROLE_ADMIN": "Beheerder"
 }

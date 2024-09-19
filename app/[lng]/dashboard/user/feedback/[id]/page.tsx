@@ -82,6 +82,7 @@ const page = () => {
         for (let i = 1; i <= 5; i++) {
             stars.push(
                 <div
+                    key={i}
                     className="flex items-center gap-2 text-2xl"
                     onClick={() => handleStarClick(i)}
                 >

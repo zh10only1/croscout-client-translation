@@ -15,5 +15,8 @@
     "USERS": "Użytkownicy",
     "AGENTS": "Agenci",
     "ALL_BOOKINGS": "Wszystkie Rezerwacje",
-    "ALL_PROPERTIES": "Wszystkie Nieruchomości"
+    "ALL_PROPERTIES": "Wszystkie Nieruchomości",
+    "ROLE_USER": "Użytkownik",
+    "ROLE_AGENT": "Agent",
+    "ROLE_ADMIN": "Administrator"
 }
