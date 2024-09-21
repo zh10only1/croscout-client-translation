@@ -6,7 +6,6 @@ import { fallbackLng, languages, cookieName } from './app/i18n/settings';
 acceptLanguage.languages(languages);
 
 export const config = {
-  // matcher: '/:lng*'
   matcher: ['/((?!api|public|images|icons|assets|favicon.ico|sw.js|site.webmanifest).*)']
 };
 
@@ -23,7 +22,6 @@ export function middleware(req: NextRequest) {
   ];
 
   const agentRoutes = [
-    // "/[lng]/dashboard",
     "/[lng]/dashboard/agent/profile",
     "/[lng]/dashboard/agent/add-property",
     "/[lng]/dashboard/agent/my-properties",
@@ -35,7 +33,6 @@ export function middleware(req: NextRequest) {
   ];
 
   const adminRoutes = [
-    // "/[lng]/dashboard",
     "/[lng]/dashboard/admin/profile",
     "/[lng]/dashboard/admin/transactions",
     "/[lng]/dashboard/admin/all-users",
@@ -73,9 +70,7 @@ export function middleware(req: NextRequest) {
   if (token) {
     const decodedToken: any = jwtDecode(token);
     const role = decodedToken['role'];
-
-    // Adjust URLs for role-based redirection
-    const adjustedUrl = `/${lng}${pathname}`; // Construct adjusted URL with [lng] parameter
+    const adjustedUrl = `/${lng}${pathname}`;
 
     if (role === "user" && (adminRoutes.includes(adjustedUrl) || agentRoutes.includes(adjustedUrl))) {
       return NextResponse.redirect(new URL("/", url));
@@ -94,6 +89,5 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL("/", url));
   }
 
-  // Default behavior
   return NextResponse.next();
 }
