@@ -9,7 +9,6 @@ import LoginModal from "@/components/ui/Modal/LoginModal";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SignupModal from "@/components/ui/Modal/SignupModal";
-import CalenderModal from "@/components/ui/Modal/CalenderModal";
 import GuestModal from "@/components/ui/Modal/GuestModal";
 import { SearchProvider } from "@/providers/SearchProvider";
 import LocationModal from "@/components/ui/Modal/LocationModal";
@@ -21,6 +20,7 @@ import { AuthProvider } from "@/providers/AuthProvider";
 import Main from "./Main";
 import { dir } from "i18next";
 import { languages } from "../i18n/settings";
+import dynamic from "next/dynamic";
 
 const onest = Onest({
   subsets: ["latin"],
@@ -47,6 +47,7 @@ export default function RootLayout({
     lng: string;
   };
 }>) {
+  const CalenderModal = dynamic(() => import('@/components/ui/Modal/CalenderModal'), { ssr: false });
   return (
     <html lang={lng} dir={dir(lng)}>
       <body className={`${onest.className} bg-primary`}>
