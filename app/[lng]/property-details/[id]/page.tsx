@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import PropertyAbout from "../components/PropertyAbout";
-import PropertyHero from "../components/PropertyHero";
 import PropertyReviews from "../components/PropertyReviews";
 import PropertyTestimonial from "../components/PropertyTestimonial";
 import { useParams } from "next/navigation";
@@ -10,6 +9,9 @@ import { getPropertyById } from "@/lib/database/getProperties";
 import Loading from "@/components/ui/Loading/Loading";
 import PropertyDescription from "../components/PropertyDescription";
 import { translateProperties } from "@/lib/database/getProperties";
+import dynamic from "next/dynamic";
+
+const PropertyHero = dynamic(() => import('../components/PropertyHero'), { ssr: false });
 
 // Interface of Properties Data
 export interface IPropertyData {

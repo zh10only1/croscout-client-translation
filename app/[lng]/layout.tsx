@@ -22,6 +22,8 @@ import { dir } from "i18next";
 import { languages } from "../i18n/settings";
 import dynamic from "next/dynamic";
 
+const CalenderModal = dynamic(() => import('@/components/ui/Modal/CalenderModal'), { ssr: false });
+
 const onest = Onest({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -47,7 +49,6 @@ export default function RootLayout({
     lng: string;
   };
 }>) {
-  const CalenderModal = dynamic(() => import('@/components/ui/Modal/CalenderModal'), { ssr: false });
   return (
     <html lang={lng} dir={dir(lng)}>
       <body className={`${onest.className} bg-primary`}>
