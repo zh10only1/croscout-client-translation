@@ -77,5 +77,17 @@
     "Osijek-Baranja": "Osijek-Baranja",
     "Vukovar-Srijem": "Vukovar-Srijem",
     "Medimurje": "Medimurje",
-    "Međimurje":"Međimurje"
+    "Međimurje":"Međimurje",
+    "Jan": "Sij",
+    "Feb": "Vel",
+    "Mar": "Ožu",
+    "Apr": "Tra",
+    "May": "Svi",
+    "Jun": "Lip",
+    "Jul": "Srp",
+    "Aug": "Kol",
+    "Sep": "Ruj",
+    "Oct": "Lis",
+    "Nov": "Stu",
+    "Dec": "Pro"
 }
