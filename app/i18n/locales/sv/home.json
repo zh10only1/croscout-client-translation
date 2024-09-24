@@ -44,5 +44,12 @@
   "PROPERTIES_NOT_FOUND": "Inga fastigheter hittades!",
   "SHOW_MORE": "Visa mer",
   "ADULT": "Vuxen",
-  "GUEST": "Gäst"
+  "GUEST": "Gäst",
+  "Monday": "Måndag",
+  "Tuesday": "Tisdag",
+  "Wednesday": "Onsdag",
+  "Thursday": "Torsdag",
+  "Friday": "Fredag",
+  "Saturday": "Lördag",
+  "Sunday": "Söndag"
 }

@@ -44,5 +44,12 @@
     "PROPERTIES_NOT_FOUND": "Keine Immobilien gefunden!",
     "SHOW_MORE": "Mehr anzeigen",
     "ADULT": "Erwachsener",
-    "GUEST": "Gast"
+    "GUEST": "Gast",
+    "Monday": "Montag",
+    "Tuesday": "Dienstag",
+    "Wednesday": "Mittwoch",
+    "Thursday": "Donnerstag",
+    "Friday": "Freitag",
+    "Saturday": "Samstag",
+    "Sunday": "Sonntag"
 }

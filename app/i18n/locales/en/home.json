@@ -44,5 +44,12 @@
     "PROPERTIES_NOT_FOUND": "Properties are not found!",
     "SHOW_MORE": "Show More",
     "ADULT": "Adult",
-    "GUEST": "Guest"
+    "GUEST": "Guest",
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday",
+    "Sunday": "Sunday"
 }

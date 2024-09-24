@@ -44,5 +44,12 @@
   "PROPERTIES_NOT_FOUND": "Geen eigenschappen gevonden!",
   "SHOW_MORE": "Toon meer",
   "ADULT": "Volwassene",
-  "GUEST": "Gast"
+  "GUEST": "Gast",
+  "Monday": "Maandag",
+  "Tuesday": "Dinsdag",
+  "Wednesday": "Woensdag",
+  "Thursday": "Donderdag",
+  "Friday": "Vrijdag",
+  "Saturday": "Zaterdag",
+  "Sunday": "Zondag"
 }

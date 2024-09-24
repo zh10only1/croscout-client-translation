@@ -44,5 +44,12 @@
   "PROPERTIES_NOT_FOUND": "Nenašli sa žiadne nehnuteľnosti!",
   "SHOW_MORE": "Zobraziť viac",
   "ADULT": "Dospelý",
-  "GUEST": "Hosť"
+  "GUEST": "Hosť",
+  "Monday": "Pondelok",
+  "Tuesday": "Utorok",
+  "Wednesday": "Streda",
+  "Thursday": "Štvrtok",
+  "Friday": "Piatok",
+  "Saturday": "Sobota",
+  "Sunday": "Nedeľa"
 }

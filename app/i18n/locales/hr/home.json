@@ -44,5 +44,12 @@
     "PROPERTIES_NOT_FOUND": "Nema pronađenih nekretnina!",
     "SHOW_MORE": "Prikaži više",
     "ADULT": "Odrasla osoba",
-    "GUEST": "Gost"
+    "GUEST": "Gost",
+    "Monday": "Ponedjeljak",
+    "Tuesday": "Utorak",
+    "Wednesday": "Srijeda",
+    "Thursday": "Četvrtak",
+    "Friday": "Petak",
+    "Saturday": "Subota",
+    "Sunday": "Nedjelja"
 }

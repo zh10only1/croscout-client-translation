@@ -44,5 +44,12 @@
   "PROPERTIES_NOT_FOUND": "Nemovitosti nebyly nalezeny!",
   "SHOW_MORE": "Zobrazit více",
   "ADULT": "Dospělý",
-  "GUEST": "Host"
+  "GUEST": "Host",
+  "Monday": "Pondělí",
+  "Tuesday": "Úterý",
+  "Wednesday": "Středa",
+  "Thursday": "Čtvrtek",
+  "Friday": "Pátek",
+  "Saturday": "Sobota",
+  "Sunday": "Neděle"
 }

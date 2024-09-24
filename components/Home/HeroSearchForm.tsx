@@ -138,7 +138,7 @@ const HeroSearchForm = ({lng}: {lng: string}) => {
                                                 {format(new Date(searchCalDate[0].startDate), "MMM dd, yyyy")}
                                             </div>
                                             <div className="text-sm lg:text-base lg:leading-5">
-                                                {format(new Date(searchCalDate[0].startDate), "EEEE")}
+                                                {t(format(new Date(searchCalDate[0].startDate), "EEEE"))}
                                             </div>
                                         </>
                                     ) : (
@@ -163,7 +163,7 @@ const HeroSearchForm = ({lng}: {lng: string}) => {
                                                 {format(new Date(searchCalDate[0].endDate), "MMM dd, yyyy")}
                                             </div>
                                             <div className="text-sm lg:text-base lg:leading-5">
-                                                {format(new Date(searchCalDate[0].endDate), "EEEE")}
+                                                {t(format(new Date(searchCalDate[0].endDate), "EEEE"))}
                                             </div>
                                         </>
                                     ) : (
