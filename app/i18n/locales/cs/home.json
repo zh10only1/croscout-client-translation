@@ -43,5 +43,6 @@
   "NOT_MATCHED": "Neshoduje se",
   "PROPERTIES_NOT_FOUND": "Nemovitosti nebyly nalezeny!",
   "SHOW_MORE": "Zobrazit více",
-  "ADULT": "Dospělý"
+  "ADULT": "Dospělý",
+  "GUEST": "Host"
 }

@@ -43,5 +43,6 @@
   "NOT_MATCHED": "Niet overeenkomend",
   "PROPERTIES_NOT_FOUND": "Geen eigenschappen gevonden!",
   "SHOW_MORE": "Toon meer",
-  "ADULT": "Volwassene"
+  "ADULT": "Volwassene",
+  "GUEST": "Gast"
 }

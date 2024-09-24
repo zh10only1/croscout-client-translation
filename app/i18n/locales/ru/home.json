@@ -43,5 +43,6 @@
     "NOT_MATCHED": "Nicht übereinstimmend",
     "PROPERTIES_NOT_FOUND": "Keine Immobilien gefunden!",
     "SHOW_MORE": "Mehr anzeigen",
-    "ADULT": "Взрослый"
+    "ADULT": "Взрослый",
+     "GUEST": "Гость"
 }

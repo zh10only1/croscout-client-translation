@@ -43,5 +43,6 @@
   "NOT_MATCHED": "Ikke samsvarende",
   "PROPERTIES_NOT_FOUND": "Ingen eiendommer funnet!",
   "SHOW_MORE": "Vis mer",
-  "ADULT": "Voksen"
+  "ADULT": "Voksen",
+  "GUEST": "Gjest"
 }

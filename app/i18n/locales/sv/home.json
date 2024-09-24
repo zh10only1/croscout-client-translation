@@ -43,5 +43,6 @@
   "NOT_MATCHED": "Inte matchad",
   "PROPERTIES_NOT_FOUND": "Inga fastigheter hittades!",
   "SHOW_MORE": "Visa mer",
-  "ADULT": "Vuxen"
+  "ADULT": "Vuxen",
+  "GUEST": "Gäst"
 }

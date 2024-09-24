@@ -43,5 +43,6 @@
   "NOT_MATCHED": "Nezodpovedá",
   "PROPERTIES_NOT_FOUND": "Nenašli sa žiadne nehnuteľnosti!",
   "SHOW_MORE": "Zobraziť viac",
-  "ADULT": "Dospelý"
+  "ADULT": "Dospelý",
+  "GUEST": "Hosť"
 }

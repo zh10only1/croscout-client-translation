@@ -43,5 +43,6 @@
     "NOT_MATCHED": "Not Matched",
     "PROPERTIES_NOT_FOUND": "Properties are not found!",
     "SHOW_MORE": "Show More",
-    "ADULT": "Adult"
+    "ADULT": "Adult",
+    "GUEST": "Guest"
 }
