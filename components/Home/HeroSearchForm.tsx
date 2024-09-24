@@ -193,9 +193,9 @@ const HeroSearchForm = ({lng}: {lng: string}) => {
                                 {
                                     adultsCount > 0 || childrenCount > 0 ? (
                                         <>
-                                            {adultsCount > 0 && <span>{adultsCount} Adult{adultsCount > 1 && 's'}</span>}
+                                            {adultsCount > 0 && <span>{adultsCount} {t("ADULT")}{adultsCount > 1 && 's'}</span>}
                                             {adultsCount > 0 && childrenCount > 0 && <span>, </span>}
-                                            {childrenCount > 0 && <span>{childrenCount} Children{childrenCount > 1 && 's'}</span>}
+                                            {childrenCount > 0 && <span>{childrenCount} {t("CHILDREN")}{childrenCount > 1 && 's'}</span>}
                                         </>
                                     ) : (
                                         <span>{t("HOME_SEARCH_SELECT_GUESTS")}</span>
