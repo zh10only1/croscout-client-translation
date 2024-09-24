@@ -210,7 +210,7 @@ const HeroSearchForm = ({ lng }: { lng: string }) => {
                     {childrenCount > 0 && (
                       <span>
                         {childrenCount} {t("CHILDREN")}
-                        {childrenCount > 1 && "s"}
+                        {/* {childrenCount > 1 && "s"} */}
                       </span>
                     )}
                   </>

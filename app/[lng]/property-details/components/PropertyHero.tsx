@@ -399,16 +399,14 @@ export default function PropertyHero({
                         {formattedStartDate !== formattedEndDate ? (
                           <>
                             <div className="text-sm lg:text-base lg:leading-5">
-                              {format(
-                                new Date(selectedDate[0].startDate),
-                                "MMM dd, yyyy"
-                              )}
+                            {t(format(new Date(selectedDate[0].startDate), "MMM"))}{" "}
+                            {format(new Date(selectedDate[0].startDate), "dd, yyyy")}
                             </div>
                             <div className="text-sm lg:text-base lg:leading-5">
-                              {format(
+                              {t(format(
                                 new Date(selectedDate[0].startDate),
                                 "EEEE"
-                              )}
+                              ))}
                             </div>
                           </>
                         ) : (
@@ -436,16 +434,14 @@ export default function PropertyHero({
                         {formattedStartDate !== formattedEndDate ? (
                           <>
                             <div className="text-sm lg:text-base lg:leading-5">
-                              {format(
-                                new Date(selectedDate[0].endDate),
-                                "MMM dd, yyyy"
-                              )}
+                            {t(format(new Date(selectedDate[0].endDate), "MMM"))}{" "}
+                            {format(new Date(selectedDate[0].endDate), "dd, yyyy")}
                             </div>
                             <div className="text-sm lg:text-base lg:leading-5">
-                              {format(
+                              {t(format(
                                 new Date(selectedDate[0].endDate),
                                 "EEEE"
-                              )}
+                              ))}
                             </div>
                           </>
                         ) : (
@@ -547,7 +543,7 @@ export default function PropertyHero({
                           <>
                             {adultsCount > 0 && (
                               <span>
-                                {adultsCount} Adult{adultsCount > 1 && "s"}
+                                {adultsCount > 1 ? t("ADULTS") : t("ADULT")}
                               </span>
                             )}
                             {adultsCount > 0 && childrenCount > 0 && (
@@ -555,8 +551,8 @@ export default function PropertyHero({
                             )}
                             {childrenCount > 0 && (
                               <span>
-                                {childrenCount} Children
-                                {childrenCount > 1 && "s"}
+                                {childrenCount} {t("CHILDREN")}
+                                {/* {childrenCount > 1 && "s"} */}
                               </span>
                             )}
                           </>
@@ -586,7 +582,7 @@ export default function PropertyHero({
                       <div className="flex flex-col">
                         <div className="flex-between ">
                           <h1 className="text-center flex-1 text-xl font-semibold text-secondary ">
-                            Guests
+                            {t("GUESTS")}
                           </h1>
                           <button
                             onClick={() => setGuestModal(false)}
