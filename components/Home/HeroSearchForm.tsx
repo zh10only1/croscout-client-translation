@@ -16,6 +16,7 @@ import "../ui/buttons/addSearchValueBtn.css";
 import { MdLocationOn } from "react-icons/md";
 import { setSearchQuery } from "@/utils/searchQuery";
 import { useTranslation } from "@/app/i18n/client";
+import React, { useEffect } from "react";
 
 const HeroSearchForm = ({ lng }: { lng: string }) => {
   const { setCalenderModal, setGuestModal, setLocationModal } =
@@ -29,10 +30,6 @@ const HeroSearchForm = ({ lng }: { lng: string }) => {
     isSearchBtnClicked,
     setIsSearchBtnClicked,
   } = useSearchContext();
-
-  // Selection Date formatted
-  // const formattedStartDate = format(searchCalDate[0].startDate, "MMM dd, yyyy");
-  // const formattedEndDate = format(searchCalDate[0].endDate, "MMM dd, yyyy");
   const { t } = useTranslation(lng, "home");
 
   let formattedStartDate: any;
@@ -46,13 +43,9 @@ const HeroSearchForm = ({ lng }: { lng: string }) => {
 
   duration = calculateDuration(
     searchCalDate[0].startDate,
-    searchCalDate[0].endDate
+    searchCalDate[0].endDate,
+    lng
   );
-
-  // const formattedStartDate = format(new Date(searchCalDate[0].startDate), "MMM dd, yyyy");
-  // const formattedEndDate = format(new Date(searchCalDate[0].endDate), "MMM dd, yyyy");
-
-  // Use calculateDuration function to get the duration
 
   // Guest Calculation
   let guests = childrenCount + adultsCount;
@@ -89,9 +82,7 @@ const HeroSearchForm = ({ lng }: { lng: string }) => {
             isBorderX={true}
             onClick={() => setCalenderModal(true)}
           >
-            {duration === "0 week" || duration === "0 day"
-              ? t("HOME_SEARCH_ANY_WEEK")
-              : duration}
+            {duration.includes("0") ? t("HOME_SEARCH_ANY_WEEK") : duration}
           </AddSearchValueBtn>
 
           {/* Add Guests */}

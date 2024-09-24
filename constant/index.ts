@@ -627,3 +627,10 @@ export const supportedLngs: Record<string, string> = {
     "Slovak": "sk",
     "Dutch": "nl"
 };
+
+export const DurationTypes: any = {
+    "Day": {"en": "Day", "ru": "День", "de": "Tag", "hr": "Dan", "pl": "Dzień", "cs": "Den", "sv": "Dag", "no": "Dag", "sk": "Deň", "nl": "Dag"},
+    "Days": {"en": "Days", "ru": "Дни", "de": "Tage", "hr": "Dani", "pl": "Dni", "cs": "Dny", "sv": "Dagar", "no": "Dager", "sk": "Dni", "nl": "Dagen"},
+    "Week": {"en": "Week", "ru": "Неделя", "de": "Woche", "hr": "Tjedan", "pl": "Tydzień", "cs": "Týden", "sv": "Vecka", "no": "Uke", "sk": "Týždeň", "nl": "Week"},
+    "Weeks": {"en": "Weeks", "ru": "Недели", "de": "Wochen", "hr": "Tjedni", "pl": "Tygodnie", "cs": "Týdny", "sv": "Veckor", "no": "Uker", "sk": "Týždne", "nl": "Weken"},
+}
