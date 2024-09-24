@@ -62,6 +62,7 @@ const LocationModal = ({ lng }: { lng: string }) => {
             setLocationObject(value);
           }}
           isAddProperty={false}
+          lng={lng}
         />
         <hr className="my-5" />
         <Map center={locationObject?.latlng} />

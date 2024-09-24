@@ -2,6 +2,7 @@
 import Select from 'react-select'
 
 import { useCountries } from "@/hooks/useCountries";
+import { useTranslation } from '@/app/i18n/client';
 
 
 export type CountrySelectValue = {
@@ -16,11 +17,13 @@ interface CountrySelectProps {
     value?: CountrySelectValue;
     isAddProperty: boolean;
     onChange: (value: CountrySelectValue | undefined) => void;
+    lng: string;
 }
 
 
-const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, isAddProperty }) => {
+const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, isAddProperty, lng }) => {
     const { getAll } = useCountries();
+    const { t } = useTranslation(lng, 'home');
 
 
     return (
@@ -40,9 +43,9 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange, isAddPro
                     <div className='flex flex-row  items-center gap-3'>
                         {/* <div>{option.flag}</div> */}
                         <div>
-                            {option.label},
+                            {t(option.label)},
                             <span className={'text-neutral-500 ml-1'}>
-                                {option.region}
+                                {t(option.region)}
                             </span>
                         </div>
                     </div>

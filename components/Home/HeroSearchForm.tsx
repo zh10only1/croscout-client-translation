@@ -29,9 +29,7 @@ const HeroSearchForm = ({lng}: {lng: string}) => {
     const { t } = useTranslation(lng, 'home');
     
     let formattedStartDate: any;
-
     let formattedEndDate: any;
-
     let duration: any = "Anywhere";
 
     const startDate = new Date(searchCalDate[0].startDate);
@@ -81,7 +79,7 @@ const HeroSearchForm = ({lng}: {lng: string}) => {
                         id="add-location"
                         onClick={() => setLocationModal(true)}
                     >
-                        {location ? location : t("HOME_SEARCH_ANYWHERE")}
+                        {location ? t(location) : t("HOME_SEARCH_ANYWHERE")}
                     </AddSearchValueBtn>
 
                     {/* Add Dates */}
@@ -112,12 +110,10 @@ const HeroSearchForm = ({lng}: {lng: string}) => {
                     className="p-4 relative hover:border-accent duration-200 flex items-center gap-2 cursor-pointer mt-6 lg:mt-0 md:p-5 bg-transparent outline-none border border-white-50 placeholder:text-gray-300 rounded-[5px] w-full text-white"
                 >
                     <MdLocationOn className="text-2xl" />
-                    <span>{location ? location : t("HOME_SEARCH_LOCATION_SELECT")}</span>
+                    <span>{location ? t(location) : t("HOME_SEARCH_LOCATION_SELECT")}</span>
                     {/* Down Arrow Button */}
                     <FaChevronDown className={`absolute ${heroStyles.downArrow} right-1 lg:right-4 text-xl`} />
                 </div>
-
-
 
 
                 <div className="grid grid-cols-2 mt-5 gap-5">
