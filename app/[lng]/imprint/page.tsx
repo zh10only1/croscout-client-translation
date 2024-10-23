@@ -30,9 +30,13 @@ export default async function ({
         <br />
         {t("IMPRESSUM_CONTENT_PART_8")}
         <br />
-        {t("IMPRESSUM_CONTENT_PART_9")}
+        {t("IMPRESSUM_CONTENT_PART_9")}{" "}
+        <a href="mailto:office@croscout.eu">office@croscout.eu</a>
         <br />
-        {t("IMPRESSUM_CONTENT_PART_10")}
+        {t("IMPRESSUM_CONTENT_PART_10")}{" "}
+        <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener noreferrer">
+          https://ec.europa.eu/odr
+        </a>
         <br />
         {t("IMPRESSUM_CONTENT_PART_11")}
         <br />
