@@ -11,226 +11,388 @@ export default async function ({
   const { t } = await useTranslation(lng, "privacyProtection");
 
   return (
-    <div className="text-white w-[75%] mx-auto py-16">
-      <h5>{t("1")}</h5>
-      <p>{t("2")}</p>
-      <p>{t("3")}</p>
-      <p>
-        {t("4")}
-        <br />
-        {t("5")}
-        <br />
-        {t("6")}
-        <br />
-        {t("7")}
-        <br />
-        {t("8")}
-        <br />
-        {t("9")}
-        <br />
-        {t("10")}: <a href="mailto:office@croscout.eu">office@croscout.eu</a>
-      </p>
-      <p>{t("11")}</p>
-      <p>{t("12")}</p>
-      <p>{t("13")}</p>
-      <ul>
-        <li>{t("14")}</li>
-        <li>{t("15")}</li>
-        <li>{t("16")}</li>
-        <li>{t("17")}</li>
-      </ul>
-      <p>{t("18")}</p>
-      <p>{t("19")}</p>
-      <p>{t("20")}</p>
-      <p>{t("21")}</p>
-      <p>{t("22")}</p>
-      <ul>
-        <li>{t("23")}</li>
-        <li>{t("24")}</li>
-        <li>{t("25")}</li>
-        <li>{t("26")}</li>
-        <li>{t("27")}</li>
-        <li>{t("28")}</li>
-      </ul>
-      <p>{t("29")}</p>
-      <p>{t("30")}</p>
-      <p>{t("31")}</p>
-      <p>{t("32")}</p>
-      <p>{t("33")}</p>
-      <p>{t("34")}</p>
-      <ul>
-        <li>
-          {t("35")}
-          <ul>
-            <li>{t("36")}</li>
-            <li>{t("37")}</li>
-            <li>{t("38")}</li>
-            <li>{t("39")}</li>
+    <div className="text-white w-[75%] mx-auto py-16 space-y-8">
+      {/* Main Content */}
+      <div className="space-y-6">
+        <h1 className="text-2xl font-bold mb-6 border-b border-gray-700 pb-4">
+          {t("1")}
+        </h1>
+
+        {/* Introduction Paragraphs */}
+        <div className="space-y-4">
+          <p className="text-lg">{t("2")}</p>
+        </div>
+
+        {/* Contact Information */}
+        <h3 className="text-xl font-bold">{t("3")}</h3>
+        <div className="bg-gray-900/50 p-6 rounded-lg space-y-2">
+          <p>{t("4")}</p>
+          <p>{t("5")}</p>
+          <p>{t("6")}</p>
+          <p>{t("7")}</p>
+          <p>{t("8")}</p>
+          <p>{t("9")}</p>
+          <p>
+            {t("10")}:
+            <a
+              href="mailto:office@croscout.eu"
+              className="text-blue-400 hover:text-blue-300 transition-colors ml-2"
+            >
+              office@croscout.eu
+            </a>
+          </p>
+        </div>
+
+        {/* General Information */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("11")}</h3>
+          <p>{t("12")}</p>
+        </div>
+
+        {/* List Section */}
+        <h3 className="text-xl font-bold">{t("13")}</h3>
+        <div className="bg-gray-900/50 p-6 rounded-lg">
+          <ul className="list-disc list-inside space-y-2">
+            <li>{t("14")}</li>
+            <li>{t("15")}</li>
+            <li>{t("16")}</li>
+            <li>{t("17")}</li>
           </ul>
-        </li>
-      </ul>
-      <p>{t("40")}</p>
-      <p>{t("41")}</p>
-      <p>{t("42")}</p>
-      <ul>
-        <li>{t("43")}</li>
-        <li>{t("44")}</li>
-      </ul>
-      <p>{t("45")}</p>
-      <ul>
-        <li>{t("46")}</li>
-        <li>{t("47")}</li>
-      </ul>
-      <p>{t("48")}</p>
-      <ul>
-        <li>{t("49")}</li>
-        <li>{t("50")}</li>
-      </ul>
-      <p>{t("51")}</p>
-      <p>{t("52")}</p>
-      <p>{t("53")}</p>
-      <p>{t("54")}</p>
-      <p>{t("55")}</p>
-      <p>{t("56")}</p>
-      <p>{t("57")}</p>
-      <ul>
-        <li>{t("58")}</li>
-        <li>{t("59")}</li>
-        <li>{t("60")}</li>
-        <li>{t("61")}</li>
-        <li>{t("62")}</li>
-        <li>{t("63")}</li>
-        <li>{t("64")}</li>
-        <li>{t("65")}</li>
-        <li>{t("66")}</li>
-      </ul>
-      <p>{t("67")}</p>
-      <p>{t("68")}</p>
-      <ul>
-        <li>{t("69")}</li>
-        <li>{t("70")}</li>
-        <li>{t("71")}</li>
-      </ul>
-      <p>{t("72")}</p>
-      <p>{t("73")}</p>
-      <p>{t("74")}</p>
-      <p>{t("75")}</p>
-      <ul>
-        <li>
-          {t("76")} <a href="https://www.hivelocity.net/">hivelocity.net</a>
-        </li>
-        <li>{t("77")}</li>
-        <li>
-          {t("78")}{" "}
-          <a href="https://www.hivelocity.net/legal/">
-            https://www.hivelocity.net/legal/
-          </a>
-        </li>
-      </ul>
-      <p>{t("79")}</p>
-      <p>{t("80")}</p>
-      <p>{t("81")}</p>
-      <p>{t("82")}</p>
-      <ul>
-        <li>{t("83")}</li>
-        <li>{t("84")}</li>
-        <li>{t("85")}</li>
-        <li>{t("86")}</li>
-      </ul>
-      <p>{t("87")}</p>
-      <p>{t("88")}</p>
-      <p>{t("89")}</p>
-      <p>{t("90")}</p>
-      <p>{t("91")}</p>
-      <p>{t("92")}</p>
-      <p>{t("93")}</p>
-      <p>{t("94")}</p>
-      <ul>
-        <li>{t("95")}</li>
-        <li>{t("96")}</li>
-      </ul>
-      <p>{t("97")}</p>
-      <p>{t("98")}</p>
-      <p>{t("99")}</p>
-      <p>{t("100")}</p>
-      <ul>
-        <li>{t("101")}</li>
-        <li>{t("102")}</li>
-        <li>
-          {t("103")}{" "}
-          <a href="https://marketingplatform.google.com/intl/de/about/analytics/">
-            https://marketingplatform.google.com/intl/de/about/analytics/
-          </a>
-        </li>
-        <li>
-          {t("104")}{" "}
-          <a href="https://policies.google.com/privacy?hl=de">
-            https://policies.google.com/privacy?hl=de
-          </a>
-        </li>
-        <li>{t("105")}</li>
-        <li>
-          {t("106")}{" "}
-          <a href="https://tools.google.com/dlpage/gaoptout?hl=de">
-            https://tools.google.com/dlpage/gaoptout?hl=de
-          </a>
-        </li>
-      </ul>
-      <p>{t("107")}</p>
-      <p>{t("108")}</p>
-      <p>{t("109")}</p>
-      <ul>
-        <li>{t("110")}</li>
-        <li>{t("111")}</li>
-      </ul>
-      <p>{t("112")}</p>
-      <p>{t("113")}</p>
-      <p>{t("114")}</p>
-      <p>{t("115")}</p>
-      <ul>
-        <li>
-          <strong>{t("116")}</strong>
-          <p>{t("117")}</p>
-          <p>{t("118")}</p>
-          <p>{t("119")}</p>
-          <p>
-            {t("120")}{" "}
-            <a href="https://www.google.de/maps">https://www.google.de/maps</a>
-          </p>
-          <p>
-            {t("121")}{" "}
-            <a href="https://policies.google.com/privacy">
-              https://policies.google.com/privacy
-            </a>
-          </p>
-          <p>
-            {t("122")}{" "}
-            <a href="https://tools.google.com/dlpage/gaoptout?hl=de">
-              https://tools.google.com/dlpage/gaoptout?hl=de
-            </a>
-          </p>
-        </li>
-      </ul>
-      <p>{t("123")}</p>
-      <p>{t("124")}</p>
-      <p>{t("125")}</p>
-      <p>{t("126")}</p>
-      <p>
-        {t("127")}{" "}
-        <a href="https://fonts.google.com/">https://fonts.google.com/</a>
-      </p>
-      <p>
-        {t("128")}{" "}
-        <a href="https://policies.google.com/privacy">
-          https://policies.google.com/privacy
-        </a>
-      </p>
+        </div>
 
-      <p>{t("129")}</p>
-      <p>{t("130")}</p>
+        {/* Additional Information */}
+        <div className="space-y-4">
+          {[18, 19, 20].map((num) => (
+            <div className="py-1 space-y-4">
+              <p>{t(String(num)).split(":")[0].trim()}:</p>
+              <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+                <ul className="space-y-4 list-disc list-inside">
+                  <li className="space-y-2">
+                    {t(String(num)).split(":")[1].trim()}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
 
-      <p>{t("131")}</p>
-      <p>{t("132")}</p>
+        <div className="space-y-2">
+          <h3 className="text-xl font-bold">{t("21")}</h3>
+          <p>{t("22")}</p>
+          {/* Secondary List */}
+          <div className="bg-gray-900/50 p-6 rounded-lg">
+            <ul className="list-disc list-inside space-y-2">
+              {[23, 24, 25, 26, 27, 28].map((num) => (
+                <li key={num}>{t(String(num))}</li>
+              ))}
+              <li>
+                {t("29")}: {t("30")}
+              </li>
+              <li>
+                {t("31")}: {t("32")}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div></div>
+
+        {/* Nested List Section */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("33")}</h3>
+          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+            <ul className="space-y-4 list-disc list-inside">
+              <li className="space-y-2">{t("34")}</li>
+              <li className="space-y-2">
+                {t("35")}
+                <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
+                  <li>{t("36")}</li>
+                  <li>{t("37")}</li>
+                  <li>{t("38")}</li>
+                  <li>{t("39")}</li>
+                </ul>
+              </li>
+            </ul>
+            <p>{t("40")}</p>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("41")}</h3>
+          <p>{t("42")}</p>
+          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+            <ul className="space-y-4 list-disc list-inside">
+              <li className="space-y-2">{t("43")}</li>
+              <li className="space-y-2">{t("44")}</li>
+            </ul>
+          </div>
+          <div className="py-3 space-y-4">
+            <p>{t("45")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("46")}</li>
+                <li className="space-y-2">{t("47")}</li>
+              </ul>
+            </div>
+          </div>
+          <div className="py-1 space-y-4">
+            <p>{t("48")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("49")}</li>
+                <li className="space-y-2">{t("50")}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("51").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("51").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("52").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("52").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("53").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("53").split(":")[1].trim()}</li>
+                <li className="space-y-2">
+                  {t("54")}. {t("55")}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("56")}</h3>
+          <p>{t("57")}</p>
+          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+            <ul className="space-y-4 list-disc list-inside">
+              {[58, 59, 60, 61, 62, 63, 64, 65, 66].map((num) => (
+                <li className="space-y-2">{t(String(num))}</li>
+              ))}
+            </ul>
+            <p>{t("67")}</p>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("68")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("69")}</li>
+                <li className="space-y-2">{t("70")}</li>
+                <li className="space-y-2">{t("71")}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("72").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("72").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("73").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("73").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("74").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("74").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("56")}</h3>
+          <p>{t("57")}</p>
+          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+            <ul className="space-y-4 list-disc list-inside">
+              {[58, 59, 60, 61, 62, 63, 64, 65, 66].map((num) => (
+                <li className="space-y-2">{t(String(num))}</li>
+              ))}
+            </ul>
+            <p>{t("67")}</p>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("68")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("69")}</li>
+                <li className="space-y-2">{t("70")}</li>
+                <li className="space-y-2">{t("71")}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("72").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("72").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("73").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("73").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("74").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("74").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("75").split(":")[0].trim()}</h3>
+          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+            <ul className="space-y-4 list-disc list-inside">
+              <li>
+                {t("76")}{" "}
+                <a
+                  href="https://www.hivelocity.net/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hivelocity.net
+                </a>
+              </li>
+              <li className="space-y-2">
+                <span className="bold">{t("77").split(":")[0].trim()}: </span>
+                {t("77").split(":")[1].trim()}
+              </li>
+              <li>
+                {t("78")}{" "}
+                <a
+                  href="https://www.hivelocity.net/legal/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hivelocity.net/legal
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">{t("79")}</h3>
+          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+            <ul className="space-y-4 list-disc list-inside">
+              <li>
+                {t("76")}{" "}
+                <a
+                  href="https://www.hivelocity.net/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hivelocity.net
+                </a>
+              </li>
+              <li className="space-y-2">
+                <span className="bold">{t("77").split(":")[0].trim()}: </span>
+                {t("77").split(":")[1].trim()}
+              </li>
+              <li>
+                {t("78")}{" "}
+                <a
+                  href="https://www.hivelocity.net/legal/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  hivelocity.net/legal
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* External Links Section */}
+        <div className="space-y-4">
+          <ul className="space-y-2">
+            <li>
+              {t("76")}{" "}
+              <a
+                href="https://www.hivelocity.net/"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                hivelocity.net
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Google Analytics Section */}
+        <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+          <h6 className="text-xl font-semibold">{t("116")}</h6>
+          <div className="space-y-2">
+            <p>{t("117")}</p>
+            <p>{t("118")}</p>
+            <p>{t("119")}</p>
+            <p>
+              {t("120")}{" "}
+              <a
+                href="https://www.google.de/maps"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://www.google.de/maps
+              </a>
+            </p>
+          </div>
+        </div>
+
+        {/* Footer Section */}
+        <div className="space-y-4 mt-8">
+          {[129, 130, 131, 132].map((num) => (
+            <p key={num} className="text-gray-300">
+              {t(String(num))}
+            </p>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
