@@ -477,7 +477,7 @@ export default function PropertyHero({
                     >
                       <div className="flex-between mb-5">
                         <h1 className="text-center flex-1 text-xl font-semibold text-secondary ">
-                          {t("CALENDER")}
+                          {t("CALENDAR")}
                         </h1>
                         <button
                           onClick={() => setCalenderModal(false)}
@@ -543,6 +543,7 @@ export default function PropertyHero({
                           <>
                             {adultsCount > 0 && (
                               <span>
+                                {adultsCount + " "}
                                 {adultsCount > 1 ? t("ADULTS") : t("ADULT")}
                               </span>
                             )}
@@ -598,7 +599,7 @@ export default function PropertyHero({
                             onChange={(value) => setAdultsCount(value)}
                             value={adultsCount}
                             title={t("ADULTS")}
-                            subtitle="Ages 18 or above"
+                            subtitle={t("ADULTS_SUBTITLE")}
                             maximumGuest={maximumGuest}
                             totalGuests={totalGuests}
                           />
@@ -607,7 +608,7 @@ export default function PropertyHero({
                             onChange={(value) => setChildrenCount(value)}
                             value={childrenCount}
                             title={t("CHILDREN")}
-                            subtitle="Ages 0-17"
+                            subtitle={t("CHILDREN_SUBTITLE")}
                             totalGuests={totalGuests}
                             maximumGuest={maximumGuest}
                           />
