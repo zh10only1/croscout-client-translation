@@ -228,57 +228,6 @@ export default async function ({
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-bold">{t("56")}</h3>
-          <p>{t("57")}</p>
-          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-            <ul className="space-y-4 list-disc list-inside">
-              {[58, 59, 60, 61, 62, 63, 64, 65, 66].map((num) => (
-                <li className="space-y-2">{t(String(num))}</li>
-              ))}
-            </ul>
-            <p>{t("67")}</p>
-          </div>
-
-          <div className="py-1 space-y-4">
-            <p>{t("68")}</p>
-            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-              <ul className="space-y-4 list-disc list-inside">
-                <li className="space-y-2">{t("69")}</li>
-                <li className="space-y-2">{t("70")}</li>
-                <li className="space-y-2">{t("71")}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="py-1 space-y-4">
-            <p>{t("72").split(":")[0].trim()}:</p>
-            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-              <ul className="space-y-4 list-disc list-inside">
-                <li className="space-y-2">{t("72").split(":")[1].trim()}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="py-1 space-y-4">
-            <p>{t("73").split(":")[0].trim()}:</p>
-            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-              <ul className="space-y-4 list-disc list-inside">
-                <li className="space-y-2">{t("73").split(":")[1].trim()}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="py-1 space-y-4">
-            <p>{t("74").split(":")[0].trim()}:</p>
-            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-              <ul className="space-y-4 list-disc list-inside">
-                <li className="space-y-2">{t("74").split(":")[1].trim()}</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-4">
           <h3 className="text-xl font-bold">{t("75").split(":")[0].trim()}</h3>
           <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
             <ul className="space-y-4 list-disc list-inside">
@@ -314,53 +263,78 @@ export default async function ({
 
         <div className="space-y-4">
           <h3 className="text-xl font-bold">{t("79")}</h3>
-          <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-            <ul className="space-y-4 list-disc list-inside">
-              <li>
-                {t("76")}{" "}
-                <a
-                  href="https://www.hivelocity.net/"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  hivelocity.net
-                </a>
-              </li>
-              <li className="space-y-2">
-                <span className="bold">{t("77").split(":")[0].trim()}: </span>
-                {t("77").split(":")[1].trim()}
-              </li>
-              <li>
-                {t("78")}{" "}
-                <a
-                  href="https://www.hivelocity.net/legal/"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  hivelocity.net/legal
-                </a>
-              </li>
-            </ul>
+          <p>
+            <a
+              href="https://www.croscout.eu/"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              croscout.eu
+            </a>
+          </p>
+          <p>{t("81")}</p>
+          <div className="py-1 space-y-4">
+            <p>{t("82")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("83")}</li>
+                <li className="space-y-2">{t("84")}</li>
+                <li className="space-y-2">{t("85")}</li>
+                <li className="space-y-2">{t("86")}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("87").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("87").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("88").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("88").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("89").split(":")[0].trim()}:</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("89").split(":")[1].trim()}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="py-1 space-y-4">
+            <p>{t("90")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("91")}</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        {/* External Links Section */}
         <div className="space-y-4">
-          <ul className="space-y-2">
-            <li>
-              {t("76")}{" "}
-              <a
-                href="https://www.hivelocity.net/"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                hivelocity.net
-              </a>
-            </li>
-          </ul>
+          <h3 className="text-xl font-bold">{t("92")}</h3>
+          <p>{t("93")}</p>
+          <div className="py-1 space-y-4">
+            <p>{t("94")}</p>
+            <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+              <ul className="space-y-4 list-disc list-inside">
+                <li className="space-y-2">{t("95")}</li>
+                <li className="space-y-2">{t("96")}</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         {/* Google Analytics Section */}
