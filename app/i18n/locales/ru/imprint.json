@@ -1,17 +1,19 @@
 {
-    "IMPRESSUM_TITLE": "Импресум",
-    "IMPRESSUM_CONTENT_PART_1": "Обязанности согласно § 5 TMG:",
-    "IMPRESSUM_CONTENT_PART_2": "croscout.eu - проект от Brandoz.eu",
-    "IMPRESSUM_CONTENT_PART_3": "Юридическая форма: Индивидуальное предприятие",
-    "IMPRESSUM_CONTENT_PART_4": "Владелец: Йорг Аллмансбергер",
-    "IMPRESSUM_CONTENT_PART_5": "Южная ул. 116",
-    "IMPRESSUM_CONTENT_PART_6": "53175 Бонн",
-    "IMPRESSUM_CONTENT_PART_7": "Германия",
-    "IMPRESSUM_CONTENT_PART_8": "Телефон: +49 228 61967990",
-    "IMPRESSUM_CONTENT_PART_9": "Электронная почта:",
-    "IMPRESSUM_CONTENT_PART_10": "Платформа Европейской Комиссии для разрешения споров онлайн:",
-    "IMPRESSUM_CONTENT_PART_11": "Мы не обязаны и не готовы участвовать в процедуре разрешения споров перед органом по разрешению потребительских споров.",
-    "IMPRESSUM_CONTENT_PART_12": "Ответственный согласно § 18 Abs. 2 MStV:",
-    "IMPRESSUM_CONTENT_PART_13": "Йорг Аллмансбергер, Южная ул. 116, Германия- 53175 Бонн"
-  }
-  
+  "IMPRESSUM_TITLE": "Импрессум",
+  "IMPRESSUM_CONTENT_PART_1": "Обязательная информация в соответствии с § 5 TMG:",
+  "IMPRESSUM_CONTENT_PART_2": "croscout.eu - проект компании Brandoz.eu",
+  "IMPRESSUM_CONTENT_PART_3_LEFT": "Форма:",
+  "IMPRESSUM_CONTENT_PART_3_RIGHT": "Индивидуальное предприятие",
+  "IMPRESSUM_CONTENT_PART_4_LEFT": "Владелец:",
+  "IMPRESSUM_CONTENT_PART_4_RIGHT": "Йорг Альманнсбергер",
+  "IMPRESSUM_CONTENT_PART_5": "Südstr. 116",
+  "IMPRESSUM_CONTENT_PART_6": "53175 Бонн",
+  "IMPRESSUM_CONTENT_PART_7": "Германия",
+  "IMPRESSUM_CONTENT_PART_8_LEFT": "Телефон:",
+  "IMPRESSUM_CONTENT_PART_8_RIGHT": "+49 228 61967990",
+  "IMPRESSUM_CONTENT_PART_9": "Электронная почта:",
+  "IMPRESSUM_CONTENT_PART_10": "Платформа Еврокомиссии для разрешения споров онлайн:",
+  "IMPRESSUM_CONTENT_PART_11": "Мы не обязаны и не намерены участвовать в процедуре разрешения споров перед потребительской арбитражной комиссией.",
+  "IMPRESSUM_CONTENT_PART_12": "Ответственное лицо согласно § 18 Abs. 2 MStV:",
+  "IMPRESSUM_CONTENT_PART_13": "Йорг Альманнсбергер, Südstr. 116, Германия - 53175 Бонн"
+}

@@ -1,17 +1,19 @@
 {
-    "IMPRESSUM_TITLE": "Impressum",
-    "IMPRESSUM_CONTENT_PART_1": "Povinné informácie podľa § 5 TMG:",
-    "IMPRESSUM_CONTENT_PART_2": "croscout.eu - projekt od Brandoz.eu",
-    "IMPRESSUM_CONTENT_PART_3": "Právna forma: Samostatný podnikateľ",
-    "IMPRESSUM_CONTENT_PART_4": "Majiteľ: Jörg Allmannsberger",
-    "IMPRESSUM_CONTENT_PART_5": "Südstr. 116",
-    "IMPRESSUM_CONTENT_PART_6": "53175 Bonn",
-    "IMPRESSUM_CONTENT_PART_7": "Nemecko",
-    "IMPRESSUM_CONTENT_PART_8": "Telefón: +49 228 61967990",
-    "IMPRESSUM_CONTENT_PART_9": "E-mail:",
-    "IMPRESSUM_CONTENT_PART_10": "Platforma Európskej komisie pre online riešenie sporov:",
-    "IMPRESSUM_CONTENT_PART_11": "Nie sme povinní ani ochotní zúčastniť sa na riešení sporov pred orgánom na riešenie spotrebiteľských sporov.",
-    "IMPRESSUM_CONTENT_PART_12": "Zodpovedná osoba podľa § 18 Abs. 2 MStV:",
-    "IMPRESSUM_CONTENT_PART_13": "Jörg Allmannsberger, Südstr. 116, Nemecko- 53175 Bonn"
-  }
-  
+  "IMPRESSUM_TITLE": "Impresum",
+  "IMPRESSUM_CONTENT_PART_1": "Povinné informácie podľa § 5 TMG:",
+  "IMPRESSUM_CONTENT_PART_2": "croscout.eu - projekt spoločnosti Brandoz.eu",
+  "IMPRESSUM_CONTENT_PART_3_LEFT": "Právna forma:",
+  "IMPRESSUM_CONTENT_PART_3_RIGHT": "Živnosť",
+  "IMPRESSUM_CONTENT_PART_4_LEFT": "Majiteľ:",
+  "IMPRESSUM_CONTENT_PART_4_RIGHT": "Jörg Allmannsberger",
+  "IMPRESSUM_CONTENT_PART_5": "Südstr. 116",
+  "IMPRESSUM_CONTENT_PART_6": "53175 Bonn",
+  "IMPRESSUM_CONTENT_PART_7": "Nemecko",
+  "IMPRESSUM_CONTENT_PART_8_LEFT": "Telefón:",
+  "IMPRESSUM_CONTENT_PART_8_RIGHT": "+49 228 61967990",
+  "IMPRESSUM_CONTENT_PART_9": "Email:",
+  "IMPRESSUM_CONTENT_PART_10": "Platforma EÚ na online riešenie sporov:",
+  "IMPRESSUM_CONTENT_PART_11": "Nie sme povinní ani ochotní zúčastniť sa konania o riešení sporov pred spotrebiteľskou arbitrážnou komisiou.",
+  "IMPRESSUM_CONTENT_PART_12": "Zodpovedná osoba podľa § 18 ods. 2 MStV:",
+  "IMPRESSUM_CONTENT_PART_13": "Jörg Allmannsberger, Südstr. 116, Nemecko - 53175 Bonn"
+}

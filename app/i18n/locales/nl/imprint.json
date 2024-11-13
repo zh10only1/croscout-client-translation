@@ -1,17 +1,19 @@
 {
-    "IMPRESSUM_TITLE": "Impressum",
-    "IMPRESSUM_CONTENT_PART_1": "Verplichte informatie volgens § 5 TMG:",
-    "IMPRESSUM_CONTENT_PART_2": "croscout.eu - een project van Brandoz.eu",
-    "IMPRESSUM_CONTENT_PART_3": "Juridische vorm: Eenmanszaak",
-    "IMPRESSUM_CONTENT_PART_4": "Eigenaar: Jörg Allmannsberger",
-    "IMPRESSUM_CONTENT_PART_5": "Südstr. 116",
-    "IMPRESSUM_CONTENT_PART_6": "53175 Bonn",
-    "IMPRESSUM_CONTENT_PART_7": "Duitsland",
-    "IMPRESSUM_CONTENT_PART_8": "Telefoon: +49 228 61967990",
-    "IMPRESSUM_CONTENT_PART_9": "E-mail:",
-    "IMPRESSUM_CONTENT_PART_10": "EU-commissieplatform voor online geschillenbeslechting:",
-    "IMPRESSUM_CONTENT_PART_11": "Wij zijn niet verplicht of bereid deel te nemen aan een geschillenbeslechtingsprocedure voor een consumentenarbiteringscommissie.",
-    "IMPRESSUM_CONTENT_PART_12": "Verantwoordelijke persoon volgens § 18 Abs. 2 MStV:",
-    "IMPRESSUM_CONTENT_PART_13": "Jörg Allmannsberger, Südstr. 116, Duitsland- 53175 Bonn"
-  }
-  
+  "IMPRESSUM_TITLE": "Colofon",
+  "IMPRESSUM_CONTENT_PART_1": "Verplichte informatie volgens § 5 TMG:",
+  "IMPRESSUM_CONTENT_PART_2": "croscout.eu - een project van Brandoz.eu",
+  "IMPRESSUM_CONTENT_PART_3_LEFT": "Rechtsvorm:",
+  "IMPRESSUM_CONTENT_PART_3_RIGHT": "Eenmanszaak",
+  "IMPRESSUM_CONTENT_PART_4_LEFT": "Eigenaar:",
+  "IMPRESSUM_CONTENT_PART_4_RIGHT": "Jörg Allmannsberger",
+  "IMPRESSUM_CONTENT_PART_5": "Südstr. 116",
+  "IMPRESSUM_CONTENT_PART_6": "53175 Bonn",
+  "IMPRESSUM_CONTENT_PART_7": "Duitsland",
+  "IMPRESSUM_CONTENT_PART_8_LEFT": "Telefoon:",
+  "IMPRESSUM_CONTENT_PART_8_RIGHT": "+49 228 61967990",
+  "IMPRESSUM_CONTENT_PART_9": "E-mail:",
+  "IMPRESSUM_CONTENT_PART_10": "EU-platform voor onlinegeschillenbeslechting:",
+  "IMPRESSUM_CONTENT_PART_11": "Wij zijn niet verplicht noch bereid om deel te nemen aan een geschillenbeslechtingsprocedure voor een consumentenbemiddelingsraad.",
+  "IMPRESSUM_CONTENT_PART_12": "Verantwoordelijk persoon volgens § 18 Abs. 2 MStV:",
+  "IMPRESSUM_CONTENT_PART_13": "Jörg Allmannsberger, Südstr. 116, Duitsland - 53175 Bonn"
+}
