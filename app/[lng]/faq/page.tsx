@@ -103,26 +103,6 @@ export default async function ({
 
           <AccordionPanel>
             <AccordionTitle>
-              <strong>{t("17")}</strong>
-            </AccordionTitle>
-            <AccordionContent>
-              <p>
-                <span>{t("18")}:</span>
-              </p>
-              <p>
-                <span>● {t("19")}</span>
-              </p>
-              <p>
-                <span>● {t("20")}</span>
-              </p>
-              <p>
-                <span>● {t("21")}</span>
-              </p>
-            </AccordionContent>
-          </AccordionPanel>
-
-          <AccordionPanel>
-            <AccordionTitle>
               <strong>{t("22")}</strong>
             </AccordionTitle>
             <AccordionContent>

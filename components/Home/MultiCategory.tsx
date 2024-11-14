@@ -25,7 +25,7 @@ export default function MultiCategory({lng}: {lng: string}) {
     }
 
     return (
-        <div className="py-14 bg-secondary">
+        <div className="py-10 bg-secondary">
             <div className="wrapper">
                 <p className="text-white font-semibold text-xl">
                     Inspiration for future getaways
@@ -42,7 +42,7 @@ export default function MultiCategory({lng}: {lng: string}) {
                         </div>
                     ))}
                 </div> */}
-                <div className="grid grid-cols-6 mt-20 gap-5 lg:gap-10">
+                <div className="grid grid-cols-6 mt-20 gap-5 lg:gap-7">
                     {defaultStates.map((state, index) => (
                         <div
                             key={index}
