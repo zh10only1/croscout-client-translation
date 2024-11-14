@@ -128,10 +128,17 @@ export default async function ({
           <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
             <ul className="space-y-4 list-disc list-inside">
               <li className="space-y-2">
-                <span className="font-bold">
-                  {t("43").split(":")[0].trim()}:{" "}
-                </span>
-                {t("43").split(":")[1].trim()}
+                {t("43").includes(":") ? (
+                  <>
+                    <span className="font-bold">
+                      {t("43").split(":")[0].trim()}
+                    </span>
+                    {": "}
+                    {t("43").split(":")[1].trim()}
+                  </>
+                ) : (
+                  t("43")
+                )}
               </li>
               <li className="space-y-2">
                 <span className="font-bold">
@@ -146,16 +153,30 @@ export default async function ({
             <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
               <ul className="space-y-4 list-disc list-inside">
                 <li className="space-y-2">
-                  <span className="font-bold">
-                    {t("46").split(":")[0].trim()}:{" "}
-                  </span>
-                  {t("46").split(":")[1].trim()}
+                  {t("46").includes(":") ? (
+                    <>
+                      <span className="font-bold">
+                        {t("46").split(":")[0].trim()}
+                      </span>
+                      {": "}
+                      {t("46").split(":")[1].trim()}
+                    </>
+                  ) : (
+                    t("46")
+                  )}
                 </li>
                 <li className="space-y-2">
-                  <span className="font-bold">
-                    {t("47").split(":")[0].trim()}:{" "}
-                  </span>
-                  {t("47").split(":")[1].trim()}
+                  {t("47").includes(":") ? (
+                    <>
+                      <span className="font-bold">
+                        {t("47").split(":")[0].trim()}
+                      </span>
+                      {": "}
+                      {t("47").split(":")[1].trim()}
+                    </>
+                  ) : (
+                    t("47")
+                  )}
                 </li>
               </ul>
             </div>
@@ -207,7 +228,9 @@ export default async function ({
           <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
             <ul className="space-y-4 list-disc list-inside">
               {[58, 59, 60, 61, 62, 63, 64, 65, 66].map((num) => (
-                <li key={num} className="space-y-2">{t(String(num))}</li>
+                <li key={num} className="space-y-2">
+                  {t(String(num))}
+                </li>
               ))}
             </ul>
             <p>{t("67")}</p>
@@ -364,14 +387,24 @@ export default async function ({
           </div>
           {[97, 98, 99].map((num) => (
             <div key={num} className="py-1 space-y-4">
-              <p>{t(String(num)).split(":")[0].trim()}:</p>
-              <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
-                <ul className="space-y-4 list-disc list-inside">
-                  <li className="space-y-2">
-                    {t(String(num)).split(":")[1].trim()}
-                  </li>
-                </ul>
-              </div>
+              {t(String(num)).includes(":") ? (
+                <>
+                  <p>{t(String(num)).split(":")[0].trim()}:</p>
+                  <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+                    <ul className="space-y-4 list-disc list-inside">
+                      <li className="space-y-2">
+                        {t(String(num)).split(":")[1].trim()}
+                      </li>
+                    </ul>
+                  </div>
+                </>
+              ) : (
+                <div className="bg-gray-900/50 p-6 rounded-lg space-y-4">
+                  <ul className="space-y-4 list-disc list-inside">
+                    <li className="space-y-2">{t(String(num))}</li>
+                  </ul>
+                </div>
+              )}
             </div>
           ))}
           <div className="py-1 space-y-4">
