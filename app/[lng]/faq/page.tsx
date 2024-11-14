@@ -20,6 +20,7 @@ export default async function ({
           </h1>
         </div>
       </div>
+
       <div className="text-white w-[75%] mx-auto py-16">
         <p>
           <strong>{t("1")}</strong>
