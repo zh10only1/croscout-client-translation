@@ -25,10 +25,10 @@ export default function MultiCategory({lng}: {lng: string}) {
     }
 
     return (
-        <div className="py-10 bg-secondary">
+        <div className="py-10 bg-primary">
             <div className="wrapper">
                 <p className="text-white font-semibold text-xl">
-                    Inspiration for future getaways
+                    {t("INSPIRATION_FOR_FUTURE")}
                 </p>
                 {/* <div className="mt-10 flex max-w-screen lg:max-w-full overflow-x-scroll">
                     {multiCategory.map((item, index) => (
@@ -49,7 +49,7 @@ export default function MultiCategory({lng}: {lng: string}) {
                             className="col-span-3 lg:col-span-1 text-lg font-semibold cursor-pointer text-white whitespace-nowrap"
                         >
                             <div className="flex items-center gap-2" onClick={() => handleLocationSearch(state)}>
-                                {state}
+                                {t(`${state}`)}
                             </div>
                             {/* <div className="font-normal text-sm">{item?.subCat}</div> */}
                         </div>
