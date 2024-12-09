@@ -53,7 +53,7 @@ const CalenderModal = ({ lng }: { lng: string }) => {
         </div>
 
         <button
-          className="w-full bg-rose-500 py-3 rounded-full text-white hover:bg-rose-400 duration-100"
+          className="w-full bg-[#24F199] py-3 rounded-full text-white hover:bg-[#1AC97C] duration-100"
           onClick={() => setCalenderModal(false)}
         >
           {t("CONTINUE")}

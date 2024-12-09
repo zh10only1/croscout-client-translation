@@ -55,7 +55,7 @@ const GuestModal = ({ lng }: { lng: string }) => {
           </div>
         </div>
         <button
-          className="w-full bg-rose-500 select-none py-3 mt-10 rounded-full text-white hover:bg-rose-400 duration-100"
+          className="w-full bg-[#24F199] select-none py-3 mt-10 rounded-full text-white hover:bg-[#1AC97C] duration-100"
           onClick={() => setGuestModal(false)}
         >
           {t("CONTINUE")}

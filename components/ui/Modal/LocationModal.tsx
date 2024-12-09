@@ -67,7 +67,7 @@ const LocationModal = ({ lng }: { lng: string }) => {
         <hr className="my-5" />
         <Map center={locationObject?.latlng} />
         <button
-          className="w-full bg-rose-500 py-3 mt-10 rounded-full text-white hover:bg-rose-400 duration-100"
+          className="w-full bg-[#24F199] py-3 mt-10 rounded-full text-white hover:bg-[#1AC97C] duration-100"
           onClick={() => setLocationModal(false)}
         >
           {t("CONTINUE")}
