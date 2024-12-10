@@ -432,7 +432,15 @@ const ProfilePage = ({ lng }: { lng: string }) => {
                   type="text"
                   name="role"
                   id="role"
-                  defaultValue={user?.role}
+                  defaultValue={
+                    user?.role == "user"
+                      ? t("ROLE_USER")
+                      : user?.role == "agent"
+                      ? t("ROLE_AGENT")
+                      : user?.role == "admin"
+                      ? t("ROLE_ADMIN")
+                      : ""
+                  }
                   readOnly
                   placeholder={
                     errors.role ? t("PLEASE_ENTER_YOUR_ROLE") : t("YOUR_ROLE")

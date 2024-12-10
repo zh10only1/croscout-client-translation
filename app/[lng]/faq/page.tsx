@@ -133,9 +133,6 @@ export default async function ({
                 <span>{t("29")}:</span>
               </p>
               <p>
-                <span>● {t("20")}</span>
-              </p>
-              <p>
                 <span>● {t("31")}</span>
               </p>
               <p>

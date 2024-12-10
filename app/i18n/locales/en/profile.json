@@ -42,5 +42,8 @@
   "PLEASE_ENTER_YOUR_TAX_NUMBER": "Please enter your tax number",
   "YOUR_TAX_NUMBER": "Your tax number",
   "SAVE_CHANGES": "Save changes",
-  "UPLOAD_NEW_IMAGE": "Upload New Image"
+  "UPLOAD_NEW_IMAGE": "Upload New Image",
+  "ROLE_USER": "User",
+  "ROLE_AGENT": "Agent",
+  "ROLE_ADMIN": "Admin"
 }

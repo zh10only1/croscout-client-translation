@@ -173,7 +173,7 @@ const SignupForm = ({ lng }: { lng: string }) => {
         {/* Register Button */}
         <button
           type="submit"
-          className="text-lg flex items-center justify-center rounded-xl relative py-2 h-[52px] w-full bg-rose-500 hover:bg-rose-400 text-white duration-200 overflow-hidden active:bg-rose-400 z-50 font-semibold"
+          className="text-lg flex items-center justify-center rounded-xl relative py-2 h-[52px] w-full bg-[#24F199] hover:bg-[#1AC97C] text-white duration-200 overflow-hidden active:bg-rose-400 z-50 font-semibold"
         >
           {isLoading ? (
             <ImSpinner9 className="animate-spin text-[26px]" />
