@@ -272,7 +272,8 @@ const AddPropertyForm = ({ lng }: { lng: string }) => {
                       </option>
                       {categoryList.map((category, i) => (
                         <option key={i} value={category.name}>
-                          {category.name}
+
+                          {t(`${category.name}`)}
                         </option>
                       ))}
                     </select>
