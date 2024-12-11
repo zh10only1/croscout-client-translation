@@ -18,8 +18,6 @@ import styles from "../../add-property/components/addProperty.module.css";
 import Loading from "@/components/ui/Loading/Loading";
 import { getStoredToken } from "@/utils/tokenStorage";
 import  { translateProperties } from "@/lib/database/getProperties";
-import { useTranslation } from "@/app/i18n/client";
-
 
 type Inputs = {
   name: string;
@@ -74,10 +72,6 @@ const EditProperties = ({
   const [amenitiesError, setAmenitiesError] = useState(false);
   const [amenities, setAmenities] = useState<AmenitiesState>([]);
   const { user } = useAuthContext();
-
-  const { t } = useTranslation(lng, "home");
-
-
   const router = useRouter();
   const removeImage = (index: number) => {
     setImagesArr((prevImages) => prevImages.filter((_, i) => i !== index));
